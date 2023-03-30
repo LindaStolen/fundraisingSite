@@ -16,6 +16,7 @@ $(function(){
         if(device > 768){
             let close = $('.about-Sub').hasClass('hidden')
             if(close){
+                console.log(close)
                 $('.subMenu > div').addClass('hidden')
                 $('.about-Sub').removeClass('hidden')
             }else{
@@ -28,19 +29,29 @@ $(function(){
                 $(this).next('nav').removeClass('hidden')
             }else{
                 $(this).next('nav').addClass('hidden')
-            }
-            
+            }            
         }
     })
     $(".product").on('click', function(){
         console.log('這是商品')
-        let close = $('.product-Sub').hasClass('hidden')
-        console.log(close)
-        if(close){
-            $('.subMenu > div').addClass('hidden')
-            $('.product-Sub').removeClass('hidden')
+        let device = $(window).innerWidth()
+        console.log(device)
+        if(device >768){
+            let close = $('.product-Sub').hasClass('hidden')
+            if(close){
+                $('.subMenu > div').addClass('hidden')
+                $('.product-Sub').removeClass('hidden')
+            }else{
+                $('.product-Sub').addClass('hidden')
+            }
         }else{
-            $('.product-Sub').addClass('hidden')
+            let close = $(this).next('nav').hasClass('hidden')
+            if(close){
+                $('.menu nav').addClass('hidden')
+                $(this).next('nav').removeClass('hidden')
+            }else{
+                $(this).next('nav').addClass('hidden')
+            }
         }
     })
 
@@ -58,4 +69,25 @@ $(function(){
     $('.adPrevBtn').click(function() {
         owl.trigger('prev.owl.carousel');
     })
+    if($(window).innerWidth() > 1919){
+        $('a.tab').eq(0).animate({marginLeft: "-=10px"}).addClass('on').removeClass('bg-primary-400').addClass('bg-primary-100')
+    }
+    $("a.tab").click(function(){
+        let on = $(this).hasClass('on')
+        let toggle = $(this).index()
+        console.log(toggle)
+        if($(window).innerWidth() > 1919 && !on){
+            $('a.tab').animate({marginLeft: '0'}).removeClass('on').addClass('bg-primary-400').removeClass('bg-primary-100')
+            $(this).animate({marginLeft: "-=10px"}).addClass('on')
+            $('.content').hide().addClass('hidden')
+            $('.content').eq(toggle).show().removeClass('hidden')
+        }else if($(window).innerWidth() < 1920 && !on){
+            $('a.tab').removeClass('on').addClass('bg-primary-400').removeClass('bg-primary-100')
+            $(this).addClass('on')
+            $('.content').hide().addClass('hidden')
+            $('.content').eq(toggle).show().removeClass('hidden')
+        }else{
+            return
+        }
+    });
 })

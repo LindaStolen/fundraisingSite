@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base {
+    p {
+        @apply leading-10
+    }
+    .on {
+        @apply bg-primary-100 3xl:focus:shadow-md 3xl:focus:shadow-graay-200 focus:bg-primary-100
+    }
+}

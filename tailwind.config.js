@@ -34,7 +34,8 @@ module.exports = {
       'success': '#4ECB71',
       'warning': '#FFD233',
       'markedPurple': '#6672DF',
-      'markedPink': '#E932D6'
+      'markedPink': '#E932D6',
+      'bgc': '#FAFAFA',
     },
     screens: {
       'sm': '375px',
@@ -42,7 +43,8 @@ module.exports = {
       'md': '768px',
       'lg': '1024px',
       'xl': '1280px',
-      '2xl': '1366px',
+      '2xl': '1440px',
+      '3xl': '1920px',
     },
     fontFamily:{
       sans: ['Noto Sans TC'],
