@@ -54,6 +54,11 @@ $(function(){
             }
         }
     })
+    $('button.top').on('click',function(){
+        console.log(123123)
+        $('html,body').animate({scrollTop: 0,} ,700)
+        console.log(789789)
+    })
 
     
     let owl = $('.ad');
