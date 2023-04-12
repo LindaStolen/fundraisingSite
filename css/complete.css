@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.2.7 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.1 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -31,6 +31,7 @@
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
 */
 
 html {
@@ -47,6 +48,8 @@ html {
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
 }
 
 /*
@@ -621,6 +624,10 @@ p {
   bottom: 50%;
 }
 
+.bottom-36 {
+  bottom: 9rem;
+}
+
 .bottom-\[3\%\] {
   bottom: 3%;
 }
@@ -633,56 +640,28 @@ p {
   right: 0px;
 }
 
+.right-2 {
+  right: 0.5rem;
+}
+
 .right-6 {
   right: 1.5rem;
+}
+
+.right-\[9\%\] {
+  right: 9%;
 }
 
 .top-0 {
   top: 0px;
 }
 
-.top-5 {
-  top: 1.25rem;
-}
-
-.right-2 {
-  right: 0.5rem;
-}
-
 .top-2 {
   top: 0.5rem;
 }
 
-.bottom-36 {
-  bottom: 9rem;
-}
-
-.right-32 {
-  right: 8rem;
-}
-
-.bottom-72 {
-  bottom: 18rem;
-}
-
-.right-72 {
-  right: 18rem;
-}
-
-.right-\[20\%\] {
-  right: 20%;
-}
-
-.right-\[12\%\] {
-  right: 12%;
-}
-
-.right-\[8\%\] {
-  right: 8%;
-}
-
-.right-\[9\%\] {
-  right: 9%;
+.top-5 {
+  top: 1.25rem;
 }
 
 .z-10 {
@@ -691,10 +670,6 @@ p {
 
 .z-20 {
   z-index: 20;
-}
-
-.z-30 {
-  z-index: 30;
 }
 
 .col-span-2 {
@@ -848,6 +823,13 @@ p {
   margin-top: 2rem;
 }
 
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
 .block {
   display: block;
 }
@@ -870,6 +852,10 @@ p {
 
 .hidden {
   display: none;
+}
+
+.h-14 {
+  height: 3.5rem;
 }
 
 .h-20 {
@@ -900,10 +886,6 @@ p {
   height: 100vh;
 }
 
-.h-14 {
-  height: 3.5rem;
-}
-
 .min-h-\[50\%\] {
   min-height: 50%;
 }
@@ -914,6 +896,10 @@ p {
 
 .w-10 {
   width: 2.5rem;
+}
+
+.w-14 {
+  width: 3.5rem;
 }
 
 .w-40 {
@@ -955,10 +941,6 @@ p {
 
 .w-full {
   width: 100%;
-}
-
-.w-14 {
-  width: 3.5rem;
 }
 
 .max-w-\[1000px\] {
@@ -1010,10 +992,6 @@ p {
   flex-wrap: nowrap;
 }
 
-.content-center {
-  align-content: center;
-}
-
 .items-center {
   align-items: center;
 }
@@ -1041,6 +1019,10 @@ p {
 
 .gap-y-4 {
   row-gap: 1rem;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
 }
 
 .overflow-hidden {
@@ -1105,16 +1087,16 @@ p {
   border-width: 1px;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
 .border-\[0\.5px\] {
   border-width: 0.5px;
 }
 
 .border-\[1px\] {
   border-width: 1px;
-}
-
-.border-2 {
-  border-width: 2px;
 }
 
 .border-b-2 {
@@ -1144,6 +1126,11 @@ p {
   border-color: rgb(230 230 230 / var(--tw-border-opacity));
 }
 
+.border-primary-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(82 70 134 / var(--tw-border-opacity));
+}
+
 .border-primary-200 {
   --tw-border-opacity: 1;
   border-color: rgb(102 87 168 / var(--tw-border-opacity));
@@ -1152,11 +1139,6 @@ p {
 .border-primary-300 {
   --tw-border-opacity: 1;
   border-color: rgb(133 121 185 / var(--tw-border-opacity));
-}
-
-.border-primary-100 {
-  --tw-border-opacity: 1;
-  border-color: rgb(82 70 134 / var(--tw-border-opacity));
 }
 
 .bg-bgc {
@@ -1179,6 +1161,11 @@ p {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-primary-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(102 87 168 / var(--tw-bg-opacity));
+}
+
 .bg-primary-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(133 121 185 / var(--tw-bg-opacity));
@@ -1199,9 +1186,19 @@ p {
   background-color: rgb(212 208 231 / var(--tw-bg-opacity));
 }
 
-.bg-primary-200 {
+.bg-second-300 {
   --tw-bg-opacity: 1;
-  background-color: rgb(102 87 168 / var(--tw-bg-opacity));
+  background-color: rgb(0 206 209 / var(--tw-bg-opacity));
+}
+
+.bg-second-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(140 216 217 / var(--tw-bg-opacity));
+}
+
+.bg-second-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(179 229 229 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-40 {
@@ -1373,10 +1370,6 @@ p {
   line-height: 1.75rem;
 }
 
-.text-\[40px\] {
-  font-size: 40px;
-}
-
 .font-medium {
   font-weight: 500;
 }
@@ -1395,10 +1388,6 @@ p {
 
 .leading-\[52px\] {
   line-height: 52px;
-}
-
-.leading-\[60px\] {
-  line-height: 60px;
 }
 
 .text-graay-100 {
