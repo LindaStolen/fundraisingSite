@@ -18,6 +18,7 @@
     <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
     <script src="../js/owl.carousel.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/product.js"></script>
 </head>
 <body>
   <!-- 固定按鈕 -->
@@ -156,26 +157,31 @@
       </div>
     </div>
   </div>
-	<div class="mainContainer w-[90%] md:w-[65%] min-h-[50%] m-auto mb-24">
-		<!-- 麵包屑導覽 -->
-    <!-- <div class="breadcrumb mt-8 md:mt-14 lx:mt-20 text-base">
-      <span class="text-primary-200">首頁</span>
-      <span class="px-3 text-graay-100"><i class="fa-solid fa-angle-right"></i></span>
-      <span class="text-primary-200">關於</span>
-      <span class="px-3 text-graay-100"><i class="fa-solid fa-angle-right"></i></span>
-      <a href="#" class="text-primary-200">關於我們</a>
-    </div> -->
-    <div class="w-full relative">
-      <button class="adPrevBtn absolute bottom-1/2 w-[30px] h-[45px] md:w-[50px] md:h-[65px] bg-graay-600 bg-opacity-40 text-base md:text-[24px] z-10"><i class="fa-solid fa-angle-left"></i></button>
-      <button class="adNextBtn absolute bottom-1/2 right-0 w-[30px] h-[45px] md:w-[50px] md:h-[65px] bg-graay-600 bg-opacity-40 text-base md:text-[24px] z-10"><i class="fa-solid fa-angle-right"></i></button>
-      <div class="ad owl-carousel owl-theme">
-        <div class=" m-auto rounded-lg"><img src="https://source.unsplash.com/random/1200x600" alt="" srcset=""></div>
-        <div class=" m-auto rounded-lg"><img src="https://source.unsplash.com/random/1200x600" alt="" srcset=""></div>
-        <div class=" m-auto rounded-lg"><img src="https://source.unsplash.com/random/1200x600" alt="" srcset=""></div>
-        <div class=" m-auto rounded-lg"><img src="https://source.unsplash.com/random/1200x600" alt="" srcset=""></div>
-        <div class=" m-auto rounded-lg"><img src="https://source.unsplash.com/random/1200x600" alt="" srcset=""></div>
-      </div>
-    </div>
+  <ul class="sidebarSelect fixed top-46 -left-60 3xl:left-20 w-[256px] p-7 bg-graay-600 border-primary-400 border-[1px] rounded-lg z-20">
+    <form action="">
+      <li class="relative">
+        <div class="toggle close block 3xl:hidden absolute -right-16 w-12 h-12 bg-primary-500 rounded-tr-[50%] rounded-br-[50%]">
+          <!-- <span class="material-symbols-outlined absolute -right-20 w-12 h-12 bg-primary-500 rounded-tr-[50%] rounded-br-[50%] text-center leading-12">
+            bolt
+          </span> -->
+        </div>
+      </li>
+      <li class="pb-5 text-[24px]">篩選：</li>
+      <li class="pb-5"><label for="hot"><input class="mr-3" type="checkbox" name="" id="hot">本週熱門</label></li>
+      <li class="pb-5"><label for="newest"><input class="mr-3" type="checkbox" name="" id="newest">最新上架</label></li>
+      <li class="pb-5"><label for="recommend"><input class="mr-3" type="checkbox" name="" id="recommend">A-Ho推薦</label></li>
+      <li class="pb-5 text-[24px]">分類：</li>
+      <li class="pb-5"><label for="books"><input class="mr-3" type="checkbox" name="" id="books">書籍</label></li>
+      <li class="pb-5"><label for="food"><input class="mr-3" type="checkbox" name="" id="food">食品</label></li>
+      <li class="pb-5"><label for="class"><input class="mr-3" type="checkbox" name="" id="class">課程</label></li>
+      <li class="pb-5"><label for="handmade"><input class="mr-3" type="checkbox" name="" id="handmade">手作</label></li>
+      <li class="pb-5"><label for="music"><input class="mr-3" type="checkbox" name="" id="music">音樂</label></li>
+      <li class="pb-5"><label for="else"><input class="mr-3" type="checkbox" name="" id="else">其他</label></li>
+      <li><button type="reset" class="block w-full py-1 bg-primary-600 border-primary-200 border-[1px] text-[24px] text-graay-100 rounded-lg">清除篩選</button></li>
+    </form>
+  </ul>
+	<div class="mainContainer w-[90%] 3xl:w-[1200px] lg:w-[75%] min-h-[50%] m-auto mb-24">
+    <p class="resultText px-5 text-graay-100 text-[24px]">搜尋「<span class="keywords">關鍵字</span>」，共找到 ”<span class="count text-primary-300">3</span>” 筆相關專案</p>
     <!-- <div class="flex flex-nowrap mt-10 px-3"> -->
     <div class="grid grid-cols-3 gap-x-10 gap-y-10 mt-10 px-5">
       <div class="card">
