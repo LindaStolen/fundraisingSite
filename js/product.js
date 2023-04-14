@@ -4,10 +4,10 @@ $(function(){
     console.log(close)
     if(close){
       $(this).removeClass('close')
-      $('.sidebarSelect').removeClass('-left-60')
+      $('.sidebarSelect').animate({left: 15})
     }else {
       $(this).addClass('close')
-      $('.sidebarSelect').addClass('-left-60')
+      $('.sidebarSelect').animate({left: -256})
     }
   })
 

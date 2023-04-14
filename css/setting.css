@@ -11,4 +11,7 @@
     .active {
         @apply  bg-primary-300 text-graay-600
     }
+    /* .openFilter {
+        @apply 
+    } */
 }
