@@ -55,9 +55,7 @@ $(function(){
         }
     })
     $('button.top').on('click',function(){
-        console.log(123123)
         $('html,body').animate({scrollTop: 0,} ,700)
-        console.log(789789)
     })
 
     
@@ -74,25 +72,5 @@ $(function(){
     $('.adPrevBtn').click(function() {
         owl.trigger('prev.owl.carousel');
     })
-    if($(window).innerWidth() > 1919){
-        $('a.tab').eq(0).animate({marginLeft: "-=10px"}).addClass('on').removeClass('bg-primary-400').addClass('bg-primary-100')
-    }
-    $("a.tab").click(function(){
-        let on = $(this).hasClass('on')
-        let toggle = $(this).index()
-        console.log(toggle)
-        if($(window).innerWidth() > 1919 && !on){
-            $('a.tab').animate({marginLeft: '0'}).removeClass('on').addClass('bg-primary-400').removeClass('bg-primary-100')
-            $(this).animate({marginLeft: "-=10px"}).addClass('on')
-            $('.content').hide().addClass('hidden')
-            $('.content').eq(toggle).show().removeClass('hidden')
-        }else if($(window).innerWidth() < 1920 && !on){
-            $('a.tab').removeClass('on').addClass('bg-primary-400').removeClass('bg-primary-100')
-            $(this).addClass('on')
-            $('.content').hide().addClass('hidden')
-            $('.content').eq(toggle).show().removeClass('hidden')
-        }else{
-            return
-        }
-    });
+    
 })
