@@ -15,7 +15,7 @@
         @apply  border-[1px] border-graay-500
     }
     .material-symbols-outlined.text-48 {
-        @apply text-[48px]
+        @apply 3xl:text-[48px]
     }
     .material-symbols-outlined.text-24 {
         @apply text-2xl

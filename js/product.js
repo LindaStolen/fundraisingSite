@@ -11,21 +11,6 @@ $(function(){
     }
   })
 
-  $('.mainCarousel').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '.asNavCarousel'
-  })
-  $('.asNavCarousel').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.mainCarousel',
-    dots: false,
-    centerMode: true,
-    focusOnSelect: true
-  })
   $('nav.tab span').on('click', function(){
     let num = $(this).index()
     $(this).addClass('active').siblings().removeClass('active')
