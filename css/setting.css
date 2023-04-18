@@ -11,7 +11,10 @@
     .active {
         @apply  bg-primary-300 text-graay-600
     }
-    /* .openFilter {
-        @apply 
-    } */
+    .items {
+        @apply  border-[1px] border-graay-500
+    }
+    .pick {
+        @apply border-primary-300 bg-primary-400 text-graay-600 
+    }
 }

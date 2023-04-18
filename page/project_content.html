@@ -17,6 +17,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js" integrity="sha512-6DC1eE3AWg1bgitkoaRM1lhY98PxbMIbhgYCGV107aZlyzzvaWCW1nJW2vDuYQm06hXrW0As6OGKcIaAVWnHJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../js/owl.carousel.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../js/product.js"></script>
 </head>
 <body>
   <!-- 行動選單 -->
@@ -202,15 +203,16 @@
       </div>
       <div class="mt-6 xl:mt-0">
         <div class="donate min-w-[360px] border-[1px] border-primary-400 rounded-lg">
-          <div class="subtotal px-5 py-3 bg-primary-400 text-2xl leading-9">訂單小計</div>
+          <div class="subtotal px-5 py-3 bg-primary-600 text-2xl leading-9">訂單小計</div>
           <div class="list py-3 px-5 text-xl max-h-fit shrink-0">
             <div class="flex justify-between mb-5"> <span>商品小計</span> <span>NT$800</span></div>
             <div class="mb-5">加碼贊助</div>
             <div class="amount flex mb-5">
-              <span class="px-5 py-2 mr-2 border-[1px] border-graay-500 rounded-full">+100</span>
-              <span class="px-5 py-2 mr-2 border-[1px] border-graay-500 rounded-full">+200</span>
-              <span class="px-5 py-2 mr-2 border-[1px] border-graay-500 rounded-full">自訂</span>
+              <span class="px-5 py-2 mr-2 items rounded-full">+100</span>
+              <span class="px-5 py-2 mr-2 items rounded-full">+200</span>
+              <span class="custom px-5 py-2 mr-2 items rounded-full cursor-pointer">自訂</span>
             </div>
+            <input type="text" name="" id="" class="customDonate w-full px-5 py-[6px] border-[1px] border-primary-400 rounded-md hidden" placeholder="請輸入金額...">
             <hr class="my-5 border-[1px] border-primary-600">
             <div class="flex justify-between">
               <span>總金額</span> <span class="total">NT$900</span>
