@@ -11,14 +11,20 @@ $(function(){
     }
   })
 
-  $('.mainCarousel').owlCarousel({
-    items:1,
-    nav: false,
-    dots: false,
+  $('.mainCarousel').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.asNavCarousel'
   })
-  $('.asNavCarousel').owlCarousel({
-    items:3,
-    margin:10,
+  $('.asNavCarousel').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.mainCarousel',
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true
   })
   $('nav.tab span').on('click', function(){
     let num = $(this).index()

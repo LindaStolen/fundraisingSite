@@ -14,7 +14,10 @@
     .items {
         @apply  border-[1px] border-graay-500
     }
-    .pick {
-        @apply border-primary-300 bg-primary-400 text-graay-600 
+    .material-symbols-outlined.text-48 {
+        @apply text-[48px]
+    }
+    .material-symbols-outlined.text-24 {
+        @apply text-2xl
     }
 }
