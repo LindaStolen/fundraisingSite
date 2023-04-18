@@ -1071,6 +1071,10 @@ p {
   width: 100%;
 }
 
+.w-\[40\%\] {
+  width: 40%;
+}
+
 .min-w-\[360px\] {
   min-width: 360px;
 }
@@ -1603,6 +1607,11 @@ p {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -2197,8 +2206,16 @@ p {
     margin-top: 1.75rem;
   }
 
+  .\33xl\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
   .\33xl\:block {
     display: block;
+  }
+
+  .\33xl\:inline-block {
+    display: inline-block;
   }
 
   .\33xl\:hidden {
@@ -2257,6 +2274,11 @@ p {
     padding-bottom: 3.5rem;
   }
 
+  .\33xl\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .\33xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -2283,6 +2305,10 @@ p {
 
   .\33xl\:leading-10 {
     line-height: 2.5rem;
+  }
+
+  .\33xl\:leading-\[48px\] {
+    line-height: 48px;
   }
 
   .\33xl\:shadow-none {
