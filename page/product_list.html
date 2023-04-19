@@ -22,7 +22,7 @@
 <body>
 
   <!-- 行動選單 -->
-  <div class="background hidden w-full h-screen bg-graay-200 opacity-30 absolute z-10"></div>
+  <div class="background hidden lg:hidden w-full h-screen bg-graay-200 opacity-30 absolute z-10"></div>
   <nav class="menu w-[70%] h-screen -ml-[70%] absolute pl-12 py-10 bg-graay-600 z-20 text-graay-100 overflow-y-auto sm:flex flex-col justify-between lg:hidden">
     <button class="menuClose absolute top-5 right-6 text-2xl"><i class="fa-solid fa-square-xmark"></i></button>
     <div class="mb-5">
@@ -52,14 +52,23 @@
       <a href="javascript:void(0)" class="block mb-5 hover:text-primary-200">
         探索課程
       </a>
-      <a href="javascript:void(0)" class="block mb-5 hover:text-primary-200">
-        <i class="fa-regular fa-bell block mr-1"></i>站內通知
+      <a href="javascript:void(0)" class="flex items-center mb-5 hover:text-primary-200">
+        <span class="material-symbols-outlined mr-1">
+          notifications
+        </span>
+        站內通知
       </a>
-      <a href="javascript:void(0)" class="block mb-5 hover:text-primary-200">
-        <i class="fa-solid fa-user block mr-1"></i> 我的課程
+      <a href="javascript:void(0)" class="flex items-center mb-5 hover:text-primary-200">
+        <span class="material-symbols-outlined mr-1">
+          person
+        </span>
+        我的課程
       </a>
-      <a href="javascript:void(0)" class="block mb-8 hover:text-primary-200">
-        <i class="las la-shopping-cart text-2xl block mr-1 -ml-1"></i>購物車
+      <a href="javascript:void(0)" class="flex items-center mb-8 hover:text-primary-200 active:text-second-300">
+        <span class="material-symbols-outlined mr-1">
+          shopping_cart
+        </span>
+        購物車
       </a>
       <select name="" id="" class=" px-2 py-1 rounded-md border border-stone-700">
         <option value="">選擇語言</option>
@@ -96,19 +105,26 @@
       </div>
     </div>
     <div class="mr-5 inline-block">
-      <div class="function text-graay-100 sm:hidden lg:flex">
-        <nav>
-          <a href="javascript:void(0)" class="inline-block mr-5 hover:text-primary-200">
-            <i class="fa-regular fa-bell"></i>
+      <div class="function text-graay-100">
+        <nav class=" sm:hidden lg:flex">
+          <a href="javascript:void(0)" class="flex items-center mr-5 hover:text-second-300">
+            <span class="inline-block material-symbols-outlined">
+              notifications
+            </span>
           </a>
-          <a href="javascript:void(0)" class="inline-block mr-5 hover:text-primary-200">
-            <i class="las la-shopping-cart text-2xl"></i>
+          <a href="javascript:void(0)" class="flex items-center mr-5 hover:text-second-300">
+            <span class="inline-block material-symbols-outlined">
+              shopping_cart
+            </span>
           </a>
-          <a href="javascript:void(0)" class="inline-block mr-5 hover:text-primary-200">
+          <a href="javascript:void(0)" class="flex items-center mr-5 hover:text-primary-200">
             <i class="fa-solid fa-user block mr-1"></i> 我的課程
           </a>
-          <a href="#" class=" px-2 py-1.5 mr-5 rounded-md border border-primary-200 text-primary-200">
-            <i class="lar la-user text-2xl"></i>登入/註冊
+          <a href="#" class="flex items-center px-2 py-1.5 mr-5 rounded-md border border-primary-200 text-primary-200">
+            <span class="inline-block material-symbols-outlined mr-1">
+              person
+            </span>
+            登入/註冊
           </a>
           <select name="" id="" class=" px-2 py-1 rounded-md border border-stone-700">
             <option value="">選擇語言</option>
@@ -162,11 +178,11 @@
       <button class="adPrevBtn absolute bottom-1/2 w-[30px] h-[45px] md:w-[50px] md:h-[65px] bg-graay-600 bg-opacity-40 text-base md:text-[24px] z-10"><i class="fa-solid fa-angle-left"></i></button>
       <button class="adNextBtn absolute bottom-1/2 right-0 w-[30px] h-[45px] md:w-[50px] md:h-[65px] bg-graay-600 bg-opacity-40 text-base md:text-[24px] z-10"><i class="fa-solid fa-angle-right"></i></button>
       <div class="ad owl-carousel owl-theme">
-        <div class=" m-auto rounded-lg"><img src="https://source.unsplash.com/random/1200x600" alt="" srcset=""></div>
-        <div class=" m-auto rounded-lg"><img src="https://source.unsplash.com/random/1200x600" alt="" srcset=""></div>
-        <div class=" m-auto rounded-lg"><img src="https://source.unsplash.com/random/1200x600" alt="" srcset=""></div>
-        <div class=" m-auto rounded-lg"><img src="https://source.unsplash.com/random/1200x600" alt="" srcset=""></div>
-        <div class=" m-auto rounded-lg"><img src="https://source.unsplash.com/random/1200x600" alt="" srcset=""></div>
+        <div class=" m-auto rounded-lg"><img src="https://source.unsplash.com/random/1200x600?wings" alt="" srcset=""></div>
+        <div class=" m-auto rounded-lg"><img src="https://source.unsplash.com/random/1200x600?wings" alt="" srcset=""></div>
+        <div class=" m-auto rounded-lg"><img src="https://source.unsplash.com/random/1200x600?wings" alt="" srcset=""></div>
+        <div class=" m-auto rounded-lg"><img src="https://source.unsplash.com/random/1200x600?wings" alt="" srcset=""></div>
+        <div class=" m-auto rounded-lg"><img src="https://source.unsplash.com/random/1200x600?wings" alt="" srcset=""></div>
       </div>
     </div>
     <!-- <div class="flex flex-nowrap mt-10 px-3"> -->
