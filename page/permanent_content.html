@@ -20,6 +20,21 @@
     <script src="../js/product.js"></script>
 </head>
 <body>
+  <!-- <div class="alertbg hidden w-full h-screen bg-graay-200 opacity-30 absolute z-10"> -->
+    <div class="alert fixed -translate-x-1/2 left-1/2 top-1/3 sm:w-[80%] mm:w-[500px] h-40 xl:w-[800px] lg:h-[250px] bg-second-100 rounded-md z-10 hidden">
+      <span class="closeAlert absolute top-4 right-5 material-symbols-outlined text-graay-600">
+        close
+      </span>
+      <div class="w-full h-full flex justify-center items-center">
+        <div class="textBox text-lg lg:text-3xl flex items-center justify-center text-graay-600">
+          <span class="material-symbols-outlined mr-2 3xl:mr-5 lg:text-48 text-24">
+            error
+          </span>
+          <span class="">請選擇商品規格</span>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
   <!-- 行動選單 -->
   <div class="background hidden w-full h-screen bg-graay-200 opacity-30 absolute z-10"></div>
   <nav class="menu w-[70%] h-screen -ml-[70%] absolute pl-12 py-10 bg-graay-600 z-20 text-graay-100 overflow-y-auto sm:flex flex-col justify-between lg:hidden">
@@ -160,17 +175,17 @@
     <div class="grid grid-cols-1 2xl:grid-cols-2 gap-x-5 gap-y-5 2xl:gap-y-0 mt-10">
       <div class="gallery">
         <div class="mb-5">
-          <div class="mainCarousel owl-carousel owl-theme rounded-lg overflow-hidden">
+          <div class="mainCarousel">
             <!-- <div class=""><img src="../image/1679995164819.jpg" alt="" srcset=""></div> -->
-            <div class="m-auto"><img src="https://source.unsplash.com/random/600x360?food" alt="" srcset=""></div>
-            <div class="m-auto"><img src="https://source.unsplash.com/random/600x360?food" alt="" srcset=""></div>
-            <div class="m-auto"><img src="https://source.unsplash.com/random/600x360?food" alt="" srcset=""></div>
-            <div class="m-auto"><img src="https://source.unsplash.com/random/600x360?food" alt="" srcset=""></div>
-            <div class="m-auto"><img src="https://source.unsplash.com/random/600x360?food" alt="" srcset=""></div>
+            <div class="m-auto rounded-lg overflow-hidden"><img src="https://source.unsplash.com/random/600x360?food" alt="" srcset=""></div>
+            <div class="m-auto rounded-lg overflow-hidden"><img src="https://source.unsplash.com/random/600x360?food" alt="" srcset=""></div>
+            <div class="m-auto rounded-lg overflow-hidden"><img src="https://source.unsplash.com/random/600x360?food" alt="" srcset=""></div>
+            <div class="m-auto rounded-lg overflow-hidden"><img src="https://source.unsplash.com/random/600x360?food" alt="" srcset=""></div>
+            <div class="m-auto rounded-lg overflow-hidden"><img src="https://source.unsplash.com/random/600x360?food" alt="" srcset=""></div>
           </div>
         </div>
         <div class="pl-5">
-          <div class="asNavCarousel owl-carousel owl-theme">
+          <div class="asNavCarousel">
             <div class="m-auto"><img src="https://source.unsplash.com/random/150x100?flower" alt="" srcset=""></div>
             <div class="m-auto"><img src="https://source.unsplash.com/random/150x100?flower" alt="" srcset=""></div>
             <div class="m-auto"><img src="https://source.unsplash.com/random/150x100?flower" alt="" srcset=""></div>
@@ -193,30 +208,39 @@
           <div class="bg-second-400 w-full h-[26px] rounded-full">
           </div>
         </div>
-        <div class="flex justify-between pt-3 text-xl text-graay-300">
-          <div class="status">募資中</div>
-          <div class="target">目標金額 NT$ <span class="price">1,000,000</span></div>
+        <div class="pt-3 text-xl text-graay-300">
+          <div class="status">長期/預購商品</div>
         </div>
         <hr class="my-3 text-graay-400">
-        <div class="mb-3 text-xl text-graay-100 leading-8">專案期間：
-          <span class="startDate mr-1">2022/01/01 <span class="time">12:00</span></span>~
-          <span class="endDate">2022/12/31 <span class="time">23:59</span></span>
+        <div class="mb-3 text-xl text-graay-100 leading-8">售出數量：
+          <span class="sale mr-1">2022</span>
         </div>
-        <div class="mb-3 text-xl text-graay-100 leading-8">
-          剩餘天數：<span class="days">32</span>天
+        <div class="flex mb-3 text-xl text-graay-100 leading-8">
+          <span class="w-[25%]">規格</span>
+          <select name="" id="" class="specification w-[75%] py-1 px-5 border-[1px] border-graay-100 rounded-md">
+            <option value="">請選擇規格</option>
+            <option value="1">超小</option>
+            <option value="2">小</option>
+            <option value="3">中</option>
+            <option value="4">大</option>
+            <option value="5">超大</option>
+          </select>
         </div>
-        <div class="mb-3 text-xl text-graay-100 leading-8">
-          贊助人數：<span class="count">3,000</span>人
+        <div class="flex mb-3 text-xl text-graay-100 leading-8">
+          <span class="w-[25%]">數量</span>
+          <select name="" id="" class="quantity w-[75%] py-1 px-5 border-[1px] border-graay-100 rounded-md">
+            <option value="">請選擇數量</option>
+          </select>
         </div>
-        <button class="py-3 mb-3 border-[1px] border-second-200 rounded-lg w-full text-graay-100 text-2xl">追蹤專案</button>
-        <button class="py-3 bg-second-600 border-[1px] border-second-200 rounded-lg w-full text-graay-100 text-2xl">立即贊助</button>
+        <button class="py-3 mb-3 border-[1px] border-second-200 rounded-lg w-full text-graay-100 text-2xl">追蹤商品</button>
+        <button class="addCart py-3 bg-second-600 border-[1px] border-second-200 rounded-lg w-full text-graay-100 text-2xl">加入購物車</button>
       </div>
     </div>
 
     <div class="mt-12">
       <nav class="tab bg-second-600 text-base 3xl:text-xl grid grid-cols-2 lg:block rounded-tl-lg rounded-tr-lg">
         <span class="permanent inline-block py-2 px-10 text-center cursor-pointer active rounded-tl-lg">專案介紹</span>
-        <span class="permanent inline-block py-2 px-10 text-center cursor-pointer rounded-tr-lg lg:rounded-none">贊助方案</span>
+        <!-- <span class="permanent inline-block py-2 px-10 text-center cursor-pointer rounded-tr-lg lg:rounded-none">贊助方案</span> -->
         <span class="permanent inline-block py-2 px-10 text-center cursor-pointer">廠商介紹</span>
         <span class="permanent inline-block py-2 px-10 text-center cursor-pointer">承諾與須知</span>
       </nav>
@@ -229,77 +253,7 @@
           <p class="mb-4">村莊望大望會實，不舒服，地方了的選擇：可以說訊息有謝您說再我怎麼，不是在口的時候我看，結果畫圖。認親卡這個在這裡說一，己高雄的少看任何⋯太會對方大家比較多，但日本可聖誕，滿找不到沒問⋯他不是那知道我好了？也都說要是感覺是怎樣，的身影的遺一個月，望片居們是喜歡你，也是因為我當然，問我再看西爽是複雜是因為，不知道發現道出了。</p>
         </div>
       </div>
-      <div class="content pt-[19px] px-10 bg-bgc hidden">
-        <!-- <div class="inline-block text-3xl leading-relaxed font-medium border-b-2">贊助方案</div> -->
-        <div class="grid grid-cols-1 md:grid-cols-2 3xl:grid-cols-3 gap-x-5 gap-y-3 3xl:gap-y-0 mt-4 3xl:mt-10 leading-8 text-xl">
-          <div class="card pb-5 border-2 border-second-400 rounded-lg">
-            <div class="rounded-lg overflow-hidden"><img src="https://source.unsplash.com/random/380x190?coffee" alt="" srcset=""></div>
-            <div class="mx-5">
-              <p class="text-xl mt-2">方案一</p>
-              <p class="projectName mb-3 text-xl">2023 日月之書 手帳桌曆組</p>
-              <p class="mb-3 text-3xl font-bold text-second-200">
-                贊助價格 <span class="projextPrice">NT$800</span>
-              </p>
-              <div class="text-base">
-                <p>方案簡介：</p>
-                <li>方案簡單介紹 介紹 方案簡單介紹</li>
-                <p>方案內容：</p>
-                <li>方案簡單介紹</li>
-                <li>方案簡方案簡單介紹</li>
-                <li>方案簡單介紹</li>
-              </div>
-              <hr class="border-[1px] border-graay-400 mt-7 mb-3">
-              <p class="text-xl">贊助實現時間</p>
-              <p class="mb-2 text-base">其他事項其他事項其他事項其他事項其他事項其他事項其他事項其他事項其他事項其他事項</p>
-              <button class="w-full bg-second-400 py-2 text-graay-600 text-2xl rounded-lg">立即贊助</button>
-            </div>
-          </div>
-          <div class="card pb-5 border-2 border-second-400 rounded-lg">
-            <div class="rounded-lg overflow-hidden"><img src="https://source.unsplash.com/random/380x190?coffee" alt="" srcset=""></div>
-            <div class="mx-5">
-              <p class="text-xl mt-2">方案二</p>
-              <p class="projectName mb-3 text-xl">2023 日月之書 手帳桌曆組</p>
-              <p class="mb-3 text-3xl font-bold text-second-200">
-                贊助價格 <span class="projextPrice">NT$1000</span>
-              </p>
-              <div class="text-base">
-                <p>方案簡介：</p>
-                <li>方案簡單介紹 介紹 方案簡單介紹</li>
-                <p>方案內容：</p>
-                <li>方案簡單介紹</li>
-                <li>方案簡方案簡單介紹</li>
-                <li>方案簡單介紹</li>
-              </div>
-              <hr class="border-[1px] border-graay-400 mt-7 mb-3">
-              <p class="text-xl">贊助實現時間</p>
-              <p class="mb-2 text-base">其他事項其他事項其他事項其他事項其他事項其他事項其他事項其他事項其他事項其他事項</p>
-              <button class="w-full bg-second-400 py-2 text-graay-600 text-2xl rounded-lg">立即贊助</button>
-            </div>
-          </div>
-          <div class="card pb-5 border-2 border-second-400 rounded-lg">
-            <div class="rounded-lg overflow-hidden"><img src="https://source.unsplash.com/random/380x190?coffee" alt="" srcset=""></div>
-            <div class="mx-5">
-              <p class="text-xl mt-2">方案三</p>
-              <p class="projectName mb-3 text-xl">2023 日月之書 手帳桌曆組</p>
-              <p class="mb-3 text-3xl font-bold text-second-200">
-                贊助價格 <span class="projextPrice">NT$1200</span>
-              </p>
-              <div class="text-base">
-                <p>方案簡介：</p>
-                <li>方案簡單介紹 介紹 方案簡單介紹</li>
-                <p>方案內容：</p>
-                <li>方案簡單介紹</li>
-                <li>方案簡方案簡單介紹</li>
-                <li>方案簡單介紹</li>
-              </div>
-              <hr class="border-[1px] border-graay-400 mt-7 mb-3">
-              <p class="text-xl">贊助實現時間</p>
-              <p class="mb-2 text-base">其他事項其他事項其他事項其他事項其他事項其他事項其他事項其他事項其他事項其他事項</p>
-              <button class="w-full bg-second-400 py-2 text-graay-600 text-2xl rounded-lg">立即贊助</button>
-            </div>
-          </div>
-        </div>
-      </div>
+      
       <div class="content pt-[60px] px-10 bg-bgc hidden">
         <div class="inline-block text-3xl leading-relaxed font-medium border-b-2">廠商介紹</div>
         <div class="mt-10 leading-8 text-xl">
