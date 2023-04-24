@@ -42,5 +42,45 @@ $(function(){
     $(this).parent('.alert').addClass('hidden')
     $('body').css('overflow','scroll')
   })
+  $('input.deliver').on('click',function(){
+    console.log($(this).val())
+    $('#deliver').attr("value", $(this).val())
+  })
+  $('input.area').on('click',function(){
+    console.log($(this).val())
+    $('#reciverArea').attr("value", $(this).val())
+  })
+  $('input.payment').on('click',function(){
+    console.log($(this).val())
+    $('#payment').attr("value", $(this).val())
+  })
+
+  $('button.checkOut').on('click',function(e){
+    e.preventDefault()
+    if($('#deliver').val() == ''){
+      $('#deliver').siblings('.error').removeClass('hidden')
+    }
+    if($('#reciverArea').val() == ''){
+      $('#reciverArea').siblings('.error').removeClass('hidden')
+    }
+    if($('#reciverAddress').val() == ''){
+      $('#reciverAddress').siblings('.error').removeClass('hidden')
+    }
+    if($('#payment').val() == ''){
+      $('#payment').siblings('.error').removeClass('hidden')
+    }
+    for(let i = 0; i < $('.purchaser').length; i++){
+      console.log($('.purchaser').length)
+      if($('.purchaser').eq(i).val() == ''){
+        $('.purchaser').eq(i).focus().addClass('error').siblings('.error').removeClass('hidden')
+      }
+    }
+    for(let i = 0; i < $('.reciver').length; i++){
+      console.log($('.reciver').length)
+      if($('.reciver').eq(i).val() == ''){
+        $('.reciver').eq(i).focus().addClass('error').siblings('.error').removeClass('hidden')
+      }
+    }
+  })
 
 })

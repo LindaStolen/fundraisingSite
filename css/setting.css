@@ -23,4 +23,7 @@
     .material-symbols-outlined.text-24 {
         @apply text-2xl
     }
+    input[type='checkbox'] {
+        @apply w-5 h-5 mr-1 3xl:mr-7 rounded-md
+    }
 }
