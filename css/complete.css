@@ -508,6 +508,15 @@ input[type='checkbox'] {
   }
 }
 
+input[type='text'].error,input[type='tel'].error {
+  --tw-border-opacity: 1;
+  border-color: rgb(240 92 92 / var(--tw-border-opacity));
+}
+
+/* .deliver.choose {
+        @apply bg-second-600
+    } */
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1172,6 +1181,14 @@ input[type='checkbox'] {
   width: 100%;
 }
 
+.w-\[365\] {
+  width: 365;
+}
+
+.w-\[35\%\] {
+  width: 35%;
+}
+
 .min-w-\[360px\] {
   min-width: 360px;
 }
@@ -1394,6 +1411,10 @@ input[type='checkbox'] {
   border-width: 1px;
 }
 
+.border-b-0 {
+  border-bottom-width: 0px;
+}
+
 .border-b-2 {
   border-bottom-width: 2px;
 }
@@ -1412,10 +1433,6 @@ input[type='checkbox'] {
 
 .border-t-\[0\.5px\] {
   border-top-width: 0.5px;
-}
-
-.border-b-0 {
-  border-bottom-width: 0px;
 }
 
 .border-graay-100 {
@@ -1557,12 +1574,12 @@ input[type='checkbox'] {
   --tw-bg-opacity: 0.4;
 }
 
-.p-7 {
-  padding: 1.75rem;
-}
-
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-7 {
+  padding: 1.75rem;
 }
 
 .px-10 {
@@ -1969,6 +1986,16 @@ input[type='checkbox'] {
   background-color: rgb(82 70 134 / var(--tw-bg-opacity));
 }
 
+.focus\:bg-second-600:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(205 238 238 / var(--tw-bg-opacity));
+}
+
+.active\:bg-second-600:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(205 238 238 / var(--tw-bg-opacity));
+}
+
 .active\:text-second-300:active {
   --tw-text-opacity: 1;
   color: rgb(0 206 209 / var(--tw-text-opacity));
@@ -2190,12 +2217,12 @@ input[type='checkbox'] {
     margin-left: 0.25rem;
   }
 
-  .lg\:ml-2 {
-    margin-left: 0.5rem;
-  }
-
   .lg\:ml-7 {
     margin-left: 1.75rem;
+  }
+
+  .lg\:mr-1 {
+    margin-right: 0.25rem;
   }
 
   .lg\:mr-3 {
@@ -2218,14 +2245,6 @@ input[type='checkbox'] {
     margin-top: 1.25rem;
   }
 
-  .lg\:mr-2 {
-    margin-right: 0.5rem;
-  }
-
-  .lg\:mr-1 {
-    margin-right: 0.25rem;
-  }
-
   .lg\:line-clamp-2 {
     overflow: hidden;
     display: -webkit-box;
@@ -2235,6 +2254,10 @@ input[type='checkbox'] {
 
   .lg\:block {
     display: block;
+  }
+
+  .lg\:inline-block {
+    display: inline-block;
   }
 
   .lg\:flex {
@@ -2287,26 +2310,6 @@ input[type='checkbox'] {
 
   .lg\:basis-3\/5 {
     flex-basis: 60%;
-  }
-
-  .lg\:basis-1\/2 {
-    flex-basis: 50%;
-  }
-
-  .lg\:basis-1\/6 {
-    flex-basis: 16.666667%;
-  }
-
-  .lg\:basis-2\/3 {
-    flex-basis: 66.666667%;
-  }
-
-  .lg\:basis-2\/12 {
-    flex-basis: 16.666667%;
-  }
-
-  .lg\:basis-8\/12 {
-    flex-basis: 66.666667%;
   }
 
   .lg\:grid-cols-4 {
@@ -2643,12 +2646,28 @@ input[type='checkbox'] {
     width: fit-content;
   }
 
-  .\33xl\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .\33xl\:w-1\/3 {
+    width: 33.333333%;
   }
 
-  .\33xl\:justify-between {
-    justify-content: space-between;
+  .\33xl\:w-\[38\%\] {
+    width: 38%;
+  }
+
+  .\33xl\:w-\[37\%\] {
+    width: 37%;
+  }
+
+  .\33xl\:w-\[36\%\] {
+    width: 36%;
+  }
+
+  .\33xl\:w-\[34\%\] {
+    width: 34%;
+  }
+
+  .\33xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .\33xl\:gap-x-10 {

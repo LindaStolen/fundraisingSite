@@ -42,6 +42,51 @@ $(function(){
     $(this).parent('.alert').addClass('hidden')
     $('body').css('overflow','scroll')
   })
+
+  //購物車列表勾選
+  $('#checkAll').on('click',function(){
+    for(let p = 0; p < $("input[type='checkbox']").length; p++){
+      if($(this).prop('checked')){
+        $("input[type='checkbox']").eq(p).prop('checked',true)
+      }else {
+        $("input[type='checkbox']").eq(p).prop('checked',false)
+      }
+    }
+  })
+  $('[id^="shop"]').on('click',function(){
+    let shop = $(this).attr('id')
+    if($('#checkAll').prop('checked') && $('[id^="shop"]:checked').length !== $('[id^="shop"]').length){
+      $('#checkAll').prop('checked', false)
+    }else if(!$('#checkAll').prop('checked') && $('[id^="shop"]:checked').length == $('[id^="shop"]').length){
+      $('#checkAll').prop('checked', true)
+    }
+    for(let p = 0; p < $("input[name='" + shop + "']").length; p++){
+      if($(this).prop('checked')){
+        $("input[name='" + shop + "']").eq(p).prop('checked',true)
+      }else {
+        $("input[name='" + shop + "']").eq(p).prop('checked',false)
+      }
+    }
+  })
+  $('.itemCheck').on('click',function(){
+    let shop = $(this).attr('name')
+    console.log('店家',shop)
+    console.log($('[id="' + shop + '"]').prop('checked'))
+    if($('[id="' + shop + '"]').prop('checked') && $('[name="' + shop + '"]:checked').length !== $('[name="' + shop + '"]').length){      
+      $('[id="' + shop + '"]').prop('checked',false)
+    }else if(!$('[id="' + shop + '"]').prop('checked') && $('[name="' + shop + '"]:checked').length == $('[name="' + shop + '"]').length){
+      console.log($('[name="' + shop + '"]:checked').length)
+      console.log($('[name="' + shop + '"]').length)
+      $('[id="' + shop + '"]').prop('checked',true)
+    }
+    if($('#checkAll').prop('checked') && $('[id^="shop"]:checked').length !== $('[id^="shop"]').length){
+      $('#checkAll').prop('checked', false)
+    }else if(!$('#checkAll').prop('checked') && $('[id^="shop"]:checked').length == $('[id^="shop"]').length){
+      $('#checkAll').prop('checked', true)
+    }
+  })
+
+  //購物車資訊表錯誤訊息提醒
   $('input.deliver').on('click',function(){
     console.log($(this).val())
     $('#deliver').attr("value", $(this).val())
