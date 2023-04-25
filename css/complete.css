@@ -771,6 +771,18 @@ input[type='text'].error,input[type='tel'].error {
   top: 1.25rem;
 }
 
+.right-16 {
+  right: 4rem;
+}
+
+.right-20 {
+  right: 5rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -973,6 +985,10 @@ input[type='text'].error,input[type='tel'].error {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.ml-4 {
+  margin-left: 1rem;
 }
 
 .line-clamp-1 {

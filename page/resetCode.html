@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A-HO｜登入</title>
+    <title>A-HO｜重設密碼</title>
     <link rel="stylesheet" href="../css/owl.carousel.min.css">
     <link rel="stylesheet" href="../css/owl.theme.default.css">
     <link rel="stylesheet" href="../css/complete.css">
@@ -17,7 +17,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js" integrity="sha512-6DC1eE3AWg1bgitkoaRM1lhY98PxbMIbhgYCGV107aZlyzzvaWCW1nJW2vDuYQm06hXrW0As6OGKcIaAVWnHJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../js/owl.carousel.js"></script>
     <script src="../js/main.js"></script>
-    <script src="../js/login.js"></script>
 </head>
 <body>
   <!-- 行動選單 -->
@@ -165,30 +164,24 @@
     </div>
   </div>
 	<div class="mainContainer max-w-[1200px] w-[90%] md:w-[75%] min-h-[50%] m-auto mb-24">
-		<!-- 登入框框 -->
+		<!-- 重設密碼框框 -->
     <div class="loginBox">
-      <div class="message md:w-[60%] xl:w-[43%] m-auto py-3 bg-second-500 text-center text-2xl font-bold text-second-100 rounded-tr-md rounded-tl-md">哈囉！</div>
+      <div class="message md:w-[60%] xl:w-[43%] m-auto py-3 bg-second-500 text-center text-2xl font-bold text-second-100 rounded-tr-md rounded-tl-md">重設密碼</div>
       <div class="md:w-[60%] xl:w-[43%] m-auto py-20 px-5 bg-loginBg rounded-br-md rounded-bl-md text-center">
         <form action="">
-          <input type="text" name="" id="" placeholder="請輸入帳號" class="w-[70%] mb-10 px-2 bg-loginBg border-b-[1px] border-graay-100">
           <div class="relative w-[70%] m-auto">
-            <input type="password" name="" id="" placeholder="請輸入密碼" class="w-full px-2 bg-loginBg border-b-[1px] border-graay-100">
+            <input type="password" name="" id="" placeholder="請輸入密碼" class="w-full mb-7 px-2 bg-loginBg border-b-[1px] border-graay-100">
+            <span class="absolute right-2 -top-1 text-graay-100 material-symbols-outlined visibility_off cursor-pointer">
+              visibility_off
+            </span>
+          </div>
+          <div class="relative mb-10 w-[70%] m-auto">
+            <input type="password" name="" id="" placeholder="再次輸入密碼" class="w-full px-2 bg-loginBg border-b-[1px] border-graay-100">
             <span class="absolute right-2 bottom-1 text-graay-100 material-symbols-outlined visibility_off cursor-pointer">
               visibility_off
             </span>
           </div>
-          <div class="w-[65%] m-auto text-right mb-8">
-            <a href="forgetCode.html" class="inline-block mt-1 pb-0.5 text-graay-100 border-b-[1px] border-graay-100">忘記密碼</a>
-          </div>
-          <button class="w-[70%] m-auto py-[6px] bg-second-300 text-center text-graay-600 text-xl rounded-full">登&nbsp;&nbsp;&nbsp;&nbsp;入</button>
-          <p class="w-[70%] m-auto mt-4 text-sm text-center">--- 快速登入 ---</p>
-          <div class="flex items-center justify-center mt-4">
-            <a href="javascript:void(0)" class="inline-block mr-10"><i class="fa-brands fa-facebook text-[40px]" style="color: #1877f2;"></i></a>
-            <a href="javascript:;" class="faceBook inline-block">
-              <img src="../image/google.png" alt="" srcset="" class="w-9">
-            </a>
-          </div>
-          <div class="text-graay-100 mt-4">還沒有帳號？ <a href="javascript:;" class="pb-1 ml-5 border-b-[1px] border-second-200 text-second-200">去註冊</a></div>
+          <button class="w-[70%] m-auto py-[6px] bg-second-300 text-center text-graay-600 text-xl rounded-full">確&nbsp;&nbsp;認&nbsp;&nbsp;變&nbsp;&nbsp;更</button>
         </form>
       </div>
     </div>
