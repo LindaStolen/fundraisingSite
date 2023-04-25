@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-HO｜忘記密碼</title>
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.css">
+    <link rel="stylesheet" href="../css/complete.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.js" integrity="sha512-6DC1eE3AWg1bgitkoaRM1lhY98PxbMIbhgYCGV107aZlyzzvaWCW1nJW2vDuYQm06hXrW0As6OGKcIaAVWnHJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/owl.carousel.js"></script>
+    <script src="../js/main.js"></script>
+</head>
+<body>
+  <!-- 行動選單 -->
+  <div class="background hidden w-full h-screen bg-graay-200 opacity-30 absolute z-10"></div>
+  <nav class="menu w-[70%] h-screen -ml-[70%] absolute pl-12 py-10 bg-graay-600 z-20 text-graay-100 overflow-y-auto sm:flex flex-col justify-between lg:hidden">
+    <button class="menuClose absolute top-5 right-6 text-2xl"><i class="fa-solid fa-square-xmark"></i></button>
+    <div class="mb-5">
+      <div class="mb-5">
+        <a href="javascript:void(0)" class="about block hover:text-primary-200">
+          關於
+        </a>      
+        <nav class="ml-2 hidden text-graay-200">
+          <a href="about.html" class="block pt-3 hover:text-primary-300 ">關於我們</a>
+          <a href="news.html" class="block pt-3 hover:text-primary-300 ">最新消息</a>
+          <a href="howToUse.html" class="block pt-3 hover:text-primary-300 ">網站使用介紹</a>
+          <a href="contact.html" class="block pt-3 hover:text-primary-300 ">聯絡我們</a>
+        </nav>
+      </div>
+      <div class="mb-5">
+        <a href="javascript:void(0)" class="product block hover:text-primary-200">
+          探索商品
+        </a>      
+        <nav class="pl-2 hidden text-graay-200 ">
+          <a href="#" class="block pt-3 hover:text-primary-300 "><i class="fa-solid fa-filter mr-1"></i>篩選</a>
+          <a href="#" class="block pt-3 hover:text-primary-300 ">全部</a>
+          <a href="#" class="block pt-3 hover:text-primary-300 ">募資</a>
+          <a href="#" class="block pt-3 hover:text-primary-300 ">預購</a>
+          <a href="#" class="block pt-3 hover:text-primary-300 ">長期</a>
+        </nav>
+      </div>
+      <a href="javascript:void(0)" class="block mb-5 hover:text-primary-200">
+        探索課程
+      </a>
+      <a href="javascript:void(0)" class="flex items-center mb-5 hover:text-primary-200">
+        <span class="material-symbols-outlined mr-1">
+          notifications
+        </span>
+        站內通知
+      </a>
+      <a href="javascript:void(0)" class="flex items-center mb-5 hover:text-primary-200">
+        <span class="material-symbols-outlined mr-1">
+          person
+        </span>
+        我的課程
+      </a>
+      <a href="javascript:void(0)" class="flex items-center mb-8 hover:text-primary-200 active:text-second-300">
+        <span class="material-symbols-outlined mr-1">
+          shopping_cart
+        </span>
+        購物車
+      </a>
+      <select name="" id="" class=" px-2 py-1 rounded-md border border-stone-700">
+        <option value="">選擇語言</option>
+        <option value="中文">中文</option>
+        <option value="英文">英文</option>
+      </select>
+    </div>
+    <div>
+      <a href="#" class="inline-block px-2 py-1.5 mr-8 rounded-md border border-primary-200 text-primary-200">
+        <i class="lar la-user text-2xl"></i>登入/註冊
+      </a>
+    </div>
+  </nav>
+  <!-- 桌機選單 -->
+  <header class="shadow-sm shadow-graay-400">
+    <!-- <div class="w-[90%] h-[80px] m-auto flex items-center text-[18px] xl:text-xl justify-between shadow-gray-300"> -->
+    <div class="h-20 lg:h-[105px] 2xl:h-[120px] flex items-center text-[18px] xl:text-xl justify-between shadow-gray-300">
+    <div class="ml-5 lg:ml-7 2xl:ml-10 inline-block">
+      <div class="lg:flex">
+        <a href="javascript:void(0)" class="w-40 lg:[185px] 2xl:w-[200px] inline-block lg:mr-7 2xl:mr-10">
+          <img src="../image/logo.jpg" alt="">
+        </a>
+        <nav class="menuBox hidden lg:flex items-center text-graay-200">
+          <a href="javascript:void(0)" class="about inline-block mr-5 hover:text-primary-200">
+            關於
+          </a>
+          <a href="javascript:void(0)" class="product inline-block mr-5 hover:text-primary-200">
+            探索商品
+          </a>
+          <a href="javascript:void(0)" class="course inline-block hover:text-primary-200">
+            探索課程
+          </a>
+        </nav>
+      </div>
+    </div>
+    <div class="mr-5 inline-block">
+      <div class="function text-graay-100">
+        <nav class=" sm:hidden lg:flex">
+          <a href="javascript:void(0)" class="flex items-center mr-5 hover:text-second-300">
+            <span class="inline-block material-symbols-outlined">
+              notifications
+            </span>
+          </a>
+          <a href="javascript:void(0)" class="flex items-center mr-5 hover:text-second-300">
+            <span class="inline-block material-symbols-outlined">
+              shopping_cart
+            </span>
+          </a>
+          <a href="javascript:void(0)" class="flex items-center mr-5 hover:text-primary-200">
+            <i class="fa-solid fa-user block mr-1"></i> 我的課程
+          </a>
+          <a href="#" class="flex items-center px-2 py-1.5 mr-5 rounded-md border border-primary-200 text-primary-200">
+            <span class="inline-block material-symbols-outlined mr-1">
+              person
+            </span>
+            登入/註冊
+          </a>
+          <select name="" id="" class=" px-2 py-1 rounded-md border border-stone-700">
+            <option value="">選擇語言</option>
+            <option value="中文">中文</option>
+            <option value="英文">英文</option>
+          </select>
+        </nav>
+      </div>
+    </div>
+    <div class="flex lg:hidden mr-5">
+      <a href="javascript:void(0)" class="searchOpen hover:text-primary-600 lg:hidden mr-3"><i class="fa-solid fa-magnifying-glass fa-xl"></i></a>
+      <a href="javascript:void(0)" class="menuOpen hover:text-primary-600 lg:hidden"><i class="fa-solid fa-bars fa-xl"></i></a>
+    </div>
+    </div>
+  </header>
+  <div class="subMenu mb-10 text-base xl:text-xl">
+    <div class="hidden about-Sub shadow-sm shadow-graay-400">
+      <nav class="lg:w-[62%] xl:w-[72%] py-6 m-auto text-graay-100">
+        <a href="about.html" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">關於我們</a>
+        <a href="news.html" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">最新消息</a>
+        <a href="howToUse.html" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">網站使用介紹</a>
+        <a href="contact.html" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">聯絡我們</a>
+      </nav>
+    </div>
+    <div class="hidden product-Sub shadow-sm shadow-graay-400">
+      <div class="lg:w-[62%] xl:w-[72%] py-6 m-auto flex justify-between items-center">
+        <nav class="text-graay-100">
+          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 "><i class="fa-solid fa-filter mr-1"></i>篩選</a>
+          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">全部</a>
+          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">募資</a>
+          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">預購</a>
+          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">長期</a>
+        </nav>
+        <div class="searchBar lg:w-[28%] xl:w-[25%] h-[40px] flex lg:px-2 xl:px-5 border border-graay-500 rounded-md">
+          <div class="text-graay-100 mr-2 flex justify-center items-center"><i class="fa-solid fa-magnifying-glass"></i></div>
+          <input class="w-full text-graay-400" type="search" placeholder="搜尋商品"> 
+        </div>
+      </div>
+    </div>
+  </div>
+	<div class="mainContainer max-w-[1200px] w-[90%] md:w-[75%] min-h-[50%] m-auto mb-24">
+		<!-- 設定密碼框框 -->
+    <div class="loginBox">
+      <div class="message md:w-[60%] xl:w-[43%] m-auto py-3 bg-second-500 text-center text-2xl font-bold text-second-100 rounded-tr-md rounded-tl-md">忘記密碼</div>
+      <div class="md:w-[60%] xl:w-[43%] m-auto py-20 px-5 bg-loginBg rounded-br-md rounded-bl-md text-center">
+        <form action="">
+          <div class="flex justify-center items-center mb-3">
+            <input type="text" name="" id="" placeholder="請輸入您註冊時的信箱" class="w-[57%] px-2 bg-loginBg border-b-[1px] border-graay-100 leading-9">
+            <span class="ml-3 pb-0.5 border-b-[1px] border-second-300 text-base text-second-300 cursor-pointer">獲取驗證碼</span>
+          </div>
+          <p class="mb-2 text-center text-sm">-- 或 --</p>
+          <div class="flex justify-center items-center mb-7">
+            <input type="text" name="" id="" placeholder="請輸入您註冊時的手機號碼" class="w-[57%] px-2 bg-loginBg border-b-[1px] border-graay-100 leading-9">
+            <span class="ml-3 pb-0.5 border-b-[1px] border-second-300 text-base text-second-300 cursor-pointer">獲取驗證碼</span>
+          </div>
+          <div class="w-[78%] mb-[50px] m-auto text-left">
+            <input type="text" name="" id="" class="w-1/3 bg-graay-600 border-[1px] border-second-300 rounded-md px-5 py-2" placeholder="輸入驗證碼">  
+          </div>
+          <button class="w-[78%] m-auto py-[6px] bg-second-300 text-center text-graay-600 text-xl rounded-full">驗&nbsp;&nbsp;&nbsp;&nbsp;證</button>
+        </form>
+      </div>
+    </div>
+	</div>
+
+	<!-- 網站地圖 -->
+  <footer class="text-base xl:text-xl border-t-[0.5px] border-graay-400 ">
+    <!-- <div class="w-[90%] mx-auto flex flex-col lg:flex-row lg:mb-10"> -->
+      <div class="flex flex-col md:items-center xl:flex-row xl:items-start xl:relative">
+        <div class="xl:absolute max-w-[160px] 2xl:w-[240px] inset-y-[33%] mt-8 ml-5 md:ml-0 xl:mt-6 xl:ml-24 2xl:ml-[120px]"><img src="../image/logo.jpg" alt="" srcset=""></div>
+        <div class="lg:w-[60%] xl:w-[50%] mt-5 ml-5 mb-14 md:mt-10 2xl:mt-[122px] lg:mx-auto xl:mb-[82px] grid grid-cols-2 md:grid-cols-4 gap-y-4 md:gap-10 xl:gap-15 lg:gap-18">
+          <ul class="mt-5">
+            <li class="text-graay-100 text-[18px] 2xl:text-2xl font-normal mb-4">探索</li>
+            <li class="text-graay-200 hover:text-primary-600 mb-2"><a href="javascript:void(0)">尋找募資</a></li>
+            <li class="text-graay-200 hover:text-primary-600 mb-2"><a href="javascript:void(0)">購買商品</a></li>
+          </ul>
+          <ul class="mt-5">
+            <li class="text-graay-100 text-[18px] 2xl:text-2xl font-normal mb-4">幫助</li>
+            <li class="text-graay-200 hover:text-primary-600 mb-2"><a href="javascript:void(0)">常見問題</a></li>
+            <li class="text-graay-200 hover:text-primary-600 mb-2"><a href="javascript:void(0)">使用條款</a></li>
+            <li class="text-graay-200 hover:text-primary-600 mb-2"><a href="javascript:void(0)">隱私權政策</a></li>
+          </ul>
+          <ul class="mt-5">
+            <li class="text-graay-100 text-[18px] 2xl:text-2xl font-normal mb-4">關於</li>
+            <li class="text-graay-200 hover:text-primary-600 mb-2"><a href="javascript:void(0)">最新消息</a></li>
+            <li class="text-graay-200 hover:text-primary-600 mb-2"><a href="javascript:void(0)">關於我們</a></li>
+          </ul>
+          <ul class="mt-5">
+            <li class="text-graay-100 text-[18px] 2xl:text-2xl font-normal mb-4">社群媒體</li>
+            <li><a href="javascript:void(0)"><i class="fa-brands fa-facebook fa-2xl" style="color: #1877f2;"></i></a></li>
+          </ul>  
+        </div>
+      </div>
+    <!-- </div> -->
+    <div class="py-2 bg-primary-600 text-[16px] text-graay-600 text-center">CopyRight@ahoahoaho.com</div>
+  </footer>
+  <!-- 固定按鈕 -->
+  <div class="buttons fixed right-5 3xl:right-[9%] bottom-10 md:bottom-36">
+    <button class="top w-14 h-14 flex justify-center items-center bg-primary-200 text-graay-600 rounded-full">
+      <span class="material-symbols-outlined">
+        vertical_align_top
+      </span>
+    </button>
+  </div>
+</body>
+</html>

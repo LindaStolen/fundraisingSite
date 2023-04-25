@@ -36,6 +36,7 @@ module.exports = {
       'markedPurple': '#6672DF',
       'markedPink': '#E932D6',
       'bgc': '#FAFAFA',
+      'loginBg': '#F2F2F2'
     },
     screens: {
       'sm': '375px',

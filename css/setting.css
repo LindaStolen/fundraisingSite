@@ -29,7 +29,10 @@
     input[type='text'].error,input[type='tel'].error  {
         @apply border-fail
     }
-    /* .deliver.choose {
-        @apply bg-second-600
+    /* .loginBox div:nth-child(2), .loginBox input{
+        background-color: #F2F2F2;
     } */
+    .loginBox p {
+        color: #979797;
+    }
 }
