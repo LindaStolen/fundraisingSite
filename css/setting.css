@@ -17,8 +17,14 @@
     .items {
         @apply  border-[1px] border-graay-500
     }
+    .material-symbols-outlined.text-full {
+        @apply text-[68px]
+    }
     .material-symbols-outlined.text-48 {
         @apply text-[48px]
+    }
+    .material-symbols-outlined.text-36 {
+        @apply text-[36px]
     }
     .material-symbols-outlined.text-24 {
         @apply text-2xl
@@ -34,5 +40,16 @@
     } */
     .loginBox p {
         color: #979797;
+    }
+    .sideMenu {
+        background: url(../image/elijah-hiett-xRr9Lz3xfYs-unsplash.jpg) no-repeat;
+        background-size: 250%;
+        background-position: -83px 0;
+    }
+    @media screen and (min-width: 1281px){
+        .sideMenu {
+            background-size: 100%;
+            background-position: 0 0;
+        }
     }
 }
