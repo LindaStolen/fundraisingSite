@@ -22,7 +22,7 @@
 <body>
   <!-- 行動選單 -->
   <div class="background hidden w-full h-screen bg-graay-200 opacity-30 absolute z-10"></div>
-  <nav class="menu w-[70%] h-screen absolute pl-12 py-10 bg-graay-600 z-20 text-graay-100 overflow-y-auto sm:flex flex-col justify-between lg:hidden">
+  <nav class="menu w-[70%] -ml-[70%] h-screen absolute pl-12 py-10 bg-graay-600 z-20 text-graay-100 overflow-y-auto sm:flex flex-col justify-between lg:hidden">
     <button class="menuClose absolute top-5 right-6 text-2xl"><i class="fa-solid fa-square-xmark"></i></button>
     <div class="mb-5">
       <div class="mb-5">
@@ -106,11 +106,11 @@
   </nav>
   <nav class="sideMenu hidden lg:block fixed left-0 top-[105px] 2xl:top-[120px] w-[100px] 2xl:w-[240px] min-h-screen bg-second-400">
     <!-- <img src="../image/elijah-hiett-xRr9Lz3xfYs-unsplash.jpg" alt="" srcset="" class="-z-10"> -->
-    <div class="avator w-[57px] h-[57px] mt-[125px] m-auto 2xl:w-[135px] 2xl:h-[135px] 2xl:ml-[62px] 2xl:mt-[105px] bg-second-400 text-center rounded-full ">
+    <div class="avator w-[57px] h-[57px] mt-[125px] m-auto 2xl:w-[135px] 2xl:h-[135px] 2xl:mt-[105px] text-center rounded-full ">
       <div class=" w-[51px] h-[51px] mt-[3px] 2xl:w-[121px] 2xl:h-[121px] mx-auto 2xl:mt-[6.5px] border-[2px] border-graay-600 rounded-full inline-flex justify-center items-center">
-        <span class="material-symbols-outlined text-36 text-graay-600">
+        <!-- <span class="material-symbols-outlined text-36 text-graay-600">
           person
-        </span>
+        </span> -->
       </div>
       <div class="relative hidden 2xl:block text-right cursor-pointer">
         <span class="absolute -top-6 -right-2 text-graay-600 material-symbols-outlined">
@@ -256,19 +256,19 @@
     </div>
   </div>
   
-	<div class="mainContainer w-full h-[88%] m-auto mt-[8%]">
+	<div class="mainContainer w-[90%] lg:w-full h-[88%] m-auto mt-[23%] md:mt-[13%] lg:mt-[10%] 3xl:mt-[8%]">
 		<!-- 會員資訊框框 -->
-    <div class="ml-[15%] mr-14 px-[64px] py-8 border-[1px] border-graay-500">
+    <div class="lg:ml-[18%] 3xl:ml-[15%] lg:mr-10 3xl:mr-14 px-2 md:px-8 py-4 3xl:px-[64px] 3xl:py-8 border-[1px] border-graay-500">
       <div class="pb-5 mb-7 text-2xl text-graay-200 border-b-[1px] border-graay-400">會員資訊</div>
       <div class="py-3 px-8 mb-5 text-xl text-graay-00 bg-second-500">標註<span class="text-fail mr-1">*</span>的欄位為必填項目</div>
       <div class="flex justify-between flex-wrap">
-        <div class="w-[48%]">
+        <div class="w-full lg:w-[48%]">
           <div class="py-2 px-10 text-left text-graay-600 bg-second-200 rounded-tl-md rounded-tr-md">
             基本資訊
           </div>
           <div class="w-full  border-[0.5px] border-second-300 rounded-bl-md rounded-br-md">
             <li class="flex border-b-[1px] border-graay-400">
-              <div class="w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>姓名</div>
+              <div class="w-[75px] md:w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>姓名</div>
               <div class="w-full py-4 px-5 text-graay-100 flex justify-between">
                 <input type="text" value="王曉明" class="px-2 border-0 tracking-[4px] focus:border-b-2 border-graay-100"/>
                 <span class=" text-second-100 material-symbols-outlined cursor-pointer">
@@ -277,14 +277,14 @@
               </div>
             </li>
             <li class="flex border-b-[1px] border-graay-400">
-              <div class="w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>生日</div>
+              <div class="w-[75px] md:w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>生日</div>
               <div class="w-full flex items-center justify-between py-4 px-5 text-graay-100">
                 <input type="date" name="" id="" class="bg-graay-500">
                 <span class="text-fail mr-1">請選擇生日</span>
               </div>
             </li>
             <li class="flex border-b-[1px] border-graay-400">
-              <div class="w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>性別</div>
+              <div class="w-[75px] md:w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>性別</div>
               <div class="w-full py-4 px-5 text-graay-100">
                 <input class="mr-1" type="radio" name="" id="male"><label class="mr-4" for="male">男性</label>
                 <input class="mr-1" type="radio" name="" id="female"><label class="mr-4" for="female">女性</label>
@@ -292,7 +292,7 @@
               </div>
             </li>
             <li class="flex border-b-[1px] border-graay-400">
-              <div class="w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>職業</div>
+              <div class="w-[75px] md:w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>職業</div>
               <div class="w-full py-4 px-5 text-graay-100">
                 <select name="" id="" class="w-[25%] px-4">
                   <option value="0">請選擇職業</option>
@@ -304,7 +304,7 @@
             </li>
           </div>
         </div>
-        <div class="w-[48%]">
+        <div class="w-full lg:w-[48%] mt-5 lg:mt-0">
           <div class="py-2 px-10 text-center text-graay-600 bg-second-200 rounded-tl-md rounded-tr-md">
             <span class="material-symbols-outlined text-graay-600">
               diamond
@@ -329,25 +329,25 @@
             </div>
           </div>
         </div>
-        <div class="w-full 3xl:mt-5">
+        <div class="w-full mt-5 lg:mt-3 3xl:mt-5">
           <div class="py-2 px-10 text-left text-graay-600 bg-second-200 rounded-tl-md rounded-tr-md">
             聯絡資訊
           </div>
           <div class="w-full border-[0.5px] border-second-300 rounded-bl-md rounded-br-md">
-            <li class="flex border-b-[1px] border-graay-400">
-              <div class="w-[50%] flex">
-                <div class="w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4">電話</div>
-                <div class="w-[80%] flex items-center justify-between py-4 px-5 text-graay-100">
-                  <input type="tel" name="" id="telephone" class="px-2 border-b-[1px] border-graay-100" maxlength="10">
+            <li class="block lg:flex border-b-[1px] border-graay-400">
+              <div class="w-full lg:w-[50%] flex border-b-[1px] lg:border-l-0 border-graay-400">
+                <div class="w-[75px] md:w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4">電話</div>
+                <div class="w-[75%] md:w-[60%] lg:w-[70%] 3xl:w-[80%] flex items-center justify-between py-4 px-5 text-graay-100">
+                  <input type="tel" name="" id="telephone" class="w-[60%] px-2 border-b-[1px] border-graay-100" maxlength="10">
                   <span class=" text-second-100 material-symbols-outlined cursor-pointer">
                     edit
                   </span>
                 </div>
               </div>
-              <div class="w-[50%] flex">
-                <div class="w-[150px] text-center text-second-100 border-r-[1px] border-l-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>手機</div>
-                <div class="w-[80%] flex items-center justify-between py-4 px-5  text-graay-100">
-                  <input type="tel" name="" id="celphone" class="px-2 border-b-[1px] border-graay-100" maxlength="10">
+              <div class="w-full lg:w-[50%] flex">
+                <div class="w-[75px] md:w-[150px] text-center text-second-100 border-r-[1px] border-l-0 lg:border-l-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>手機</div>
+                <div class="w-[75%] md:w-[60%] lg:w-[70%] 3xl:w-[80%] flex items-center justify-between py-4 px-5  text-graay-100">
+                  <input type="tel" name="" id="celphone" class="w-[60%] px-2 border-b-[1px] border-graay-100" maxlength="10">
                   <span class=" text-second-100 material-symbols-outlined cursor-pointer">
                     edit
                   </span>
@@ -355,8 +355,8 @@
               </div>
             </li>
             <li class="flex border-b-[1px] border-graay-400">
-              <div class="w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>Email</div>
-              <div class="w-[60%] flex justify-between py-4 px-5 text-graay-100">
+              <div class="w-[75px] md:w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>Email</div>
+              <div class="w-[75%] md:w-[60%] flex justify-between py-4 px-5 text-graay-100">
                 <input class="w-[60%] px-2 border-b-[1px] border-graay-100" type="text" name="" id="">
                 <span class=" text-second-100 material-symbols-outlined cursor-pointer">
                   edit
@@ -364,7 +364,7 @@
               </div>
             </li>
             <li class="flex border-b-[1px] border-graay-400">
-              <div class="w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>居住地</div>
+              <div class="w-[75px] md:w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>居住地</div>
               <div class=" py-4 px-5 text-graay-100">
                 <input type="button" name="" id="" value="國內" class="py-1 px-4 mr-2 tracking-[2px] border-[1px] border-graay-500 focus:bg-second-500 focus:border-none rounded-full">
                 <input type="button" name="" id="" value="離島" class="py-1 px-4 mr-2 tracking-[2px] border-[1px] border-graay-500 focus:bg-second-500 focus:border-none rounded-full">
@@ -372,8 +372,8 @@
               </div>
             </li>
             <li class="flex border-b-[1px] border-graay-400">
-              <div class="w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>地址</div>
-              <div class="w-[60%] flex justify-between py-4 px-5 text-graay-100">
+              <div class="w-[75px] md:w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>地址</div>
+              <div class="w-[75%] md:w-[60%] flex justify-between py-4 px-5 text-graay-100">
                 <input class="w-[60%] px-2 border-b-[1px] border-graay-100" type="text" name="" id="">
                 <span class=" text-second-100 material-symbols-outlined cursor-pointer">
                   edit

@@ -530,13 +530,14 @@ input[type='text'].error,input[type='tel'].error {
 }
 
 .sideMenu {
-  background: url(../image/elijah-hiett-xRr9Lz3xfYs-unsplash.jpg) no-repeat;
+  background: url(../image/memberSideBar_768.png) no-repeat;
   background-size: 250%;
   background-position: -83px 0;
 }
 
 @media screen and (min-width: 1281px){
   .sideMenu {
+    background: url(../image/memberSideBar_1024.png) no-repeat;
     background-size: 100%;
     background-position: 0 0;
   }
@@ -828,10 +829,6 @@ input[type='text'].error,input[type='tel'].error {
   grid-column: span 7 / span 7;
 }
 
-.col-span-1 {
-  grid-column: span 1 / span 1;
-}
-
 .row-span-2 {
   grid-row: span 2 / span 2;
 }
@@ -945,10 +942,6 @@ input[type='text'].error,input[type='tel'].error {
   margin-left: 1.25rem;
 }
 
-.ml-\[20\%\] {
-  margin-left: 20%;
-}
-
 .mr-1 {
   margin-right: 0.25rem;
 }
@@ -1033,44 +1026,16 @@ input[type='text'].error,input[type='tel'].error {
   margin-top: 2rem;
 }
 
-.mt-\[10\%\] {
-  margin-top: 10%;
-}
-
 .mt-\[125px\] {
   margin-top: 125px;
 }
 
+.mt-\[23\%\] {
+  margin-top: 23%;
+}
+
 .mt-\[3px\] {
   margin-top: 3px;
-}
-
-.ml-\[15\%\] {
-  margin-left: 15%;
-}
-
-.ml-\[18\%\] {
-  margin-left: 18%;
-}
-
-.mt-\[5\%\] {
-  margin-top: 5%;
-}
-
-.mt-\[8\%\] {
-  margin-top: 8%;
-}
-
-.ml-\[10\%\] {
-  margin-left: 10%;
-}
-
-.ml-\[12\%\] {
-  margin-left: 12%;
-}
-
-.mr-14 {
-  margin-right: 3.5rem;
 }
 
 .line-clamp-1 {
@@ -1105,10 +1070,6 @@ input[type='text'].error,input[type='tel'].error {
 
 .inline-flex {
   display: inline-flex;
-}
-
-.table {
-  display: table;
 }
 
 .grid {
@@ -1163,10 +1124,6 @@ input[type='text'].error,input[type='tel'].error {
   height: 45px;
 }
 
-.h-\[500px\] {
-  height: 500px;
-}
-
 .h-\[51px\] {
   height: 51px;
 }
@@ -1177,6 +1134,10 @@ input[type='text'].error,input[type='tel'].error {
 
 .h-\[80px\] {
   height: 80px;
+}
+
+.h-\[88\%\] {
+  height: 88%;
 }
 
 .h-fit {
@@ -1190,10 +1151,6 @@ input[type='text'].error,input[type='tel'].error {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[88\%\] {
-  height: 88%;
 }
 
 .max-h-fit {
@@ -1260,6 +1217,10 @@ input[type='text'].error,input[type='tel'].error {
 
 .w-\[128px\] {
   width: 128px;
+}
+
+.w-\[150px\] {
+  width: 150px;
 }
 
 .w-\[160px\] {
@@ -1338,6 +1299,10 @@ input[type='text'].error,input[type='tel'].error {
   width: 75%;
 }
 
+.w-\[75px\] {
+  width: 75px;
+}
+
 .w-\[78\%\] {
   width: 78%;
 }
@@ -1371,42 +1336,6 @@ input[type='text'].error,input[type='tel'].error {
   width: 100%;
 }
 
-.w-\[50\%\] {
-  width: 50%;
-}
-
-.w-\[43\%\] {
-  width: 43%;
-}
-
-.w-\[48\%\] {
-  width: 48%;
-}
-
-.w-\[150px\] {
-  width: 150px;
-}
-
-.w-\[20\%\] {
-  width: 20%;
-}
-
-.w-\[100\%\] {
-  width: 100%;
-}
-
-.w-\[83\%\] {
-  width: 83%;
-}
-
-.w-\[7\%\] {
-  width: 7%;
-}
-
-.w-auto {
-  width: auto;
-}
-
 .min-w-\[360px\] {
   min-width: 360px;
 }
@@ -1414,14 +1343,6 @@ input[type='text'].error,input[type='tel'].error {
 .min-w-fit {
   min-width: -moz-fit-content;
   min-width: fit-content;
-}
-
-.min-w-\[100px\] {
-  min-width: 100px;
-}
-
-.min-w-\[40\%\] {
-  min-width: 40%;
 }
 
 .max-w-\[1000px\] {
@@ -1443,10 +1364,6 @@ input[type='text'].error,input[type='tel'].error {
 
 .shrink-0 {
   flex-shrink: 0;
-}
-
-.border-collapse {
-  border-collapse: collapse;
 }
 
 .-translate-x-1\/2 {
@@ -1488,10 +1405,6 @@ input[type='text'].error,input[type='tel'].error {
 
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1550,10 +1463,6 @@ input[type='text'].error,input[type='tel'].error {
   gap: 1.25rem;
 }
 
-.gap-\[72px\] {
-  gap: 72px;
-}
-
 .gap-x-5 {
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
@@ -1569,11 +1478,6 @@ input[type='text'].error,input[type='tel'].error {
 
 .gap-y-5 {
   row-gap: 1.25rem;
-}
-
-.gap-x-\[72px\] {
-  -moz-column-gap: 72px;
-       column-gap: 72px;
 }
 
 .overflow-hidden {
@@ -1646,6 +1550,10 @@ input[type='text'].error,input[type='tel'].error {
   border-width: 1px;
 }
 
+.border-0 {
+  border-width: 0px;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -1662,10 +1570,6 @@ input[type='text'].error,input[type='tel'].error {
   border-width: 2px;
 }
 
-.border-0 {
-  border-width: 0px;
-}
-
 .border-b-0 {
   border-bottom-width: 0px;
 }
@@ -1678,8 +1582,16 @@ input[type='text'].error,input[type='tel'].error {
   border-bottom-width: 1px;
 }
 
+.border-l-0 {
+  border-left-width: 0px;
+}
+
 .border-l-\[1px\] {
   border-left-width: 1px;
+}
+
+.border-r-\[1px\] {
+  border-right-width: 1px;
 }
 
 .border-t-0 {
@@ -1688,10 +1600,6 @@ input[type='text'].error,input[type='tel'].error {
 
 .border-t-\[0\.5px\] {
   border-top-width: 0.5px;
-}
-
-.border-r-\[1px\] {
-  border-right-width: 1px;
 }
 
 .border-graay-100 {
@@ -1762,11 +1670,6 @@ input[type='text'].error,input[type='tel'].error {
 .border-second-500 {
   --tw-border-opacity: 1;
   border-color: rgb(179 229 229 / var(--tw-border-opacity));
-}
-
-.border-b-graay-400 {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(204 204 204 / var(--tw-border-opacity));
 }
 
 .bg-bgc {
@@ -1976,19 +1879,9 @@ input[type='text'].error,input[type='tel'].error {
   padding-bottom: 50px;
 }
 
-.py-\[64px\] {
-  padding-top: 64px;
-  padding-bottom: 64px;
-}
-
 .py-\[6px\] {
   padding-top: 6px;
   padding-bottom: 6px;
-}
-
-.px-\[64px\] {
-  padding-left: 64px;
-  padding-right: 64px;
 }
 
 .pb-0 {
@@ -2137,16 +2030,16 @@ input[type='text'].error,input[type='tel'].error {
   font-weight: 700;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
 .font-medium {
   font-weight: 500;
 }
 
 .font-normal {
   font-weight: 400;
-}
-
-.font-light {
-  font-weight: 300;
 }
 
 .leading-10 {
@@ -2179,14 +2072,6 @@ input[type='text'].error,input[type='tel'].error {
 
 .leading-relaxed {
   line-height: 1.625;
-}
-
-.tracking-wider {
-  letter-spacing: 0.05em;
-}
-
-.tracking-widest {
-  letter-spacing: 0.1em;
 }
 
 .tracking-\[2px\] {
@@ -2260,11 +2145,6 @@ input[type='text'].error,input[type='tel'].error {
 .text-second-400 {
   --tw-text-opacity: 1;
   color: rgb(140 216 217 / var(--tw-text-opacity));
-}
-
-.text-second-600 {
-  --tw-text-opacity: 1;
-  color: rgb(205 238 238 / var(--tw-text-opacity));
 }
 
 .opacity-30 {
@@ -2384,12 +2264,12 @@ input[type='text'].error,input[type='tel'].error {
   border-bottom-width: 1px;
 }
 
-.focus\:border-b-\[1px\]:focus {
-  border-bottom-width: 1px;
-}
-
 .focus\:border-b-2:focus {
   border-bottom-width: 2px;
+}
+
+.focus\:border-b-\[1px\]:focus {
+  border-bottom-width: 1px;
 }
 
 .focus\:border-none:focus {
@@ -2421,24 +2301,14 @@ input[type='text'].error,input[type='tel'].error {
   background-color: rgb(212 208 231 / var(--tw-bg-opacity));
 }
 
-.focus\:bg-second-600:focus {
-  --tw-bg-opacity: 1;
-  background-color: rgb(205 238 238 / var(--tw-bg-opacity));
-}
-
-.focus\:bg-graay-300:focus {
-  --tw-bg-opacity: 1;
-  background-color: rgb(153 153 153 / var(--tw-bg-opacity));
-}
-
-.focus\:bg-second-300:focus {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 206 209 / var(--tw-bg-opacity));
-}
-
 .focus\:bg-second-500:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(179 229 229 / var(--tw-bg-opacity));
+}
+
+.focus\:bg-second-600:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(205 238 238 / var(--tw-bg-opacity));
 }
 
 .focus\:text-primary-200:focus {
@@ -2524,6 +2394,10 @@ input[type='text'].error,input[type='tel'].error {
     margin-top: 1.25rem;
   }
 
+  .md\:mt-\[13\%\] {
+    margin-top: 13%;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2534,6 +2408,10 @@ input[type='text'].error,input[type='tel'].error {
 
   .md\:h-\[65px\] {
     height: 65px;
+  }
+
+  .md\:w-\[150px\] {
+    width: 150px;
   }
 
   .md\:w-\[20\%\] {
@@ -2622,6 +2500,11 @@ input[type='text'].error,input[type='tel'].error {
     border-right-width: 1px;
   }
 
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .md\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
@@ -2690,8 +2573,16 @@ input[type='text'].error,input[type='tel'].error {
     margin-left: 1.75rem;
   }
 
+  .lg\:ml-\[18\%\] {
+    margin-left: 18%;
+  }
+
   .lg\:mr-1 {
     margin-right: 0.25rem;
+  }
+
+  .lg\:mr-10 {
+    margin-right: 2.5rem;
   }
 
   .lg\:mr-3 {
@@ -2710,8 +2601,16 @@ input[type='text'].error,input[type='tel'].error {
     margin-top: 0px;
   }
 
+  .lg\:mt-3 {
+    margin-top: 0.75rem;
+  }
+
   .lg\:mt-5 {
     margin-top: 1.25rem;
+  }
+
+  .lg\:mt-\[10\%\] {
+    margin-top: 10%;
   }
 
   .lg\:line-clamp-2 {
@@ -2761,12 +2660,28 @@ input[type='text'].error,input[type='tel'].error {
     width: 450px;
   }
 
+  .lg\:w-\[48\%\] {
+    width: 48%;
+  }
+
+  .lg\:w-\[50\%\] {
+    width: 50%;
+  }
+
   .lg\:w-\[60\%\] {
     width: 60%;
   }
 
   .lg\:w-\[62\%\] {
     width: 62%;
+  }
+
+  .lg\:w-\[70\%\] {
+    width: 70%;
+  }
+
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:flex-none {
@@ -2803,6 +2718,14 @@ input[type='text'].error,input[type='tel'].error {
 
   .lg\:rounded-none {
     border-radius: 0px;
+  }
+
+  .lg\:border-l-0 {
+    border-left-width: 0px;
+  }
+
+  .lg\:border-l-\[1px\] {
+    border-left-width: 1px;
   }
 
   .lg\:px-2 {
@@ -3114,6 +3037,14 @@ input[type='text'].error,input[type='tel'].error {
     margin-left: 0px;
   }
 
+  .\33xl\:ml-\[15\%\] {
+    margin-left: 15%;
+  }
+
+  .\33xl\:mr-14 {
+    margin-right: 3.5rem;
+  }
+
   .\33xl\:mr-5 {
     margin-right: 1.25rem;
   }
@@ -3136,6 +3067,10 @@ input[type='text'].error,input[type='tel'].error {
 
   .\33xl\:mt-7 {
     margin-top: 1.75rem;
+  }
+
+  .\33xl\:mt-\[8\%\] {
+    margin-top: 8%;
   }
 
   .\33xl\:block {
@@ -3168,6 +3103,10 @@ input[type='text'].error,input[type='tel'].error {
 
   .\33xl\:w-\[65\%\] {
     width: 65%;
+  }
+
+  .\33xl\:w-\[80\%\] {
+    width: 80%;
   }
 
   .\33xl\:w-fit {
@@ -3210,6 +3149,11 @@ input[type='text'].error,input[type='tel'].error {
     padding-right: 46px;
   }
 
+  .\33xl\:px-\[64px\] {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
   .\33xl\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -3218,6 +3162,11 @@ input[type='text'].error,input[type='tel'].error {
   .\33xl\:py-14 {
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
+  }
+
+  .\33xl\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .\33xl\:text-2xl {

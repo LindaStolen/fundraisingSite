@@ -42,12 +42,13 @@
         color: #979797;
     }
     .sideMenu {
-        background: url(../image/elijah-hiett-xRr9Lz3xfYs-unsplash.jpg) no-repeat;
+        background: url(../image/memberSideBar_768.png) no-repeat;
         background-size: 250%;
         background-position: -83px 0;
     }
     @media screen and (min-width: 1281px){
         .sideMenu {
+            background: url(../image/memberSideBar_1024.png) no-repeat;
             background-size: 100%;
             background-position: 0 0;
         }
