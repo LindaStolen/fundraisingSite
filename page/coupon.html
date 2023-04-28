@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A-HO｜會員資訊</title>
+    <title>A-HO｜</title>
     <link rel="stylesheet" href="../css/owl.carousel.min.css">
     <link rel="stylesheet" href="../css/owl.theme.default.css">
     <link rel="stylesheet" href="../css/complete.css">
@@ -226,7 +226,7 @@
     </div>
     </div>
   </header>
-  <div class="subMenu text-base xl:text-xl fixed top-[105px] 2xl:top-[120px] w-full bg-graay-600">
+  <div class="subMenu mb-10 text-base xl:text-xl">
     <div class="hidden about-Sub shadow-sm shadow-graay-400">
       <nav class="lg:w-[62%] xl:w-[72%] py-6 m-auto text-graay-100">
         <a href="about.html" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">關於我們</a>
@@ -251,143 +251,120 @@
       </div>
     </div>
   </div>
-  
 	<div class="mainContainer w-[90%] lg:w-full h-[88%] m-auto mt-[23%] md:mt-[13%] lg:mt-[12%] 3xl:mt-[8%]">
-		<!-- 會員資訊框框 -->
-    <div class="lg:ml-[11%] 2xl:ml-[18%]  3xl:ml-[15%] lg:mr-10 3xl:mr-14 px-2 md:px-8 py-4 3xl:px-[64px] 3xl:py-8 border-[1px] border-graay-500">
-      <div class="pb-5 mb-7 text-2xl text-graay-200 border-b-[1px] border-graay-400">會員資訊</div>
-      <div class="py-3 px-8 mb-5 text-xl text-graay-00 bg-second-500">標註<span class="text-fail mr-1">*</span>的欄位為必填項目</div>
-      <form action="">
-      <div class="flex justify-between flex-wrap">
-          <div class="w-full lg:w-[48%]">
-            <div class="py-2 px-10 text-left text-graay-600 bg-second-200 rounded-tl-md rounded-tr-md">
-              基本資訊
-            </div>
-            <div class="w-full  border-[0.5px] border-second-300 rounded-bl-md rounded-br-md">
-              <li class="flex border-b-[1px] border-graay-400">
-                <div class="w-[75px] md:w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>姓名</div>
-                <div class="w-full py-4 px-5 text-graay-100 flex justify-between">
-                  <input type="text" value="王曉明" class="px-2 border-0 tracking-[4px] focus:border-b-2 border-graay-100"/>
-                  <span class=" text-second-100 material-symbols-outlined cursor-pointer">
-                    edit
-                  </span>
-                </div>
-              </li>
-              <li class="flex border-b-[1px] border-graay-400">
-                <div class="w-[75px] md:w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>生日</div>
-                <div class="w-full flex items-center justify-between py-4 px-5 text-graay-100">
-                  <input type="date" name="" id="" class="bg-graay-500">
-                  <span class="text-fail mr-1">請選擇生日</span>
-                </div>
-              </li>
-              <li class="flex border-b-[1px] border-graay-400">
-                <div class="w-[75px] md:w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>性別</div>
-                <div class="w-full py-4 px-5 text-graay-100">
-                  <input class="mr-1" type="radio" name="" id="male"><label class="mr-4" for="male">男性</label>
-                  <input class="mr-1" type="radio" name="" id="female"><label class="mr-4" for="female">女性</label>
-                  <input class="mr-1" type="radio" name="" id=""><label class="mr-4" for="else">其他</label>
-                </div>
-              </li>
-              <li class="flex border-b-[1px] border-graay-400">
-                <div class="w-[75px] md:w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>職業</div>
-                <div class="w-full py-4 px-5 text-graay-100">
-                  <select name="" id="" class="w-[25%] px-4">
-                    <option value="0">請選擇職業</option>
-                    <option value="0">老師</option>
-                    <option value="0">服務業</option>
-                    <option value="0">製造業</option>
-                  </select>
-                </div>
-              </li>
-            </div>
+		<div class="lg:ml-[11%] 2xl:ml-[18%] 3xl:ml-[15%] lg:mr-10 3xl:mr-14 px-2 md:px-8 py-4 3xl:px-[64px] 3xl:py-8 border-[1px] border-graay-500">
+      <div class="pb-5 mb-7 text-xl lg:text-2xl text-graay-200 border-b-[1px] border-graay-400">會員點數/優惠券</div>
+      <div class="tabs w-full flex">
+        <button class="points w-[50%] py-4 text-center bg-second-600 focus:text-graay-600 focus:bg-second-300 rounded-tl-md">會員點數</button>
+        <button class="coupon w-[50%] py-4 text-center bg-second-600 focus:text-graay-600 focus:bg-second-300 rounded-tr-md">優惠券</button>
+      </div>
+      <div class="flex flex-wrap lg:flex-nowrap items-center mt-2 lg:mt-10">
+        <!-- <div> -->
+          <span class="inline-flex items-center px-6 3xl:px-11 py-2 mr-3 xl:mr-5 3xl:mr-12 bg-second-600 text-xl text-second-100 rounded-full ">
+            <span class="material-symbols-outlined">
+              water_drop
+            </span>
+            累積點數
+          </span>
+          <span class="px-5 3xl:px-10 py-2 mr-3 xl:mr-5 3xl:mr-12 text-second-300 border-b-[1px] border-graay-100 text-2xl text-center">888</span>
+          <span class="inline-flex items-center px-6 3xl:px-11 py-2 mt-2 lg:mt-0 mr-3 xl:mr-5 3xl:mr-12 bg-second-600 text-xl text-second-100 rounded-full">
+            <span class="material-symbols-outlined">
+              schedule
+            </span>
+            即期點數</span>
+          <span class="px-5 3xl:px-10 py-2 mr-3 xl:mr-5 3xl:mr-12 text-second-300 border-b-[1px] border-graay-100 text-2xl text-center">100</span>
+          <span class="px-5 3xl:px-10 py-2 mt-2 lg:mt-0 mr-3 xl:mr-5 3xl:mr-12 text-fail text-xl">
+            點數到期日：
+            <span class="deadline">2023.6.30</span>
+          </span>
+        <!-- </div> -->
+      </div>
+      <ul class="mb-4 mt-2 lg:mt-5 md:text-lg 2xl:text-[20px] leading-6 md:leading-10">
+        <li class="py-3 px-5 bg-graay-500 text-graay-100 rounded-tl-md rounded-tr-md">訂單金額</li>
+        <li class="flex flex-col mm:flex-row md:justify-between py-2 md:py-[20px] px-5 border-[1px] border-graay-400 cursor-pointer">
+          <div class="flex mm:w-[65%] lg:w-[80%]">
+            <div class="md:w-[30%] lg:w-[15%] pr-6 text-graay-100 md:text-center md:border-r-[1px] border-graay-400">2022/12/15</div>
+            <div class="w-[70%] text-graay-200 md:pl-6 truncate">《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！</div>
           </div>
-          <div class="w-full lg:w-[48%] mt-5 lg:mt-0">
-            <div class="py-2 px-10 text-center text-graay-600 bg-second-200 rounded-tl-md rounded-tr-md">
-              <span class="material-symbols-outlined text-graay-600">
-                diamond
+          <div class="min-w-[160px] md:w-fit text-right md:text-left text-graay-200">
+            <div class="obtain inline-flex lg:flex items-center px-4 py-1 rounded-full">
+              <span class="material-symbols-outlined mr-2">
+                water_drop
               </span>
-            </div>
-            <div class="w-full px-10 bg-second-600 text-second-100 rounded-bl-md rounded-br-md">
-              <div class="flex justify-around text-center border-b-[1px] border-graay-600">
-                <div class="w-[150px] py-4 font-bold">會員編號</div>
-                <div class="w-[150px] py-4 font-light ">00000</div>
-              </div>
-              <div class="flex justify-around text-center border-b-[1px] border-graay-600">
-                <div class="w-[150px] py-4 font-bold">會員等級</div>
-                <div class="w-[150px] py-4 font-light ">1</div>
-              </div>
-              <div class="flex justify-around text-center border-b-[1px] border-graay-600">
-                <div class="w-[150px] py-4 font-bold">VIP到期日到期日</div>
-                <div class="w-[150px] py-4 font-light ">2070/11/30</div>
-              </div>
-              <div class="flex justify-around text-center border-b-[1px] border-graay-600">
-                <div class="w-[150px] py-4 font-bold">註冊日期</div>
-                <div class="w-[150px] py-4 font-light ">2022/11/30</div>
-              </div>
+              <span class="point">100</span>
             </div>
           </div>
-          <div class="w-full mt-5 lg:mt-3 3xl:mt-5">
-            <div class="py-2 px-10 text-left text-graay-600 bg-second-200 rounded-tl-md rounded-tr-md">
-              聯絡資訊
-            </div>
-            <div class="w-full border-[0.5px] border-second-300 rounded-bl-md rounded-br-md">
-              <li class="block lg:flex border-b-[1px] border-graay-400">
-                <div class="w-full lg:w-[50%] flex border-b-[1px] lg:border-l-0 border-graay-400">
-                  <div class="w-[75px] md:w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4">電話</div>
-                  <div class="w-[75%] md:w-[60%] lg:w-[70%] 3xl:w-[80%] flex items-center justify-between py-4 px-5 text-graay-100">
-                    <input type="tel" name="" id="telephone" class="w-[60%] px-2 border-b-[1px] border-graay-100" maxlength="10">
-                    <span class=" text-second-100 material-symbols-outlined cursor-pointer">
-                      edit
-                    </span>
-                  </div>
-                </div>
-                <div class="w-full lg:w-[50%] flex">
-                  <div class="w-[75px] md:w-[150px] text-center text-second-100 border-r-[1px] border-l-0 lg:border-l-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>手機</div>
-                  <div class="w-[75%] md:w-[60%] lg:w-[70%] 3xl:w-[80%] flex items-center justify-between py-4 px-5  text-graay-100">
-                    <input type="tel" name="" id="celphone" class="w-[60%] px-2 border-b-[1px] border-graay-100" maxlength="10">
-                    <span class=" text-second-100 material-symbols-outlined cursor-pointer">
-                      edit
-                    </span>
-                  </div>
-                </div>
-              </li>
-              <li class="flex border-b-[1px] border-graay-400">
-                <div class="w-[75px] md:w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>Email</div>
-                <div class="w-[75%] md:w-[60%] flex justify-between py-4 px-5 text-graay-100">
-                  <input class="w-[60%] px-2 border-b-[1px] border-graay-100" type="text" name="" id="">
-                  <span class=" text-second-100 material-symbols-outlined cursor-pointer">
-                    edit
-                  </span>
-                </div>
-              </li>
-              <li class="flex border-b-[1px] border-graay-400">
-                <div class="w-[75px] md:w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>居住地</div>
-                <div class=" py-4 px-5 text-graay-100">
-                  <input type="button" name="" id="" value="國內" class="py-1 px-4 mr-2 tracking-[2px] border-[1px] border-graay-500 focus:bg-second-500 focus:border-none rounded-full">
-                  <input type="button" name="" id="" value="離島" class="py-1 px-4 mr-2 tracking-[2px] border-[1px] border-graay-500 focus:bg-second-500 focus:border-none rounded-full">
-                  <input type="button" name="" id="" value="國外" class="py-1 px-4 mr-2 tracking-[2px] border-[1px] border-graay-500 focus:bg-second-500 focus:border-none rounded-full">
-                </div>
-              </li>
-              <li class="flex border-b-[1px] border-graay-400">
-                <div class="w-[75px] md:w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>地址</div>
-                <div class="w-[75%] md:w-[60%] flex justify-between py-4 px-5 text-graay-100">
-                  <input class="w-[60%] px-2 border-b-[1px] border-graay-100" type="text" name="" id="">
-                  <span class=" text-second-100 material-symbols-outlined cursor-pointer">
-                    edit
-                  </span>
-                </div>
-              </li>
+        </li>
+        <li class="flex flex-col mm:flex-row md:justify-between py-2 md:py-[20px] px-5 border-[1px] border-graay-400 cursor-pointer">
+          <div class="flex mm:w-[65%] lg:w-[80%]">
+            <div class="md:w-[30%] lg:w-[15%] pr-6 text-graay-100 md:text-center md:border-r-[1px] border-graay-400">2022/12/15</div>
+            <div class="w-[70%] text-graay-200 md:pl-6 truncate">《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！</div>
+          </div>
+          <div class="min-w-[160px] md:w-fit text-right md:text-left text-graay-200">
+            <div class="deduct inline-flex lg:flex items-center px-4 py-1 rounded-full">
+              <span class="material-symbols-outlined mr-2">
+                water_drop
+              </span>
+              <span class="point">-300</span>
             </div>
           </div>
-          <div class="buttons m-auto mt-6">
-            <button type="button" class="py-2 px-5 mr-2 text-graay-100 border-[1px] border-second-400 hover:bg-second-400 focus:bg-second-400 rounded-full">返&nbsp;&nbsp;回</button>
-            <button type="submit" class="py-2 px-5 text-graay-100 border-[1px] border-second-400 hover:bg-second-400 focus:bg-second-400 rounded-full">儲&nbsp;&nbsp;存</button>
+        </li>
+        <li class="flex flex-col mm:flex-row md:justify-between py-2 md:py-[20px] px-5 border-[1px] border-graay-400 cursor-pointer">
+          <div class="flex mm:w-[65%] lg:w-[80%]">
+            <div class="md:w-[30%] lg:w-[15%] pr-6 text-graay-100 md:text-center md:border-r-[1px] border-graay-400">2022/12/15</div>
+            <div class="w-[70%] text-graay-200 md:pl-6 truncate">《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！</div>
           </div>
-        </div>
-      </form>
+          <div class="min-w-[160px] md:w-fit text-right md:text-left text-graay-200">
+            <div class="deduct inline-flex lg:flex items-center px-4 py-1 rounded-full">
+              <span class="material-symbols-outlined mr-2">
+                water_drop
+              </span>
+              <span class="point">-300</span>
+            </div>
+          </div>
+        </li>
+        <li class="flex flex-col mm:flex-row md:justify-between py-2 md:py-[20px] px-5 border-[1px] border-graay-400 cursor-pointer">
+          <div class="flex mm:w-[65%] lg:w-[80%]">
+            <div class="md:w-[30%] lg:w-[15%] pr-6 text-graay-100 md:text-center md:border-r-[1px] border-graay-400">2022/12/15</div>
+            <div class="w-[70%] text-graay-200 md:pl-6 truncate">《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！</div>
+          </div>
+          <div class="min-w-[160px] md:w-fit text-right md:text-left text-graay-200">
+            <div class="deduct inline-flex lg:flex items-center px-4 py-1 rounded-full">
+              <span class="material-symbols-outlined mr-2">
+                water_drop
+              </span>
+              <span class="point">-300</span>
+            </div>
+          </div>
+        </li>
+        <li class="flex flex-col mm:flex-row md:justify-between py-2 md:py-[20px] px-5 border-[1px] border-graay-400 cursor-pointer">
+          <div class="flex mm:w-[65%] lg:w-[80%]">
+            <div class="md:w-[30%] lg:w-[15%] pr-6 text-graay-100 md:text-center md:border-r-[1px] border-graay-400">2022/12/15</div>
+            <div class="w-[70%] text-graay-200 md:pl-6 truncate">《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！《河流》官方LINE群、專屬團購群正式開通！</div>
+          </div>
+          <div class="min-w-[160px] md:w-fit text-right md:text-left text-graay-200">
+            <div class="obtain inline-flex lg:flex items-center px-4 py-1 rounded-full">
+              <span class="material-symbols-outlined mr-2">
+                water_drop
+              </span>
+              <span class="point">40</span>
+            </div>
+          </div>
+        </li>
+        
+      </ul>
+      <div class="pagenation flex justify-end text-center mb-16">
+        <span class="prev w-10 leading-[52px] inline-block border-[1px] border-second-200 hover:bg-second-600 cursor-pointer rounded-tl-md rounded-bl-md"><i class="fa-solid fa-angle-left"></i></span>
+        <span class=" w-10 leading-[52px] inline-block border-[1px] border-second-200 hover:bg-second-600 cursor-pointer">1</span>
+        <span class=" w-10 leading-[52px] inline-block border-[1px] border-second-200 hover:bg-second-600 cursor-pointer">2</span>
+        <span class=" w-10 leading-[52px] inline-block border-[1px] border-second-200 hover:bg-second-600 cursor-pointer">3</span>
+        <span class=" w-10 leading-[52px] inline-block border-[1px] border-second-200 hover:bg-second-600 cursor-pointer">4</span>
+        <span class="next w-10 leading-[52px] inline-block border-[1px] border-second-200 hover:bg-second-600 cursor-pointer rounded-tr-md rounded-br-md"><i class="fa-solid fa-angle-right"></i></span>
+      </div>
     </div>
 	</div>
 
+	
   <!-- 固定按鈕 -->
   <!-- <div class="buttons fixed right-5 3xl:right-[9%] bottom-10 md:bottom-36">
     <button class="top w-14 h-14 flex justify-center items-center bg-primary-200 text-graay-600 rounded-full">

@@ -43,8 +43,8 @@
     }
     .sideMenu {
         background: url(../image/memberSideBar_768.png) no-repeat;
-        background-size: 250%;
-        background-position: -83px 0;
+        //background-size: 250%;
+        //background-position: -83px 0;
     }
     @media screen and (min-width: 1281px){
         .sideMenu {
@@ -52,5 +52,12 @@
             background-size: 100%;
             background-position: 0 0;
         }
+    }
+
+    .deduct {
+        background: #FECDD8;
+    }
+    .obtain {
+        background: #CDEEEE;
     }
 }
