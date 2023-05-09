@@ -43,8 +43,7 @@
     }
     .sideMenu {
         background: url(../image/memberSideBar_768-1.png) no-repeat;
-        //background-size: 250%;
-        //background-position: -83px 0;
+
     }
     @media screen and (min-width: 1281px){
         .sideMenu {
@@ -57,7 +56,15 @@
     .deduct {
         background: #FECDD8;
     }
-    .obtain {
+    .obtain, .available {
         background: #CDEEEE;
+    }
+
+    .unavailable {
+        @apply bg-graay-500;
+    }
+
+    .points.active, .coupon.active {
+        @apply text-graay-600 bg-second-300
     }
 }
