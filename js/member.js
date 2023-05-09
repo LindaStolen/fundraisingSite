@@ -15,4 +15,15 @@ $(function(){
       $('.listBox').eq(box).removeClass('hidden').siblings('.listBox').addClass('hidden')
     }
   })
+  
+  $('.videoInfo button').on('click',function(){
+    let inx = $(this).index()
+    console.log(inx)
+    if(inx == 1){
+      $('.infoBox').eq(inx).removeClass('hidden').addClass('grid').siblings('.infoBox').addClass('hidden').removeClass('grid')
+    }else{
+      $('.infoBox').eq(inx).removeClass('hidden').siblings('.infoBox').addClass('hidden').removeClass('grid')
+    }
+  })
+
 })

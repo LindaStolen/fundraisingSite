@@ -926,6 +926,18 @@ input[type='text'].error,input[type='tel'].error {
   left: 2rem;
 }
 
+.top-\[8rem\] {
+  top: 8rem;
+}
+
+.top-\[4rem\] {
+  top: 4rem;
+}
+
+.top-\[4\.5rem\] {
+  top: 4.5rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1211,6 +1223,14 @@ input[type='text'].error,input[type='tel'].error {
   margin-bottom: 10px;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mb-9 {
+  margin-bottom: 2.25rem;
+}
+
 .line-clamp-1 {
   overflow: hidden;
   display: -webkit-box;
@@ -1338,9 +1358,25 @@ input[type='text'].error,input[type='tel'].error {
   height: 650px;
 }
 
+.h-\[90vh\] {
+  height: 90vh;
+}
+
+.h-\[85vh\] {
+  height: 85vh;
+}
+
+.h-\[80vh\] {
+  height: 80vh;
+}
+
 .max-h-fit {
   max-height: -moz-fit-content;
   max-height: fit-content;
+}
+
+.max-h-\[750px\] {
+  max-height: 750px;
 }
 
 .min-h-\[50\%\] {
@@ -1382,6 +1418,10 @@ input[type='text'].error,input[type='tel'].error {
 
 .min-h-\[89vh\] {
   min-height: 89vh;
+}
+
+.min-h-\[750px\] {
+  min-height: 750px;
 }
 
 .w-1\/3 {
@@ -1640,6 +1680,10 @@ input[type='text'].error,input[type='tel'].error {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1654,6 +1698,10 @@ input[type='text'].error,input[type='tel'].error {
 
 .flex-nowrap {
   flex-wrap: nowrap;
+}
+
+.content-center {
+  align-content: center;
 }
 
 .items-start {
@@ -1713,12 +1761,25 @@ input[type='text'].error,input[type='tel'].error {
   row-gap: 1.25rem;
 }
 
+.gap-x-14 {
+  -moz-column-gap: 3.5rem;
+       column-gap: 3.5rem;
+}
+
+.gap-y-10 {
+  row-gap: 2.5rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
 
 .overflow-y-auto {
   overflow-y: auto;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .truncate {
@@ -2009,6 +2070,21 @@ input[type='text'].error,input[type='tel'].error {
   --tw-bg-opacity: 0.4;
 }
 
+.to-second-200 {
+  --tw-gradient-to: #21A9AB var(--tw-gradient-to-position);
+  --tw-gradient-to-position:  ;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
@@ -2217,6 +2293,14 @@ input[type='text'].error,input[type='tel'].error {
   padding-bottom: 2.5rem;
 }
 
+.pl-8 {
+  padding-left: 2rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -2342,6 +2426,14 @@ input[type='text'].error,input[type='tel'].error {
 
 .leading-relaxed {
   line-height: 1.625;
+}
+
+.leading-\[3rem\] {
+  line-height: 3rem;
+}
+
+.leading-\[4rem\] {
+  line-height: 4rem;
 }
 
 .tracking-\[2px\] {
@@ -2512,6 +2604,16 @@ input[type='text'].error,input[type='tel'].error {
   background-color: rgb(24 127 129 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-second-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 169 171 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-second-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 206 209 / var(--tw-bg-opacity));
+}
+
 .hover\:text-primary-200:hover {
   --tw-text-opacity: 1;
   color: rgb(102 87 168 / var(--tw-text-opacity));
@@ -2614,6 +2716,16 @@ input[type='text'].error,input[type='tel'].error {
 .focus\:bg-second-600:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(205 238 238 / var(--tw-bg-opacity));
+}
+
+.focus\:bg-second-200:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 169 171 / var(--tw-bg-opacity));
+}
+
+.focus\:bg-second-300:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 206 209 / var(--tw-bg-opacity));
 }
 
 .focus\:text-primary-200:focus {
@@ -2927,6 +3039,11 @@ input[type='text'].error,input[type='tel'].error {
   .lg\:mx-auto {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .lg\:mx-10 {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
   }
 
   .lg\:mb-0 {
@@ -3532,6 +3649,11 @@ input[type='text'].error,input[type='tel'].error {
 
   .\33xl\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .\33xl\:mx-\[60px\] {
+    margin-left: 60px;
+    margin-right: 60px;
   }
 
   .\33xl\:mb-6 {
