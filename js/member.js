@@ -4,7 +4,7 @@ $(function(){
     if(!openSub){
       $(this).addClass('open').next('div').removeClass('hidden')
     }else{
-      $(this).removeClass('open').next('div').removeClass('hidden')
+      $(this).removeClass('open').next('div').addClass('hidden')
     }
   })
   $('.tabs button').on('click', function(){
@@ -24,6 +24,14 @@ $(function(){
     }else{
       $('.infoBox').eq(inx).removeClass('hidden').siblings('.infoBox').addClass('hidden').removeClass('grid')
     }
+  })
+
+  $('.listBox li').on('click',function(){
+    $('.messageContainer').removeClass('hidden')
+  })
+
+  $('.messageContainer .close').on('click',function(){
+    $(this).parents('.messageContainer').addClass('hidden')
   })
 
 })

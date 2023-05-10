@@ -67,4 +67,18 @@
     .points.active, .coupon.active {
         @apply text-graay-600 bg-second-300
     }
+
+    table td {
+        @apply bg-bgc
+    }
+
+    th, td {
+        @apply py-2 px-5 border-[1px] border-graay-500
+    }
+
+    @media screen and (min-width: 1280px){
+        th, td {
+            @apply py-4 px-7 border-[1px] border-graay-500
+        }
+    }
 }
