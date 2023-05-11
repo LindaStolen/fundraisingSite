@@ -72,5 +72,14 @@ $(function(){
     $('.adPrevBtn').click(function() {
         owl.trigger('prev.owl.carousel');
     })
+
+    // 頁碼
+  $('.pagenation button').on('click',function(){
+    let active = $(this).hasClass('active')
+    if(!active){
+      $(this).addClass('active').siblings('.page').removeClass('active')
+    }
+  })
+
     
 })

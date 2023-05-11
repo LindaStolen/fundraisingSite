@@ -81,4 +81,29 @@
             @apply py-4 px-7 border-[1px] border-graay-500
         }
     }
+
+    td.data {
+        @apply bg-bgc text-second-100
+    }
+
+    td.field {
+        @apply bg-graay-600
+    }
+
+    .memberMenu li.active, .memberMenu div>a.active {
+        @apply text-second-200
+    }
+    .memberMenu div>a.active {
+        @apply 2xl:border-b-[1px] 2xl:border-second-200
+    }
+    .courseCategory button.active {
+        @apply bg-second-400
+    }
+    .product.pagenation .page.active {
+        @apply bg-primary-600
+    }
+    .member.pagenation .page.active {
+        @apply bg-second-600
+    }
+
 }
