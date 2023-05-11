@@ -186,7 +186,7 @@
         </div>
         <ul class="bg-second-500 text-graay-100 text-xl">
           <li class="info items-center py-4 text-center cursor-pointer">
-            <a href="javascript:;" class="flex justify-center hover:text-second-200 focus:text-second-200">
+            <a href="javascript:;" class="flex justify-center hover:text-second-200">
               <span class="material-symbols-outlined m-0 2xl:mr-6">
                 person
               </span>
@@ -194,19 +194,19 @@
             </a>
           </li>
           <div class="bg-second-600 2xl:pl-14 hidden">
-            <a href="javascript:;" class="inline-block w-full text-center 2xl:w-[128px] m-auto pb-0.5 my-4 2xl:text-left text-graay-100 cursor-pointer hover:text-second-200 2xl:hover:border-second-200 2xl:hover:border-b-[1px] 2xl:focus:border-b-[1px] 2xl:focus:border-second-200 2xl:focus:text-second-200">
+            <a href="javascript:;" class="inline-block w-full text-center 2xl:w-[128px] m-auto pb-0.5 my-4 2xl:text-left text-graay-100 cursor-pointer hover:text-second-200 2xl:hover:border-second-200 2xl:hover:border-b-[1px]">
               <span class="2xl:hidden material-symbols-outlined m-0 ">
                 description
               </span>
               <span class="hidden 2xl:inline-block">會員資料</span>
             </a>
-            <a href="javascript:;" class="inline-block w-full text-center 2xl:w-[128px] m-auto pb-0.5 my-4 2xl:text-left text-graay-100 cursor-pointer hover:text-second-200 2xl:hover:border-second-200 2xl:hover:border-b-[1px] 2xl:focus:border-b-[1px] 2xl:focus:border-second-200 2xl:focus:text-second-200">
+            <a href="javascript:;" class="inline-block w-full text-center 2xl:w-[128px] m-auto pb-0.5 my-4 2xl:text-left text-graay-100 cursor-pointer hover:text-second-200 2xl:hover:border-second-200 2xl:hover:border-b-[1px]">
               <span class="2xl:hidden material-symbols-outlined m-0 ">
                 water_drop
               </span>
               <span class="hidden 2xl:inline-block">點數/優惠卷</span>
             </a>
-            <a href="javascript:;" class="inline-block w-full text-center 2xl:w-[128px] m-auto pb-0.5 my-4 2xl:text-left text-graay-100 cursor-pointer hover:text-second-200 2xl:hover:border-second-200 2xl:hover:border-b-[1px] 2xl:focus:border-b-[1px] 2xl:focus:border-second-200 2xl:focus:text-second-200">
+            <a href="javascript:;" class="inline-block w-full text-center 2xl:w-[128px] m-auto pb-0.5 my-4 2xl:text-left text-graay-100 cursor-pointer hover:text-second-200 2xl:hover:border-second-200 2xl:hover:border-b-[1px]">
               <span class="2xl:hidden material-symbols-outlined m-0 ">
                 lock_person
               </span>
@@ -214,7 +214,7 @@
             </a>
           </div>
           <li class="items-center py-4 text-center cursor-pointer">
-            <a href="javascript:;" class="flex justify-center hover:text-second-200 focus:text-second-200">
+            <a href="javascript:;" class="flex justify-center hover:text-second-200">
               <span class="material-symbols-outlined m-0 2xl:mr-6">
                 menu_book
               </span>
@@ -222,7 +222,7 @@
             </a>
           </li>
           <li class="items-center py-4 text-center cursor-pointer">
-            <a href="javascript:;" class="flex justify-center hover:text-second-200 focus:text-second-200">
+            <a href="javascript:;" class="flex justify-center hover:text-second-200">
               <span class="material-symbols-outlined m-0 2xl:mr-6">
                 notifications
               </span>
@@ -230,7 +230,7 @@
             </a>
           </li>
           <li class="items-center py-4 text-center cursor-pointer">
-            <a href="javascript:;" class="flex justify-center hover:text-second-200 focus:text-second-200">
+            <a href="javascript:;" class="flex justify-center hover:text-second-200">
               <span class="material-symbols-outlined m-0 2xl:mr-6">
                 shopping_cart
               </span>
@@ -238,7 +238,7 @@
             </a>
           </li>
           <li class="items-center py-4 text-center cursor-pointer">
-            <a href="javascript:;" class="flex justify-center hover:text-second-200 focus:text-second-200">
+            <a href="javascript:;" class="flex justify-center hover:text-second-200">
               <span class="material-symbols-outlined m-0 2xl:mr-6">
                 favorite
               </span>
@@ -252,8 +252,8 @@
     <div class="mainContainer w-[82%] h-[88%] m-auto my-[3%]">
       <div class="lg:ml-[5%] lg:mr-10 3xl:mr-14 px-2 md:px-8 py-4 3xl:px-[64px] 3xl:py-8 border-[1px] border-graay-500">
         <div class="pb-5 mb-7 text-xl lg:text-2xl border-b-[1px] border-graay-400">我的課程</div>
-        <div class="mb-5 bg-second-600">
-          <button class="px-4 py-2 mm:px-10 mm:py-4 hover:bg-second-400 focus:bg-second-400">所有課程</button>
+        <div class="courseCategory mb-5 bg-second-600 flex">
+          <button class="active px-4 py-2 mm:px-10 mm:py-4 hover:bg-second-400 focus:bg-second-400">所有課程</button>
           <button class="px-4 py-2 mm:px-10 mm:py-4 hover:bg-second-400 focus:bg-second-400">馬上上課</button>
           <button class="px-4 py-2 mm:px-10 mm:py-4 hover:bg-second-400 focus:bg-second-400">尚未開課</button>
         </div>
@@ -404,13 +404,13 @@
           </div>
         </div>
 
-        <div class="pagenation flex justify-end text-center">
-          <button class="prev w-10 leading-[52px] inline-block border-[1px] border-r-0 border-second-200 hover:bg-second-200 focus:bg-second-100 rounded-tl-md rounded-bl-md"><i class="fa-solid fa-angle-left"></i></button>
-          <button class=" w-10 leading-[52px] inline-block border-[1px] border-r-0 border-second-200 hover:bg-second-200 focus:bg-second-100">1</button>
-          <button class=" w-10 leading-[52px] inline-block border-[1px] border-r-0 border-second-200 hover:bg-second-200 focus:bg-second-100">2</button>
-          <button class=" w-10 leading-[52px] inline-block border-[1px] border-r-0 border-second-200 hover:bg-second-200 focus:bg-second-100">3</button>
-          <button class=" w-10 leading-[52px] inline-block border-[1px] border-r-0 border-second-200 hover:bg-second-200 focus:bg-second-100">4</button>
-          <button class="next w-10 leading-[52px] inline-block border-[1px] border-second-200 hover:bg-second-200 rounded-tr-md rounded-br-md"><i class="fa-solid fa-angle-right"></i></button>
+        <div class="member pagenation flex justify-end text-center mb-4 mm:mb-16">
+          <button class="prev w-10 leading-[52px] inline-block border-[1px] border-r-0 border-second-200 hover:bg-second-600 cursor-pointer rounded-tl-md rounded-bl-md"><i class="fa-solid fa-angle-left"></i></button>
+          <button class="page w-10 leading-[52px] inline-block border-[1px] border-r-0 border-second-200 hover:bg-second-600">1</button>
+          <button class="page w-10 leading-[52px] inline-block border-[1px] border-r-0 border-second-200 hover:bg-second-600">2</button>
+          <button class="page w-10 leading-[52px] inline-block border-[1px] border-r-0 border-second-200 hover:bg-second-600">3</button>
+          <button class="page w-10 leading-[52px] inline-block border-[1px] border-r-0 border-second-200 hover:bg-second-600">4</button>
+          <button class="next w-10 leading-[52px] inline-block border-[1px] border-second-200 hover:bg-second-600 cursor-pointer rounded-tr-md rounded-br-md"><i class="fa-solid fa-angle-right"></i></button>
         </div>
       </div>
     </div>
