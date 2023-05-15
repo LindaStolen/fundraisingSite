@@ -32,7 +32,7 @@ $(function(){
             }            
         }
     })
-    $(".product").on('click', function(){
+    $("a.product").on('click', function(){
         console.log('這是商品')
         let device = $(window).innerWidth()
         console.log(device)
@@ -54,6 +54,10 @@ $(function(){
             }
         }
     })
+    $('.course').on("click", function(){
+        $('.subMenu > div').addClass('hidden')
+    })
+
     $('button.top').on('click',function(){
         $('html,body').animate({scrollTop: 0,} ,700)
     })

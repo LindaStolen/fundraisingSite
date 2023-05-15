@@ -21,8 +21,8 @@
 </head>
 <body>
   <!-- 行動選單 -->
-  <div class="background hidden w-full h-screen bg-graay-200 opacity-30 absolute z-10"></div>
-  <nav class="menu w-[70%] -ml-[70%] h-screen absolute pl-12 py-10 bg-graay-600 z-20 text-graay-100 overflow-y-auto sm:flex flex-col justify-between lg:hidden">
+  <div class="background hidden w-full h-screen bg-graay-200 opacity-30 fixed top-0 z-50"></div>
+  <nav class="fixed menu top-0 w-[70%] -ml-[70%] h-screen pl-12 py-10 bg-graay-600 z-50 text-graay-100 overflow-y-auto sm:flex flex-col justify-between lg:hidden">
     <button class="menuClose absolute top-5 right-6 text-2xl"><i class="fa-solid fa-square-xmark"></i></button>
     <div class="mb-5">
       <div class="mb-5">
@@ -105,8 +105,89 @@
     </div>
   </nav>
 
+  <!-- 會員側邊選單 -->
+  <nav class="sideMenu hidden fixed top-[5.5rem] min-h-[89vh] lg:block w-[100px] 2xl:w-[240px] pt-[125px] 2xl:pt-[86px] bg-second-400">
+    <div class="avator w-[57px] h-[57px] m-auto 2xl:w-[125px] 2xl:h-[125px] text-center rounded-full ">
+      <div class=" w-[51px] h-[51px] mt-[5px] 2xl:w-[121px] 2xl:h-[121px] mx-auto 2xl:mt-[6.5px] border-[2px] border-graay-600 rounded-full inline-flex justify-center items-center">
+      </div>
+      <div class="relative hidden 2xl:block text-right cursor-pointer">
+        <span class="absolute top-[-26px] -right-2 text-graay-600 material-symbols-outlined">
+          edit
+        </span>
+      </div>
+    </div>
+    <div class="memberMenu bg-second-400 w-full">
+      <div class="flex flex-col items-center 2xl:flex-row 2xl:justify-center py-4 text-xl text-graay-100">
+        嗨!<div class="memberName">王曉明</div>
+      </div>
+      <ul class="bg-second-500 text-graay-100 text-xl lg:h-[280px] xl:h-[340px] 2xl:h-[305px] 3xl:h-fit overflow-auto">
+        <li class="info items-center py-4 text-center cursor-pointer">
+          <a href="javascript:;" class="flex justify-center hover:text-second-200">
+            <span class="material-symbols-outlined m-0 2xl:mr-6">
+              person
+            </span>
+            <span class="hidden 2xl:inline-block">會員資訊</span>
+          </a>
+        </li>
+        <div class="bg-second-600 2xl:pl-14 hidden">
+          <a href="javascript:;" class="inline-block w-full text-center 2xl:w-[128px] m-auto pb-0.5 my-4 2xl:text-left text-graay-100 cursor-pointer hover:text-second-200 2xl:hover:border-second-200 2xl:hover:border-b-[1px]">
+            <span class="2xl:hidden material-symbols-outlined m-0 ">
+              description
+            </span>
+            <span class="hidden 2xl:inline-block">會員資料</span>
+          </a>
+          <a href="javascript:;" class="inline-block w-full text-center 2xl:w-[128px] m-auto pb-0.5 my-4 2xl:text-left text-graay-100 cursor-pointer hover:text-second-200 2xl:hover:border-second-200 2xl:hover:border-b-[1px]">
+            <span class="2xl:hidden material-symbols-outlined m-0 ">
+              water_drop
+            </span>
+            <span class="hidden 2xl:inline-block">點數/優惠卷</span>
+          </a>
+          <a href="javascript:;" class="inline-block w-full text-center 2xl:w-[128px] m-auto pb-0.5 my-4 2xl:text-left text-graay-100 cursor-pointer hover:text-second-200 2xl:hover:border-second-200 2xl:hover:border-b-[1px]">
+            <span class="2xl:hidden material-symbols-outlined m-0 ">
+              lock_person
+            </span>
+            <span class="hidden 2xl:inline-block">修改密碼</span>
+          </a>
+        </div>
+        <li class="items-center py-4 text-center cursor-pointer">
+          <a href="javascript:;" class="flex justify-center hover:text-second-200">
+            <span class="material-symbols-outlined m-0 2xl:mr-6">
+              menu_book
+            </span>
+            <span class="hidden 2xl:inline-block">我的課程</span>
+          </a>
+        </li>
+        <li class="items-center py-4 text-center cursor-pointer">
+          <a href="javascript:;" class="flex justify-center hover:text-second-200">
+            <span class="material-symbols-outlined m-0 2xl:mr-6">
+              notifications
+            </span>
+            <span class="hidden 2xl:inline-block">通知中心</span>
+          </a>
+        </li>
+        <li class="items-center py-4 text-center cursor-pointer">
+          <a href="javascript:;" class="flex justify-center hover:text-second-200">
+            <span class="material-symbols-outlined m-0 2xl:mr-6">
+              shopping_cart
+            </span>
+            <span class="hidden 2xl:inline-block">我的訂單</span>
+          </a>
+        </li>
+        <li class="items-center py-4 text-center cursor-pointer">
+          <a href="javascript:;" class="flex justify-center hover:text-second-200">
+            <span class="material-symbols-outlined m-0 2xl:mr-6">
+              favorite
+            </span>
+            <span class="hidden 2xl:inline-block">追蹤清單</span>
+          </a>
+        </li>
+        <button class="absolute w-full bottom-0 py-4 text-xl text-center text-graay-100 cursor-pointer hover:bg-second-100 hover:text-graay-600 focus:bg-second-100 focus:text-graay-600">登出</button>
+      </ul>
+    </div>
+  </nav>
+  
   <!-- 桌機選單 -->
-  <header class="bg-graay-600 shadow-sm shadow-graay-400 z-10">
+  <header class="fixed w-full top-0 bg-graay-600 shadow-sm shadow-graay-400 z-10">
     <!-- <div class="w-[90%] h-[80px] m-auto flex items-center text-[18px] xl:text-xl justify-between shadow-gray-300"> -->
     <div class="h-20 lg:h-[105px] 2xl:h-[120px] flex items-center text-[18px] xl:text-xl justify-between shadow-gray-300">
     <div class="ml-5 lg:ml-7 2xl:ml-10 inline-block">
@@ -167,7 +248,7 @@
     </div>
   </header>
 
-  <div class="subMenu mt-1 bg-graay-600 text-base xl:text-xl">
+  <div class="subMenu fixed w-full top-[100px] 2xl:top-[116px] mt-1 bg-graay-600 text-base xl:text-xl">
     <div class="hidden about-Sub shadow-sm shadow-graay-400">
       <nav class="lg:w-[62%] xl:w-[72%] py-6 m-auto text-graay-100">
         <a href="about.html" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">關於我們</a>
@@ -176,7 +257,7 @@
         <a href="contact.html" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">聯絡我們</a>
       </nav>
     </div>
-    <div class="hidden product-Sub shadow-sm shadow-graay-400">
+    <div class="hidden product-Sub pt-6 shadow-sm shadow-graay-400">
       <div class="lg:w-[62%] xl:w-[72%] py-6 m-auto flex justify-between items-center">
         <nav class="text-graay-100">
           <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 "><i class="fa-solid fa-filter mr-1"></i>篩選</a>
@@ -193,88 +274,8 @@
     </div>
   </div>
   
-  <div class="lg:flex">
-    <nav class="sideMenu relative hidden lg:block w-[100px] 2xl:w-[240px] min-h-[89vh] bg-second-400">
-      <div class="avator w-[57px] h-[57px] m-auto 2xl:w-[125px] 2xl:h-[125px] 2xl:mb-24 text-center rounded-full ">
-        <!-- <div class=" w-[51px] h-[51px] mt-[5px] 2xl:w-[121px] 2xl:h-[121px] mx-auto 2xl:mt-[6.5px] border-[2px] border-graay-600 rounded-full inline-flex justify-center items-center">
-        </div> -->
-        <div class="relative hidden 2xl:block text-right cursor-pointer">
-          <span class="absolute top-[12rem] -right-2 text-graay-600 material-symbols-outlined">
-            edit
-          </span>
-        </div>
-      </div>
-      <div class="memberMenu bg-second-400 w-full">
-        <div class="flex flex-col items-center 2xl:flex-row 2xl:justify-center py-4 text-xl text-graay-100">
-          嗨!<div class="memberName">王曉明</div>
-        </div>
-        <ul class="bg-second-500 text-graay-100 text-xl">
-          <li class="info items-center py-4 text-center cursor-pointer">
-            <a href="javascript:;" class="flex justify-center hover:text-second-200 focus:text-second-200">
-              <span class="material-symbols-outlined m-0 2xl:mr-6">
-                person
-              </span>
-              <span class="hidden 2xl:inline-block">會員資訊</span>
-            </a>
-          </li>
-          <div class="bg-second-600 2xl:pl-14 hidden">
-            <a href="javascript:;" class="inline-block w-full text-center 2xl:w-[128px] m-auto pb-0.5 my-4 2xl:text-left text-graay-100 cursor-pointer hover:text-second-200 2xl:hover:border-second-200 2xl:hover:border-b-[1px] 2xl:focus:border-b-[1px] 2xl:focus:border-second-200 2xl:focus:text-second-200">
-              <span class="2xl:hidden material-symbols-outlined m-0 ">
-                description
-              </span>
-              <span class="hidden 2xl:inline-block">會員資料</span>
-            </a>
-            <a href="javascript:;" class="inline-block w-full text-center 2xl:w-[128px] m-auto pb-0.5 my-4 2xl:text-left text-graay-100 cursor-pointer hover:text-second-200 2xl:hover:border-second-200 2xl:hover:border-b-[1px] 2xl:focus:border-b-[1px] 2xl:focus:border-second-200 2xl:focus:text-second-200">
-              <span class="2xl:hidden material-symbols-outlined m-0 ">
-                water_drop
-              </span>
-              <span class="hidden 2xl:inline-block">點數/優惠卷</span>
-            </a>
-            <a href="javascript:;" class="inline-block w-full text-center 2xl:w-[128px] m-auto pb-0.5 my-4 2xl:text-left text-graay-100 cursor-pointer hover:text-second-200 2xl:hover:border-second-200 2xl:hover:border-b-[1px] 2xl:focus:border-b-[1px] 2xl:focus:border-second-200 2xl:focus:text-second-200">
-              <span class="2xl:hidden material-symbols-outlined m-0 ">
-                lock_person
-              </span>
-              <span class="hidden 2xl:inline-block">修改密碼</span>
-            </a>
-          </div>
-          <li class="items-center py-4 text-center cursor-pointer">
-            <a href="javascript:;" class="flex justify-center hover:text-second-200 focus:text-second-200">
-              <span class="material-symbols-outlined m-0 2xl:mr-6">
-                menu_book
-              </span>
-              <span class="hidden 2xl:inline-block">我的課程</span>
-            </a>
-          </li>
-          <li class="items-center py-4 text-center cursor-pointer">
-            <a href="javascript:;" class="flex justify-center hover:text-second-200 focus:text-second-200">
-              <span class="material-symbols-outlined m-0 2xl:mr-6">
-                notifications
-              </span>
-              <span class="hidden 2xl:inline-block">通知中心</span>
-            </a>
-          </li>
-          <li class="items-center py-4 text-center cursor-pointer">
-            <a href="javascript:;" class="flex justify-center hover:text-second-200 focus:text-second-200">
-              <span class="material-symbols-outlined m-0 2xl:mr-6">
-                shopping_cart
-              </span>
-              <span class="hidden 2xl:inline-block">我的訂單</span>
-            </a>
-          </li>
-          <li class="items-center py-4 text-center cursor-pointer">
-            <a href="javascript:;" class="flex justify-center hover:text-second-200 focus:text-second-200">
-              <span class="material-symbols-outlined m-0 2xl:mr-6">
-                favorite
-              </span>
-              <span class="hidden 2xl:inline-block">追蹤清單</span>
-            </a>
-          </li>
-          <button class="absolute w-full bottom-0 py-4 text-xl text-center text-graay-100 cursor-pointer hover:bg-second-100 hover:text-graay-600 focus:bg-second-100 focus:text-graay-600">登出</button>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="mainContainer w-[90%] mm:w-[82%] h-[88%] m-auto my-[3%]">
+  <!-- <div class="lg:flex"> -->
+    <div class="mainContainer w-[86%] 2xl:w-[82%] m-auto mt-[24%] md:mt-[13%] mb-[2%] xl:mt-[10%] ml-[8%] 2xl:ml-[15%] 3xl:ml-[13%]">
       <!-- 會員資訊框框 -->
       <div class="lg:ml-[5%] lg:mr-10 3xl:mr-14 px-2 md:px-8 py-4 3xl:px-[64px] 3xl:py-8 border-[1px] border-graay-500">
         <div class="pb-5 mb-7 text-2xl border-b-[1px] border-graay-400">會員資訊</div>
@@ -294,9 +295,9 @@
                 </li>
                 <li class="flex border-b-[1px] border-graay-400">
                   <div class="w-[75px] md:w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>生日</div>
-                  <div class="w-full flex items-center justify-between py-4 px-5 text-graay-100">
+                  <div class="w-full xl:flex items-center justify-between py-4 px-5 text-graay-100">
                     <input type="date" name="" id="" class="bg-graay-500" disabled="disabled">
-                    <span class="text-fail mr-1">請選擇生日</span>
+                    <span class="block xl:inline-block text-fail mr-1">請選擇生日</span>
                   </div>
                 </li>
                 <li class="flex border-b-[1px] border-graay-400">
@@ -351,16 +352,16 @@
               </div>
               <div class="w-full border-[0.5px] border-second-300 rounded-bl-md rounded-br-md">
                 <li class="block lg:flex border-b-[1px] border-graay-400">
-                  <div class="w-full lg:w-[50%] flex border-b-[1px] lg:border-l-0 border-graay-400">
+                  <div class="w-full lg:w-[50%] flex lg:border-l-0 border-graay-400">
                     <div class="w-[75px] md:w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4">電話</div>
-                    <div class="w-[75%] md:w-[60%] lg:w-[70%] 3xl:w-[80%] flex items-center justify-between py-4 px-5 text-graay-100">
-                      <input type="tel" name="" id="telephone" class="w-[60%] px-2 border-b-[1px] border-graay-100" maxlength="10" disabled="disabled">
+                    <div class="w-[75%] md:w-[60%] 3xl:w-[80%] flex items-center justify-between py-4 px-5 text-graay-100">
+                      <input type="tel" name="" id="telephone" class="lg:w-full xl:w-[60%] px-2 border-b-[1px] border-graay-100" maxlength="10" disabled="disabled">
                     </div>
                   </div>
                   <div class="w-full lg:w-[50%] flex">
                     <div class="w-[75px] md:w-[150px] text-center text-second-100 border-r-[1px] border-l-0 lg:border-l-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>手機</div>
-                    <div class="w-[75%] md:w-[60%] lg:w-[70%] 3xl:w-[80%] flex items-center justify-between py-4 px-5  text-graay-100">
-                      <input type="tel" name="" id="celphone" class="w-[60%] px-2 border-b-[1px] border-graay-100" maxlength="10" disabled="disabled">
+                    <div class="w-[75%] md:w-[60%] 3xl:w-[80%] flex items-center justify-between py-4 px-5  text-graay-100">
+                      <input type="tel" name="" id="celphone" class="lg:w-full xl:w-[60%] px-2 border-b-[1px] border-graay-100" maxlength="10" disabled="disabled">
                     </div>
                   </div>
                 </li>
@@ -397,17 +398,7 @@
         </form>
       </div>
     </div>
-  </div>
+  <!-- </div> -->
   
-  
-
-  <!-- 固定按鈕 -->
-  <!-- <div class="buttons fixed right-5 3xl:right-[9%] bottom-10 md:bottom-36">
-    <button class="top w-14 h-14 flex justify-center items-center bg-primary-200 text-graay-600 rounded-full">
-      <span class="material-symbols-outlined">
-        vertical_align_top
-      </span>
-    </button>
-  </div> -->
 </body>
 </html>

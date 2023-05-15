@@ -42,6 +42,7 @@
         color: #979797;
     }
     .sideMenu {
+        height: -webkit-fill-available;
         background: url(../image/memberSideBar_768-1.png) no-repeat;
 
     }
@@ -83,13 +84,22 @@
     }
 
     td.data {
-        @apply bg-bgc text-second-100
+        @apply bg-bgc text-second-100;
+        min-width: 180px;
     }
 
     td.field {
         @apply bg-graay-600
     }
-
+    /* @media screen and (max-width: 640px){ */
+        td.field {
+            min-width: 120px;
+        }
+    /* } */
+    form input[type='button'].pick {
+        @apply bg-second-500 border-none 
+        /* background-color: #000 !important; */
+    }
     .memberMenu li.active, .memberMenu div>a.active {
         @apply text-second-200
     }
@@ -105,5 +115,10 @@
     .member.pagenation .page.active {
         @apply bg-second-600
     }
-
+    .videoInfo .tabsBox>button.active {
+        @apply bg-second-400
+    }
+    .infoBox>button.pick {
+        @apply bg-second-300 text-graay-600
+    }
 }
