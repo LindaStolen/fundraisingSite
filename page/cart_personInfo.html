@@ -21,8 +21,8 @@
 </head>
 <body>
   <!-- 行動選單 -->
-  <div class="background hidden lg:hidden w-full h-screen bg-graay-200 opacity-30 absolute z-10"></div>
-  <nav class="menu w-[70%] h-screen -ml-[70%] absolute pl-12 py-10 bg-graay-600 z-20 text-graay-100 overflow-y-auto sm:flex flex-col justify-between lg:hidden">
+  <div class="background hidden w-full h-screen bg-graay-200 opacity-30 fixed top-0 z-50"></div>
+  <nav class="fixed menu top-0 w-[70%] -ml-[70%] h-screen pl-12 py-10 bg-graay-600 z-50 text-graay-100 overflow-y-auto sm:flex flex-col justify-between lg:hidden">
     <button class="menuClose absolute top-5 right-6 text-2xl"><i class="fa-solid fa-square-xmark"></i></button>
     <div class="mb-5">
       <div class="mb-5">
@@ -59,7 +59,7 @@
       </a>
       <a href="javascript:void(0)" class="flex items-center mb-5 hover:text-primary-200">
         <span class="material-symbols-outlined mr-1">
-          person
+          menu_book
         </span>
         我的課程
       </a>
@@ -82,7 +82,7 @@
     </div>
   </nav>
   <!-- 桌機選單 -->
-  <header class="shadow-sm shadow-graay-400">
+  <header class="fixed w-full top-0 bg-graay-600 shadow-sm shadow-graay-400 z-20">
     <!-- <div class="w-[90%] h-[80px] m-auto flex items-center text-[18px] xl:text-xl justify-between shadow-gray-300"> -->
     <div class="h-20 lg:h-[105px] 2xl:h-[120px] flex items-center text-[18px] xl:text-xl justify-between shadow-gray-300">
     <div class="ml-5 lg:ml-7 2xl:ml-10 inline-block">
@@ -106,24 +106,27 @@
     <div class="mr-5 inline-block">
       <div class="function text-graay-100">
         <nav class=" sm:hidden lg:flex">
-          <a href="javascript:void(0)" class="flex items-center mr-5 hover:text-second-300">
+          <a href="javascript:void(0)" class="notifications flex items-center mr-5 hover:text-second-300">
             <span class="inline-block material-symbols-outlined">
               notifications
             </span>
           </a>
-          <a href="javascript:void(0)" class="flex items-center mr-5 hover:text-second-300">
+          <a href="javascript:void(0)" class="cart flex items-center mr-5 hover:text-second-300">
             <span class="inline-block material-symbols-outlined">
               shopping_cart
             </span>
           </a>
-          <a href="javascript:void(0)" class="flex items-center mr-5 hover:text-primary-200">
-            <i class="fa-solid fa-user block mr-1"></i> 我的課程
+          <a href="javascript:void(0)" class="myCourse flex px-2 py-1.5 items-center mr-5 hover:text-primary-200">
+            <span class="material-symbols-outlined mr-1">
+              menu_book
+            </span>
+            我的課程
           </a>
           <a href="#" class="flex items-center px-2 py-1.5 mr-5 rounded-md border border-primary-200 text-primary-200">
             <span class="inline-block material-symbols-outlined mr-1">
               person
             </span>
-            王小明
+            登入/註冊
           </a>
           <select name="" id="" class=" px-2 py-1 rounded-md border border-stone-700">
             <option value="">選擇語言</option>
@@ -139,7 +142,8 @@
     </div>
     </div>
   </header>
-  <div class="subMenu mb-10 text-base xl:text-xl">
+
+  <div class="subMenu fixed w-full top-[102px] 2xl:top-[118px] mt-1 bg-graay-600 text-base xl:text-xl z-20">
     <div class="hidden about-Sub shadow-sm shadow-graay-400">
       <nav class="lg:w-[62%] xl:w-[72%] py-6 m-auto text-graay-100">
         <a href="about.html" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">關於我們</a>
@@ -148,8 +152,8 @@
         <a href="contact.html" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">聯絡我們</a>
       </nav>
     </div>
-    <div class="hidden product-Sub shadow-sm shadow-graay-400">
-      <div class="lg:w-[62%] xl:w-[72%] py-6 m-auto flex justify-between items-center">
+    <div class="hidden product-Sub pt-6 shadow-sm shadow-graay-400">
+      <div class="lg:w-[62%] xl:w-[72%] pb-6 m-auto flex justify-between items-center">
         <nav class="text-graay-100">
           <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 "><i class="fa-solid fa-filter mr-1"></i>篩選</a>
           <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">全部</a>
@@ -164,7 +168,7 @@
       </div>
     </div>
   </div>
-	<div class="mainContainer max-w-[1200px] w-[90%] md:w-[75%] min-h-[50%] m-auto mb-24">
+	<div class="mainContainer max-w-[1200px] w-[90%] md:w-[75%] min-h-[450px] m-auto mb-24 mt-24 md:mt-32 xl:mt-40">
 		<!-- 麵包屑導覽 -->
     <div class="breadcrumb mt-8 md:mt-14 lx:mt-20 text-base">
       <span class="text-primary-200">填寫付款資訊</span>
@@ -222,35 +226,35 @@
             <div class="w-[40%] md:w-[30%] 3xl:w-[20%] text-xl text-second-200">*寄送方式</div>
             <!-- 這邊放寄送選項的值 -->
             <input name="" id="deliver" class="hidden" value=""> 
-            <input type="button" value="7-11店到店" class="deliver mr-1 3xl:mr-5 py-1 px-2 3xl:px-5 text-graay-100 border-[1px] border-second-200 rounded-md focus:bg-second-600" />
-            <input type="button" value="郵局寄送" class="deliver mr-1 3xl:mr-5 py-1 px-2 3xl:px-5 text-graay-100 border-[1px] border-second-200 rounded-md focus:bg-second-600" />
-            <input type="button" value="宅配" class="deliver mr-1 3xl:mr-5 py-1 px-2 3xl:px-5 text-graay-100 border-[1px] border-second-200 rounded-md focus:bg-second-600" />
+            <input type="button" value="7-11店到店" class="deliver mr-1 3xl:mr-5 py-1 px-2 3xl:px-5 text-graay-100 border-[1px] border-second-200 rounded-md" />
+            <input type="button" value="郵局寄送" class="deliver mr-1 3xl:mr-5 py-1 px-2 3xl:px-5 text-graay-100 border-[1px] border-second-200 rounded-md" />
+            <input type="button" value="宅配" class="deliver mr-1 3xl:mr-5 py-1 px-2 3xl:px-5 text-graay-100 border-[1px] border-second-200 rounded-md" />
             <span class="error hidden text-fail">請選擇寄送方式</span>
           </div>
         </div>
         <div class="border-[1px] border-b-0 border-second-400">
-          <div class="subtotal px-5 py-3 bg-second-600 text-2xl leading-9 border-b-[1px] border-second-400">訂單資訊<span class="text-fail">（*為必填項目）</span></div>
+          <div class="subtotal px-5 py-3 bg-second-600 text-2xl leading-9 border-b-[1px] border-second-400">訂單資訊<span class="text-base text-fail">（*為必填項目）</span></div>
           <div class="list py-3 px-5 text-xl max-h-fit shrink-0 border-b-[1px] border-graay-400">
-            <div class="flex text-graay-100 mb-5">
-              <div class="w-[30%] 3xl:w-[20%]">寄件人資訊</div>
-              <div class="flex items-center"><input type="checkbox" name="" id="check" class="w-5 h-5 mr-2"><label for="check">同會員資訊</label></div>
+            <div class="flex text-graay-100 mb-2 md:mb-5">
+              <div class="w-[50%] md:w-[30%]">寄件人資訊</div>
+              <div class="flex items-center ml-1"><input type="checkbox" name="" id="check" class="w-5 h-5 mr-2"><label for="check">同會員資訊</label></div>
             </div>
-            <div class="flex mb-5">
-              <div class="w-[40%] md:w-[30%] 3xl:w-[20%] text-second-200">*寄件人姓名：</div>
+            <div class="md:flex mb-2 md:mb-5">
+              <div class="w-[50%] md:w-[30%] 3xl:w-[20%] text-second-200">*寄件人姓名：</div>
               <div>
                 <input type="text" name="" id="" class="purchaser py-1 px-5 text-graay-300 border-[1px] border-second-400 rounded-md" placeholder="請填寫真實姓名">
                 <span class="error hidden text-fail">請填寫寄件人姓名</span>
               </div>
             </div>
-            <div class="flex mb-5">
-              <div class="w-[40%] md:w-[30%] 3xl:w-[20%] text-second-200">*手機：</div>
+            <div class="md:flex mb-2 md:mb-5">
+              <div class="w-[50%] md:w-[30%] 3xl:w-[20%] text-second-200">*手機：</div>
               <div>
                 <input type="tel" name="" id="" class="purchaser py-1 px-5 text-graay-300 border-[1px] border-second-400 rounded-md" placeholder="手機號碼" maxlength="10">
               <span class="error hidden text-fail">請填寫寄件人手機號碼</span>
             </div>
             </div>
-            <div class="flex">
-              <div class="w-[40%] md:w-[30%] 3xl:w-[20%] text-second-200">*電子信箱：</div>
+            <div class="md:flex">
+              <div class="w-[50%] md:w-[30%] 3xl:w-[20%] text-second-200">*電子信箱：</div>
               <div>
                 <input type="text" name="" id="" class="purchaser py-1 px-5 text-graay-300 border-[1px] border-second-400 rounded-md" placeholder="聯絡信箱">
                 <span class="error hidden text-fail">請填寫寄件人聯絡信箱</span>
@@ -259,24 +263,24 @@
           </div>
           <div class="list py-3 px-5 text-xl max-h-fit shrink-0 border-b-[1px] border-graay-400">
             <div class="flex text-graay-100 mb-5">
-              <div class="w-[40%] md:w-[30%] 3xl:w-[20%]">收件人資訊</div>
+              <div class="w-[50%] md:w-[30%] 3xl:w-[20%]">收件人資訊</div>
               <div class="flex items-center"><input type="checkbox" name="" id="member" class="w-5 h-5 mr-2"><label for="member">同會員資訊</label></div>
             </div>
-            <div class="flex mb-5">
-              <div class="w-[40%] md:w-[30%] 3xl:w-[20%] text-second-200">*收件人姓名：</div>
+            <div class="md:flex mb-2 md:mb-5">
+              <div class="w-[50%] md:w-[30%] 3xl:w-[20%] text-second-200">*收件人姓名：</div>
               <div>
                 <input type="text" name="" id="reciver" class="reciver py-1 px-5 text-graay-300 border-[1px] border-second-400 rounded-md" placeholder="請填寫真實姓名">
                 <span class="error hidden text-fail">請填寫收件人地址</span>
               </div>
             </div>
-            <div class="flex mb-5">
-              <div class="w-[40%] md:w-[30%] 3xl:w-[20%] text-second-200">*手機：</div>
+            <div class="md:flex mb-2 md:mb-5">
+              <div class="w-[50%] md:w-[30%] 3xl:w-[20%] text-second-200">*手機：</div>
               <div>
                 <input type="tel" name="" id="reciverTel" class="reciver py-1 px-5 text-graay-300 border-[1px] border-second-400 rounded-md" placeholder="手機號碼" maxlength="10">
                 <span class="error hidden text-fail">請填寫收件人手機號碼</span>
               </div>
             </div>
-            <div class="flex">
+            <div class="md:flex">
               <div class="w-[40%] md:w-[30%] 3xl:w-[20%] text-second-200">*電子信箱：</div>
               <div>
                 <input type="text" name="" id="reciverMail" class="reciver py-1 px-5 text-graay-300 border-[1px] border-second-400 rounded-md" placeholder="聯絡信箱">
@@ -285,9 +289,9 @@
             </div>
           </div>
           <div class="list py-3 px-5 text-xl max-h-fit shrink-0 ">
-            <div class="flex mb-5">
-              <div class="w-[40%] md:w-[30%] 3xl:w-[20%] text-second-200">*選擇收件地區：</div>
-              <div class="flex items-center">
+            <div class="md:flex mb-5">
+              <div class="w-[50%] md:w-[30%] 3xl:w-[20%] text-second-200">*選擇收件地區：</div>
+              <div class="flex items-center mt-1 md:mt-0">
                 <!-- 這裡放收件地區的值 -->
                 <input type="text" name="" id="reciverArea" class="hidden">
                 <input class="area py-2 px-7 mr-2 border-[1px] border-graay-500 active:bg-second-600 focus:bg-second-600 rounded-full text-graay-100 text-xl" type="button" value="國內"/>
@@ -306,7 +310,7 @@
         </div>
         <div class="border-[1px] border-second-400">
           <div class="subtotal px-5 py-3 bg-second-600 text-graay-100 text-2xl leading-9 border-b-[1px] border-second-400">選擇付款方式</div>
-          <div class="list flex items-center py-3 px-5 text-base 3xl:text-xl max-h-fit shrink-0">
+          <div class="list md:flex items-center py-3 px-5 text-base 3xl:text-xl max-h-fit shrink-0">
             <div class="w-[40%] md:w-[30%] 3xl:w-[20%] text-xl text-second-200">*付款方式</div>
             <!-- 這裡放付款方式的值 -->
             <input type="text" name="" id="payment" class="hidden">
