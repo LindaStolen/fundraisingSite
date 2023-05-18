@@ -9,6 +9,19 @@ $(function(){
         $(".background").addClass('hidden')
         $('body').css('overflow-y','scroll')
     })
+    // 判斷視窗大小選單收合
+    $(window).resize(function(){
+        if($(window).innerWidth() > 1024){
+            $('.menu').addClass('-ml-[70%]')
+            $(".background").addClass('hidden')
+            $('body').css('overflow-y','scroll')
+        }
+        if($(window).innerWidth() < 1024){
+            $('.subMenu > div').addClass('hidden')
+            $(".background").addClass('hidden')
+            $('body').css('overflow-y','scroll')
+        }
+    })
     $(".about").on('click', function(){
         console.log('這是關於')        
         let device = $(window).innerWidth()
@@ -54,6 +67,21 @@ $(function(){
             }
         }
     })
+    // header右邊選單點擊功能樣式
+    $('.function nav a').on('click',function(){
+        let active = $(this).hasClass('active')
+        if(!active){
+            $(this).addClass('active').siblings('a').removeClass('active')
+        }
+    })
+    // header左邊選單點擊功能樣式
+    $('.menuBox a').on('click',function(){
+        let active = $(this).hasClass('active')
+        if(!active){
+            $(this).addClass('active').siblings('a').removeClass('active')
+        }
+    })
+
     $('.course').on("click", function(){
         $('.subMenu > div').addClass('hidden')
     })

@@ -1,4 +1,5 @@
 $(function(){
+  // 商品篩選區塊功能
   $('.toggle').on('click',function(){
     let close = $(this).hasClass('close')
     console.log(close)
@@ -10,13 +11,13 @@ $(function(){
       $('.sidebarSelect').animate({left: -256})
     }
   })
-
+  // product_content tab切換功能
   $('nav.tab span').on('click', function(){
     let num = $(this).index()
     $(this).addClass('active').siblings().removeClass('active')
     $('.content').eq(num).removeClass('hidden').siblings('.content').addClass('hidden')
   })
-
+  // product_content 加碼功能
   $('.amount span').on('click',function(){
     $(this).removeClass('items').siblings('span').addClass('items')
     $(this).addClass('border-primary-300 bg-primary-400 text-graay-600 ').siblings('span').removeClass('border-primary-300 bg-primary-400 text-graay-600')
@@ -26,7 +27,7 @@ $(function(){
       $('.amount').next('input').addClass('hidden').val('')
     }
   })
-
+  // 點擊結帳判斷是否選擇規格
   $('.addCart').on('click',function(){
     if($('.specification').val() == 0 || ''){
       $('.alert').removeClass('hidden').find('.textBox span').eq(0).empty().text('error')
@@ -43,7 +44,7 @@ $(function(){
     $('body').css('overflow','scroll')
   })
 
-  //購物車列表勾選
+  //購物車列表勾選＿全選
   $('#checkAll').on('click',function(){
     for(let p = 0; p < $("input[type='checkbox']").length; p++){
       if($(this).prop('checked')){
@@ -53,6 +54,7 @@ $(function(){
       }
     }
   })
+  // 購物車商家是否全選
   $('[id^="shop"]').on('click',function(){
     let shop = $(this).attr('id')
     if($('#checkAll').prop('checked') && $('[id^="shop"]:checked').length !== $('[id^="shop"]').length){
@@ -68,6 +70,7 @@ $(function(){
       }
     }
   })
+  // 購物車商品是否全選
   $('.itemCheck').on('click',function(){
     let shop = $(this).attr('name')
     console.log('店家',shop)
@@ -86,20 +89,25 @@ $(function(){
     }
   })
 
-  //購物車資訊表錯誤訊息提醒
+  // 商品運送方式選擇與點擊樣式功能
   $('input.deliver').on('click',function(){
     console.log($(this).val())
     $('#deliver').attr("value", $(this).val())
+    $(this).addClass('pick').siblings('.deliver').removeClass('pick')
   })
+  // 運送地區選擇與點擊樣式功能
   $('input.area').on('click',function(){
     console.log($(this).val())
     $('#reciverArea').attr("value", $(this).val())
+    $(this).addClass('pick').siblings('.area').removeClass('pick')
   })
+  // 結帳方式選擇
   $('input.payment').on('click',function(){
     console.log($(this).val())
     $('#payment').attr("value", $(this).val())
   })
 
+  //購物車資訊表錯誤訊息提醒
   $('button.checkOut').on('click',function(e){
     e.preventDefault()
     if($('#deliver').val() == ''){
