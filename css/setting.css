@@ -5,10 +5,22 @@
     p {
         @apply leading-10
     }
+    .function nav .myCourse.active {
+        @apply border-[1px] border-primary-100 bg-primary-600 text-primary-200 rounded-md
+    }
+    .function nav .notifications.active, .function nav .cart.active {
+        @apply text-second-200
+    }
+    .menuBox a.active {
+        @apply text-primary-200
+    }
+    .subMenu nav > a.active {
+        @apply border-b border-primary-300
+    }
     .on {
         @apply bg-primary-100 3xl:focus:shadow-md 3xl:focus:shadow-graay-200 focus:bg-primary-100
     }
-    .product.active {
+    .tab span.product.active {
         @apply  bg-primary-300 text-graay-600
     }
     .permanent.active {
@@ -28,6 +40,9 @@
     }
     .material-symbols-outlined.text-24 {
         @apply text-2xl
+    }
+    input[type='button'].deliver.pick, input[type='button'].area.pick {
+        @apply bg-second-600 
     }
     input[type='checkbox'] {
         @apply w-5 h-5 mr-1 3xl:mr-7 rounded-md
