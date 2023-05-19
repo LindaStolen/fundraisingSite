@@ -20,8 +20,8 @@
 </head>
 <body>
   <!-- 行動選單 -->
-  <div class="background hidden w-full h-screen bg-graay-200 opacity-30 absolute z-10"></div>
-  <nav class="menu w-[70%] h-screen -ml-[70%] absolute pl-12 py-10 bg-graay-600 z-20 text-graay-100 overflow-y-auto sm:flex flex-col justify-between lg:hidden">
+  <div class="background hidden w-full h-screen bg-graay-200 opacity-30 fixed top-0 z-50"></div>
+  <nav class="fixed menu top-0 w-[70%] -ml-[70%] h-screen pl-12 py-10 bg-graay-600 z-50 text-graay-100 overflow-y-auto sm:flex flex-col justify-between lg:hidden">
     <button class="menuClose absolute top-5 right-6 text-2xl"><i class="fa-solid fa-square-xmark"></i></button>
     <div class="mb-5">
       <div class="mb-5">
@@ -58,7 +58,7 @@
       </a>
       <a href="javascript:void(0)" class="flex items-center mb-5 hover:text-primary-200">
         <span class="material-symbols-outlined mr-1">
-          person
+          menu_book
         </span>
         我的課程
       </a>
@@ -81,7 +81,7 @@
     </div>
   </nav>
   <!-- 桌機選單 -->
-  <header class="shadow-sm shadow-graay-400">
+  <header class="fixed w-full top-0 bg-graay-600 shadow-sm shadow-graay-400 z-20">
     <!-- <div class="w-[90%] h-[80px] m-auto flex items-center text-[18px] xl:text-xl justify-between shadow-gray-300"> -->
     <div class="h-20 lg:h-[105px] 2xl:h-[120px] flex items-center text-[18px] xl:text-xl justify-between shadow-gray-300">
     <div class="ml-5 lg:ml-7 2xl:ml-10 inline-block">
@@ -105,18 +105,21 @@
     <div class="mr-5 inline-block">
       <div class="function text-graay-100">
         <nav class=" sm:hidden lg:flex">
-          <a href="javascript:void(0)" class="flex items-center mr-5 hover:text-second-300">
+          <a href="javascript:void(0)" class="notifications flex items-center mr-5 hover:text-second-300">
             <span class="inline-block material-symbols-outlined">
               notifications
             </span>
           </a>
-          <a href="javascript:void(0)" class="flex items-center mr-5 hover:text-second-300">
+          <a href="javascript:void(0)" class="cart flex items-center mr-5 hover:text-second-300">
             <span class="inline-block material-symbols-outlined">
               shopping_cart
             </span>
           </a>
-          <a href="javascript:void(0)" class="flex items-center mr-5 hover:text-primary-200">
-            <i class="fa-solid fa-user block mr-1"></i> 我的課程
+          <a href="javascript:void(0)" class="myCourse flex px-2 py-1.5 items-center mr-5 hover:text-primary-200">
+            <span class="material-symbols-outlined mr-1">
+              menu_book
+            </span>
+            我的課程
           </a>
           <a href="#" class="flex items-center px-2 py-1.5 mr-5 rounded-md border border-primary-200 text-primary-200">
             <span class="inline-block material-symbols-outlined mr-1">
@@ -138,23 +141,24 @@
     </div>
     </div>
   </header>
-  <div class="subMenu mb-10 text-base xl:text-xl">
+
+  <div class="subMenu fixed w-full top-[102px] 2xl:top-[118px] mt-1 bg-graay-600 text-base xl:text-xl z-20">
     <div class="hidden about-Sub shadow-sm shadow-graay-400">
       <nav class="lg:w-[62%] xl:w-[72%] py-6 m-auto text-graay-100">
-        <a href="about.html" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">關於我們</a>
-        <a href="news.html" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">最新消息</a>
-        <a href="howToUse.html" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">網站使用介紹</a>
-        <a href="contact.html" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">聯絡我們</a>
+        <a href="about.html" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">關於我們</a>
+        <a href="news.html" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">最新消息</a>
+        <a href="howToUse.html" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">網站使用介紹</a>
+        <a href="contact.html" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">聯絡我們</a>
       </nav>
     </div>
-    <div class="hidden product-Sub shadow-sm shadow-graay-400">
-      <div class="lg:w-[62%] xl:w-[72%] py-6 m-auto flex justify-between items-center">
+    <div class="hidden product-Sub pt-6 shadow-sm shadow-graay-400">
+      <div class="lg:w-[62%] xl:w-[72%] pb-6 m-auto flex justify-between items-center">
         <nav class="text-graay-100">
-          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 "><i class="fa-solid fa-filter mr-1"></i>篩選</a>
-          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">全部</a>
-          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">募資</a>
-          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">預購</a>
-          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">長期</a>
+          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300"><i class="fa-solid fa-filter mr-1"></i>篩選</a>
+          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">全部</a>
+          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">募資</a>
+          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">預購</a>
+          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">長期</a>
         </nav>
         <div class="searchBar lg:w-[28%] xl:w-[25%] h-[40px] flex lg:px-2 xl:px-5 border border-graay-500 rounded-md">
           <div class="text-graay-100 mr-2 flex justify-center items-center"><i class="fa-solid fa-magnifying-glass"></i></div>
@@ -163,7 +167,7 @@
       </div>
     </div>
   </div>
-	<div class="mainContainer max-w-[1200px] w-[90%] md:w-[75%] min-h-[50%] m-auto mb-24">
+	<div class="mainContainer max-w-[1200px] w-[90%] md:w-[75%] min-h-[450px] m-auto mb-24 mt-24 md:mt-32 xl:mt-40">
 		<!-- 設定密碼框框 -->
     <div class="loginBox">
       <div class="message md:w-[60%] xl:w-[43%] m-auto py-3 bg-second-500 text-center text-2xl font-bold text-second-100 rounded-tr-md rounded-tl-md">忘記密碼</div>
