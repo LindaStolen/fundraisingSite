@@ -6,6 +6,7 @@ $(function(){
     })
     $('.menuClose').on('click', function(){
         $(this).parent().addClass('-ml-[70%]')
+        $('.menu nav').addClass('hidden')
         $(".background").addClass('hidden')
         $('body').css('overflow-y','scroll')
     })
@@ -13,6 +14,7 @@ $(function(){
     $(window).resize(function(){
         if($(window).innerWidth() > 1024){
             $('.menu').addClass('-ml-[70%]')
+            $('.menu nav').addClass('hidden')
             $(".background").addClass('hidden')
             $('body').css('overflow-y','scroll')
         }
@@ -74,6 +76,11 @@ $(function(){
             $(this).addClass('active').siblings('a').removeClass('active')
         }
     })
+    $('.subMenu nav > a').on('click',function(){
+        $('.subMenu nav > a').removeClass('active')
+        $(this).addClass('active')
+    })
+
     // header左邊選單點擊功能樣式
     $('.menuBox a').on('click',function(){
         let active = $(this).hasClass('active')

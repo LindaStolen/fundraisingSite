@@ -4,10 +4,10 @@ $(function(){
     let close = $(this).hasClass('close')
     console.log(close)
     if(close){
-      $(this).removeClass('close')
+      $(this).removeClass('close').addClass('select')
       $('.sidebarSelect').animate({left: 15})
     }else {
-      $(this).addClass('close')
+      $(this).addClass('close').removeClass('select')
       $('.sidebarSelect').animate({left: -256})
     }
   })

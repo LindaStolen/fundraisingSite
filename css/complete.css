@@ -451,6 +451,8 @@ p {
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(133 121 185 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(133 121 185 / var(--tw-text-opacity));
 }
 
 .\!on {
@@ -498,6 +500,13 @@ p {
   background-color: rgb(133 121 185 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.toggle.select {
+  --tw-bg-opacity: 1;
+  background-color: rgb(194 188 220 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(82 70 134 / var(--tw-text-opacity));
 }
 
 .permanent.active {
@@ -2603,17 +2612,8 @@ td.field {
   color: rgb(0 206 209 / var(--tw-text-opacity));
 }
 
-.focus\:border-b:focus {
-  border-bottom-width: 1px;
-}
-
 .focus\:border-b-2:focus {
   border-bottom-width: 2px;
-}
-
-.focus\:border-primary-300:focus {
-  --tw-border-opacity: 1;
-  border-color: rgb(133 121 185 / var(--tw-border-opacity));
 }
 
 .focus\:bg-primary-100:focus {
@@ -2763,6 +2763,10 @@ td.field {
     margin-left: 0px;
   }
 
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
   .md\:mt-1 {
     margin-top: 0.25rem;
   }
@@ -2789,10 +2793,6 @@ td.field {
 
   .md\:mt-\[13\%\] {
     margin-top: 13%;
-  }
-
-  .md\:mt-0 {
-    margin-top: 0px;
   }
 
   .md\:block {
