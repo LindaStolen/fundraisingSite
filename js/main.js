@@ -12,16 +12,16 @@ $(function(){
     })
     // 判斷視窗大小選單收合
     $(window).resize(function(){
-        if($(window).innerWidth() > 1024){
+        if($(window).innerWidth() > 1023 && !$('.menu').hasClass('-ml-[70%]')){
             $('.menu').addClass('-ml-[70%]')
             $('.menu nav').addClass('hidden')
             $(".background").addClass('hidden')
             $('body').css('overflow-y','scroll')
         }
-        if($(window).innerWidth() < 1024){
+        if($(window).innerWidth() < 1024 || !$('.menu').hasClass('-ml-[70%]')){
             $('.subMenu > div').addClass('hidden')
-            $(".background").addClass('hidden')
-            $('body').css('overflow-y','scroll')
+            // $(".background").addClass('hidden')
+            // $('body').css('overflow-y','scroll')
         }
     })
     $(".about").on('click', function(){

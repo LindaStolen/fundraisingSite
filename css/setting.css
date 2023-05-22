@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 @layer base {
+    img, video {
+        width: -webkit-fill-available;
+    }
     p {
         @apply leading-10
     }
@@ -138,5 +141,8 @@
     }
     .infoBox>button.pick {
         @apply bg-second-300 text-graay-600
+    }
+    .courseBox button.active {
+        @apply bg-second-300 text-graay-600 
     }
 }

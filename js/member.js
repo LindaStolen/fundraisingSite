@@ -83,6 +83,10 @@ $(function(){
         $(this).addClass('pick').siblings('button').removeClass('pick')
       }
     })
+  // 課程講義下載點擊樣式
+    $('.courseBox button').on('click',function(){
+      $(this).addClass('active').siblings('button').removeClass('active')
+    })
 
   // 判斷訂單是否捲動
   if($(window).innerWidth() < 960){
