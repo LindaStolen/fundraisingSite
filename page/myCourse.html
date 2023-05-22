@@ -63,17 +63,40 @@
         </span>
         我的課程
       </a>
-      <a href="javascript:void(0)" class="flex items-center mb-8 hover:text-primary-200 active:text-second-300">
+      <a href="javascript:void(0)" class="flex items-center mb-5 hover:text-primary-200 active:text-second-300">
         <span class="material-symbols-outlined mr-1">
           shopping_cart
         </span>
         購物車
       </a>
-      <select name="" id="" class=" px-2 py-1 rounded-md border border-stone-700">
+      <select name="" id="" class=" px-2 py-1 mb-5 rounded-md border border-stone-700">
         <option value="">選擇語言</option>
         <option value="中文">中文</option>
         <option value="英文">英文</option>
       </select>
+      <a href="javascript:;" class="flex items-center mb-5 hover:text-second-200 focus:text-second-200">
+        <span class="material-symbols-outlined m-0 2xl:mr-6">
+          person
+        </span>
+        <span>會員資訊</span>
+      </a>
+      <nav class="pl-2 hidden text-graay-200 ">
+        <a href="#" class="block pt-3 hover:text-primary-300 ">會員資料</a>
+        <a href="#" class="block pt-3 hover:text-primary-300 ">點數/優惠卷</a>
+        <a href="#" class="block pt-3 hover:text-primary-300 ">修改密碼</a>
+      </nav>
+      <a href="javascript:;" class="flex items-center mb-5 hover:text-second-200 focus:text-second-200">
+        <span class="material-symbols-outlined m-0 2xl:mr-6">
+          shopping_cart
+        </span>
+        <span>我的訂單</span>
+      </a>
+      <a href="javascript:;" class="flex items-center mb-5 hover:text-second-200 focus:text-second-200">
+        <span class="material-symbols-outlined m-0 2xl:mr-6">
+          favorite
+        </span>
+        <span>追蹤清單</span>
+      </a>
     </div>
     <div>
       <a href="#" class="inline-block px-2 py-1.5 mr-8 rounded-md border border-primary-200 text-primary-200">
@@ -163,7 +186,7 @@
   </nav>
   
   <!-- 桌機選單 -->
-  <header class="fixed w-full top-0 bg-graay-600 shadow-sm shadow-graay-400 z-10">
+  <header class="fixed w-full top-0 bg-graay-600 shadow-sm shadow-graay-400 z-20">
     <!-- <div class="w-[90%] h-[80px] m-auto flex items-center text-[18px] xl:text-xl justify-between shadow-gray-300"> -->
     <div class="h-20 lg:h-[105px] 2xl:h-[120px] flex items-center text-[18px] xl:text-xl justify-between shadow-gray-300">
     <div class="ml-5 lg:ml-7 2xl:ml-10 inline-block">
@@ -187,17 +210,17 @@
     <div class="mr-5 inline-block">
       <div class="function text-graay-100">
         <nav class=" sm:hidden lg:flex">
-          <a href="javascript:void(0)" class="flex items-center mr-5 hover:text-second-300">
+          <a href="javascript:void(0)" class="notifications flex items-center mr-5 hover:text-second-300">
             <span class="inline-block material-symbols-outlined">
               notifications
             </span>
           </a>
-          <a href="javascript:void(0)" class="flex items-center mr-5 hover:text-second-300">
+          <a href="javascript:void(0)" class="cart flex items-center mr-5 hover:text-second-300">
             <span class="inline-block material-symbols-outlined">
               shopping_cart
             </span>
           </a>
-          <a href="javascript:void(0)" class="flex items-center mr-5 hover:text-primary-200">
+          <a href="javascript:void(0)" class="myCourse flex px-2 py-1.5 items-center mr-5 hover:text-primary-200">
             <span class="material-symbols-outlined mr-1">
               menu_book
             </span>
@@ -224,23 +247,23 @@
     </div>
   </header>
   
-  <div class="subMenu fixed w-full top-[100px] 2xl:top-[116px] mt-1 bg-graay-600 text-base xl:text-xl">
+  <div class="subMenu fixed w-full top-[102px] 2xl:top-[118px] mt-[2.5px] bg-graay-600 text-base xl:text-xl z-20">
     <div class="hidden about-Sub shadow-sm shadow-graay-400">
       <nav class="lg:w-[62%] xl:w-[72%] py-6 m-auto text-graay-100">
-        <a href="about.html" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">關於我們</a>
-        <a href="news.html" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">最新消息</a>
-        <a href="howToUse.html" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">網站使用介紹</a>
-        <a href="contact.html" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">聯絡我們</a>
+        <a href="about.html" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">關於我們</a>
+        <a href="news.html" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">最新消息</a>
+        <a href="howToUse.html" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">網站使用介紹</a>
+        <a href="contact.html" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">聯絡我們</a>
       </nav>
     </div>
-    <div class="hidden product-Sub pt-6 shadow-sm shadow-graay-400">
-      <div class="lg:w-[62%] xl:w-[72%] pb-6 m-auto flex justify-between items-center">
+    <div class="hidden product-Sub shadow-sm shadow-graay-400">
+      <div class="lg:w-[62%] xl:w-[72%] py-4 xl:py-6 m-auto flex justify-between items-center">
         <nav class="text-graay-100">
-          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 "><i class="fa-solid fa-filter mr-1"></i>篩選</a>
-          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">全部</a>
-          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">募資</a>
-          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">預購</a>
-          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300 focus:border-b focus:border-primary-300 ">長期</a>
+          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300"><i class="fa-solid fa-filter mr-1"></i>篩選</a>
+          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">全部</a>
+          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">募資</a>
+          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">預購</a>
+          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">長期</a>
         </nav>
         <div class="searchBar lg:w-[28%] xl:w-[25%] h-[40px] flex lg:px-2 xl:px-5 border border-graay-500 rounded-md">
           <div class="text-graay-100 mr-2 flex justify-center items-center"><i class="fa-solid fa-magnifying-glass"></i></div>
@@ -251,7 +274,7 @@
   </div>
   <!-- <div class="lg:flex"> -->
     <div class="mainContainer w-[86%] 2xl:w-[82%] m-auto mt-[24%] md:mt-[13%] mb-[2%] xl:mt-[10%] ml-[8%] 2xl:ml-[15%] 3xl:ml-[13%]">
-      <div class="lg:ml-[5%] lg:mr-10 3xl:mr-14 px-2 md:px-8 py-4 3xl:px-[64px] 3xl:py-8 border-[1px] border-graay-500">
+      <div class="lg:h-[80vh] lg:mx-10 3xl:mx-[60px] px-2 md:px-8 py-4 3xl:px-[64px] 3xl:py-8 border-[1px] border-graay-500 overflow-y-scrollborder-graay-500 overflow-y-scrollborder-graay-500 overflow-y-scrollborder-graay-500 overflow-y-scrollborder-graay-500 overflow-y-scrollborder-graay-500 overflow-y-scroll">
         <div class="pb-5 mb-7 text-xl lg:text-2xl border-b-[1px] border-graay-400">我的課程</div>
         <div class="courseCategory mb-5 bg-second-600 flex">
           <button class="active px-4 py-2 mm:px-10 mm:py-4 hover:bg-second-400 focus:bg-second-400">所有課程</button>
