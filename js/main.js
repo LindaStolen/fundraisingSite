@@ -12,16 +12,15 @@ $(function(){
     })
     // 判斷視窗大小選單收合
     $(window).resize(function(){
-        if($(window).innerWidth() > 1023 && !$('.menu').hasClass('-ml-[70%]')){
+        let mobileMenu = $('.menu').hasClass('-ml-[70%]')
+        if($(window).innerWidth() > 1023 && !mobileMenu){
             $('.menu').addClass('-ml-[70%]')
             $('.menu nav').addClass('hidden')
             $(".background").addClass('hidden')
             $('body').css('overflow-y','scroll')
         }
-        if($(window).innerWidth() < 1024 || !$('.menu').hasClass('-ml-[70%]')){
-            $('.subMenu > div').addClass('hidden')
-            // $(".background").addClass('hidden')
-            // $('body').css('overflow-y','scroll')
+        if($(window).innerWidth() < 1024){
+            $('.subMenu > div').addClass('hidden').children('a').removeClass('active')
         }
     })
     $(".about").on('click', function(){
@@ -32,16 +31,17 @@ $(function(){
             let close = $('.about-Sub').hasClass('hidden')
             if(close){
                 console.log(close)
-                $('.subMenu > div').addClass('hidden')
+                $('.subMenu > div').addClass('hidden').children('a').removeClass('active')
                 $('.about-Sub').removeClass('hidden')
             }else{
                 $('.about-Sub').addClass('hidden')
             }
         }else{
+            $('.subMenu nav > a').removeClass('active')
             let close = $(this).next('nav').hasClass('hidden')
             if(close){
                 $('.menu nav').addClass('hidden')
-                $(this).next('nav').removeClass('hidden')
+                $(this).next('nav').removeClass('hidden').children('a').addClass('active').siblings('a').removeClass('active')
             }else{
                 $(this).next('nav').addClass('hidden')
             }            
@@ -54,16 +54,17 @@ $(function(){
         if(device >768){
             let close = $('.product-Sub').hasClass('hidden')
             if(close){
-                $('.subMenu > div').addClass('hidden')
+                $('.subMenu > div').addClass('hidden').children('a').removeClass('active')
                 $('.product-Sub').removeClass('hidden')
             }else{
                 $('.product-Sub').addClass('hidden')
             }
         }else{
+            $('.subMenu nav > a').removeClass('active')
             let close = $(this).next('nav').hasClass('hidden')
             if(close){
                 $('.menu nav').addClass('hidden')
-                $(this).next('nav').removeClass('hidden')
+                $(this).next('nav').removeClass('hidden').children('a').addClass('active').siblings('a').removeClass('active')
             }else{
                 $(this).next('nav').addClass('hidden')
             }
@@ -87,6 +88,11 @@ $(function(){
         if(!active){
             $(this).addClass('active').siblings('a').removeClass('active')
         }
+    })
+    // 手機版選單點擊樣式
+    $('.menu div > a').on('click', function(){
+        $('.menu div > a').removeClass('active')
+        $(this).addClass('active')
     })
 
     $('.course').on("click", function(){

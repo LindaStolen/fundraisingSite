@@ -100,7 +100,8 @@
     </div>
     <div>
       <a href="#" class="inline-block px-2 py-1.5 mr-8 rounded-md border border-primary-200 text-primary-200">
-        <i class="lar la-user text-2xl"></i>登入/註冊
+        <i class="lar la-user text-2xl"></i>
+        <span class="loginStatus">王小明</span>
       </a>
     </div>
   </nav>
@@ -111,9 +112,12 @@
       <div class=" w-[51px] h-[51px] mt-[5px] 2xl:w-[121px] 2xl:h-[121px] mx-auto 2xl:mt-[6.5px] border-[2px] border-graay-600 rounded-full inline-flex justify-center items-center">
       </div>
       <div class="relative hidden 2xl:block text-right cursor-pointer">
-        <span class="absolute top-[-26px] -right-2 text-graay-600 material-symbols-outlined">
-          edit
-        </span>
+        <label for="avator">
+          <input type="file" name="" id="avator" class="hidden">
+          <span class="absolute top-[-26px] -right-2 text-graay-600 material-symbols-outlined cursor-pointer">
+            edit
+          </span>
+        </label>
       </div>
     </div>
     <div class="memberMenu bg-second-400 w-full">
@@ -231,7 +235,7 @@
             <span class="inline-block material-symbols-outlined mr-1">
               person
             </span>
-            登入/註冊
+            <span class="loginStatus">王小明</span>
           </a>
           <select name="" id="" class=" px-2 py-1 rounded-md border border-stone-700">
             <option value="">選擇語言</option>
@@ -297,7 +301,7 @@
                   <div class="w-[75px] md:w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>生日</div>
                   <div class="w-full xl:flex items-center justify-between py-4 px-5 text-graay-100">
                     <input type="date" name="" id="" class="bg-graay-500" disabled="disabled">
-                    <span class="block xl:inline-block text-fail mr-1">請選擇生日</span>
+                    <span class="block md:inline-block text-fail mr-1">請選擇生日</span>
                   </div>
                 </li>
                 <li class="flex border-b-[1px] border-graay-400">
@@ -311,7 +315,7 @@
                 <li class="flex border-b-[1px] border-graay-400">
                   <div class="w-[75px] md:w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>職業</div>
                   <div class="w-full py-4 px-5 text-graay-100">
-                    <select name="" id="" class="w-[50%] 3xl:w-[25%] px-4">
+                    <select name="" id="" class="w-[70%] 3xl:w-[25%] px-4" disabled="disabled">
                       <option value="0">請選擇職業</option>
                       <option value="0">老師</option>
                       <option value="0">服務業</option>
@@ -352,7 +356,7 @@
               </div>
               <div class="w-full border-[0.5px] border-second-300 rounded-bl-md rounded-br-md">
                 <li class="block lg:flex border-b-[1px] border-graay-400">
-                  <div class="w-full lg:w-[50%] flex lg:border-l-0 border-graay-400">
+                  <div class="w-full lg:w-[50%] flex border-b-[1px] lg:border-b-0 border-graay-400">
                     <div class="w-[75px] md:w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4">電話</div>
                     <div class="w-[75%] md:w-[60%] 3xl:w-[80%] flex items-center justify-between py-4 px-5 text-graay-100">
                       <input type="tel" name="" id="telephone" class="lg:w-full xl:w-[60%] px-2 border-b-[1px] border-graay-100" maxlength="10" disabled="disabled">
@@ -374,9 +378,9 @@
                 <li class="flex border-b-[1px] border-graay-400">
                   <div class="w-[75px] md:w-[150px] text-center text-second-100 border-r-[1px] border-graay-400 py-4"><span class="text-fail mr-1">*</span>居住地</div>
                   <div class="w-[75%] md:w-[60%] py-4 px-5 text-graay-100">
-                    <input type="button" name="" id="" value="國內" class="py-1 px-4 mr-2 tracking-[2px] border-[1px] border-graay-500 rounded-full cursor-pointer">
-                    <input type="button" name="" id="" value="離島" class="py-1 px-4 mr-2 tracking-[2px] border-[1px] border-graay-500 rounded-full cursor-pointer">
-                    <input type="button" name="" id="" value="國外" class="py-1 px-4 mr-2 tracking-[2px] border-[1px] border-graay-500 rounded-full cursor-pointer">
+                    <input type="button" name="" id="" value="國內" class="area py-1 px-3 mr-1 lg:mr-2 tracking-[2px] border-[1px] border-graay-500 rounded-full cursor-pointer" disabled="disabled">
+                    <input type="button" name="" id="" value="離島" class="area py-1 px-3 mr-1 lg:mr-2 tracking-[2px] border-[1px] border-graay-500 rounded-full cursor-pointer" disabled="disabled">
+                    <input type="button" name="" id="" value="國外" class="area py-1 px-3 mr-1 lg:mr-2 tracking-[2px] border-[1px] border-graay-500 rounded-full cursor-pointer" disabled="disabled">
                   </div>
                 </li>
                 <li class="flex border-b-[1px] border-graay-400">

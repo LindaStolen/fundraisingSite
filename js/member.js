@@ -8,7 +8,7 @@ $(function(){
       $(this).next('div').removeClass('hidden')
     }else if(!active && !subMenu){
       $(this).addClass('active').siblings('li').removeClass('active')
-      $('li.info').next('div').addClass('hidden')
+      $('li.info').next('div').addClass('hidden').children('a').removeClass('active')
     }else if(active && subMenu){
       $(this).removeClass('active').siblings('li').removeClass('active')
       $(this).next('div').addClass('hidden').children('a').removeClass('active')
@@ -32,7 +32,8 @@ $(function(){
   })
   $('.edit button').on('click',function(){
     $(this).parent().addClass('hidden').next('.buttons').removeClass('hidden')
-    $('.mainContainer form input').attr('disabled',false)
+    $('.mainContainer form input, .mainContianer form input.area').attr('disabled',false)
+    $('.mainContainer form select').attr('disabled',false)
   })
 
   $('.buttons button').on('click',function(){
@@ -42,10 +43,11 @@ $(function(){
       // send form out
       alert('已儲存！')
     }
-    $('.mainContainer form input').attr('disabled',true)
+    $('.mainContainer form input, .mainContianer form input.area').attr('disabled',true)
+    $('.mainContainer form select').attr('disabled',true)
     return false
   })
-  // console.log($('form input:button'))
+  console.log($('form input:button'))
   $('form input:button').on('click',function(){
     console.log($(this).hasClass('pick'))
     console.log($(this).val())

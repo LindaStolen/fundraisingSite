@@ -20,6 +20,12 @@
     .subMenu nav > a.active {
         @apply border-b border-primary-300 text-primary-300
     }
+    .menu div > a.active {
+        @apply text-primary-200
+    }
+    .menu nav > a.active {
+        @apply text-primary-300
+    }
     .on {
         @apply bg-primary-100 3xl:focus:shadow-md 3xl:focus:shadow-graay-200 focus:bg-primary-100
     }
@@ -117,7 +123,7 @@
             min-width: 120px;
         }
     /* } */
-    form input[type='button'].pick {
+    form input.area.pick {
         @apply bg-second-500 border-none 
         /* background-color: #000 !important; */
     }

@@ -100,7 +100,8 @@
     </div>
     <div>
       <a href="#" class="inline-block px-2 py-1.5 mr-8 rounded-md border border-primary-200 text-primary-200">
-        <i class="lar la-user text-2xl"></i>登入/註冊
+        <i class="lar la-user text-2xl"></i>
+        <span class="loginStatus">王小明</span>
       </a>
     </div>
   </nav>
@@ -111,9 +112,12 @@
       <div class=" w-[51px] h-[51px] mt-[5px] 2xl:w-[121px] 2xl:h-[121px] mx-auto 2xl:mt-[6.5px] border-[2px] border-graay-600 rounded-full inline-flex justify-center items-center">
       </div>
       <div class="relative hidden 2xl:block text-right cursor-pointer">
-        <span class="absolute top-[-26px] -right-2 text-graay-600 material-symbols-outlined">
-          edit
-        </span>
+        <label for="avator">
+          <input type="file" name="" id="avator" class="hidden">
+          <span class="absolute top-[-26px] -right-2 text-graay-600 material-symbols-outlined cursor-pointer">
+            edit
+          </span>
+        </label>
       </div>
     </div>
     <div class="memberMenu bg-second-400 w-full">
@@ -231,7 +235,7 @@
             <span class="inline-block material-symbols-outlined mr-1">
               person
             </span>
-            登入/註冊
+            <span class="loginStatus">王小明</span> <!--登入後顯示會員名稱，點擊進會員專區-->
           </a>
           <select name="" id="" class=" px-2 py-1 rounded-md border border-stone-700">
             <option value="">選擇語言</option>
