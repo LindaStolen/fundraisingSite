@@ -41,11 +41,11 @@
           探索商品
         </a>      
         <nav class="pl-2 hidden text-graay-200 ">
-          <a href="#" class="block pt-3 hover:text-primary-300 "><i class="fa-solid fa-filter mr-1"></i>篩選</a>
-          <a href="#" class="block pt-3 hover:text-primary-300 ">全部</a>
-          <a href="#" class="block pt-3 hover:text-primary-300 ">募資</a>
-          <a href="#" class="block pt-3 hover:text-primary-300 ">預購</a>
-          <a href="#" class="block pt-3 hover:text-primary-300 ">長期</a>
+          <a href="javascript:;" class="block pt-3 hover:text-primary-300 "><i class="fa-solid fa-filter mr-1"></i>篩選</a>
+          <a href="javascript:;" class="block pt-3 hover:text-primary-300 ">全部</a>
+          <a href="javascript:;" class="block pt-3 hover:text-primary-300 ">募資</a>
+          <a href="javascript:;" class="block pt-3 hover:text-primary-300 ">預購</a>
+          <a href="javascript:;" class="block pt-3 hover:text-primary-300 ">長期</a>
         </nav>
       </div>
       <a href="javascript:void(0)" class="block mb-5 hover:text-primary-200">
@@ -81,9 +81,9 @@
         <span>會員資訊</span>
       </a>
       <nav class="pl-2 hidden text-graay-200 ">
-        <a href="#" class="block pt-3 hover:text-primary-300 ">會員資料</a>
-        <a href="#" class="block pt-3 hover:text-primary-300 ">點數/優惠卷</a>
-        <a href="#" class="block pt-3 hover:text-primary-300 ">修改密碼</a>
+        <a href="javascript:;" class="block pt-3 hover:text-primary-300 ">會員資料</a>
+        <a href="javascript:;" class="block pt-3 hover:text-primary-300 ">點數/優惠卷</a>
+        <a href="javascript:;" class="block pt-3 hover:text-primary-300 ">修改密碼</a>
       </nav>
       <a href="javascript:;" class="flex items-center mb-5 hover:text-second-200 focus:text-second-200">
         <span class="material-symbols-outlined m-0 2xl:mr-6">
@@ -99,95 +99,101 @@
       </a>
     </div>
     <div>
-      <a href="#" class="inline-block px-2 py-1.5 mr-8 rounded-md border border-primary-200 text-primary-200">
+      <a href="javascript:;" class="inline-flex items-center px-2 py-1.5 mr-8 rounded-md border border-primary-200 text-primary-200">
         <i class="lar la-user text-2xl"></i>
         <span class="loginStatus">王曉明</span>
       </a>
     </div>
   </nav>
-    <!-- 會員側邊選單 -->
-    <nav class="sideMenu hidden fixed top-[5.5rem] min-h-[89vh] lg:block w-[100px] 2xl:w-[240px] pt-[125px] 2xl:pt-[86px] bg-second-400">
-      <div class="avator w-[57px] h-[57px] m-auto 2xl:w-[125px] 2xl:h-[125px] text-center rounded-full ">
-        <div class=" w-[51px] h-[51px] mt-[5px] 2xl:w-[121px] 2xl:h-[121px] mx-auto 2xl:mt-[6.5px] border-[2px] border-graay-600 rounded-full inline-flex justify-center items-center">
-        </div>
-        <div class="relative hidden 2xl:block text-right cursor-pointer">
-          <label for="avator">
-            <input type="file" name="" id="avator" class="hidden">
-            <span class="absolute top-[-26px] -right-2 text-graay-600 material-symbols-outlined cursor-pointer">
-              edit
+  <!-- 手機版搜尋 -->
+  <div class="searchBox hidden absolute w-[75%] h-14 justify-center items-center top-[25%] left-[50%] -translate-x-[50%] z-50 bg-bgc rounded-md shadow-lg">
+    <button class="searchClose absolute -top-2 -right-3 text-2xl"><i class="fa-solid fa-circle-xmark text-graay-100"></i></button>
+    <input type="text" name="" id="" class="w-[75%] px-4 bg-graay-600 rounded-md leading-8" placeholder="請輸入關鍵字">
+    <button><i class="fa-solid fa-magnifying-glass fa-xl ml-3"></i></button>
+  </div>
+  <!-- 會員側邊選單 -->
+  <nav class="sideMenu hidden fixed top-[5.5rem] min-h-[89vh] lg:block w-[100px] 2xl:w-[240px] pt-[125px] 2xl:pt-[86px] bg-second-400">
+    <div class="avator w-[57px] h-[57px] m-auto 2xl:w-[125px] 2xl:h-[125px] text-center rounded-full ">
+      <div class=" w-[51px] h-[51px] mt-[5px] 2xl:w-[121px] 2xl:h-[121px] mx-auto 2xl:mt-[6.5px] border-[2px] border-graay-600 rounded-full inline-flex justify-center items-center">
+      </div>
+      <div class="relative hidden 2xl:block text-right cursor-pointer">
+        <label for="avator">
+          <input type="file" name="" id="avator" class="hidden">
+          <span class="absolute top-[-26px] -right-2 text-graay-600 material-symbols-outlined cursor-pointer">
+            edit
+          </span>
+        </label>
+      </div>
+    </div>
+    <div class="memberMenu bg-second-400 w-full">
+      <div class="flex flex-col items-center 2xl:flex-row 2xl:justify-center py-4 text-xl text-graay-100">
+        嗨!<div class="memberName">王曉明</div>
+      </div>
+      <ul class="bg-second-500 text-graay-100 text-xl lg:h-[280px] xl:h-[340px] 2xl:h-[305px] 3xl:h-fit overflow-auto">
+        <li class="info items-center py-4 text-center cursor-pointer">
+          <a href="javascript:;" class="flex justify-center hover:text-second-200">
+            <span class="material-symbols-outlined m-0 2xl:mr-6">
+              person
             </span>
-          </label>
+            <span class="hidden 2xl:inline-block">會員資訊</span>
+          </a>
+        </li>
+        <div class="bg-second-600 2xl:pl-14 hidden">
+          <a href="javascript:;" class="inline-block w-full text-center 2xl:w-[128px] m-auto pb-0.5 my-4 2xl:text-left text-graay-100 cursor-pointer hover:text-second-200 2xl:hover:border-second-200 2xl:hover:border-b-[1px]">
+            <span class="2xl:hidden material-symbols-outlined m-0 ">
+              description
+            </span>
+            <span class="hidden 2xl:inline-block">會員資料</span>
+          </a>
+          <a href="javascript:;" class="inline-block w-full text-center 2xl:w-[128px] m-auto pb-0.5 my-4 2xl:text-left text-graay-100 cursor-pointer hover:text-second-200 2xl:hover:border-second-200 2xl:hover:border-b-[1px]">
+            <span class="2xl:hidden material-symbols-outlined m-0 ">
+              water_drop
+            </span>
+            <span class="hidden 2xl:inline-block">點數/優惠卷</span>
+          </a>
+          <a href="javascript:;" class="inline-block w-full text-center 2xl:w-[128px] m-auto pb-0.5 my-4 2xl:text-left text-graay-100 cursor-pointer hover:text-second-200 2xl:hover:border-second-200 2xl:hover:border-b-[1px]">
+            <span class="2xl:hidden material-symbols-outlined m-0 ">
+              lock_person
+            </span>
+            <span class="hidden 2xl:inline-block">修改密碼</span>
+          </a>
         </div>
-      </div>
-      <div class="memberMenu bg-second-400 w-full">
-        <div class="flex flex-col items-center 2xl:flex-row 2xl:justify-center py-4 text-xl text-graay-100">
-          嗨!<div class="memberName">王曉明</div>
-        </div>
-        <ul class="bg-second-500 text-graay-100 text-xl lg:h-[280px] xl:h-[340px] 2xl:h-[305px] 3xl:h-fit overflow-auto">
-          <li class="info items-center py-4 text-center cursor-pointer">
-            <a href="javascript:;" class="flex justify-center hover:text-second-200">
-              <span class="material-symbols-outlined m-0 2xl:mr-6">
-                person
-              </span>
-              <span class="hidden 2xl:inline-block">會員資訊</span>
-            </a>
-          </li>
-          <div class="bg-second-600 2xl:pl-14 hidden">
-            <a href="javascript:;" class="inline-block w-full text-center 2xl:w-[128px] m-auto pb-0.5 my-4 2xl:text-left text-graay-100 cursor-pointer hover:text-second-200 2xl:hover:border-second-200 2xl:hover:border-b-[1px]">
-              <span class="2xl:hidden material-symbols-outlined m-0 ">
-                description
-              </span>
-              <span class="hidden 2xl:inline-block">會員資料</span>
-            </a>
-            <a href="javascript:;" class="inline-block w-full text-center 2xl:w-[128px] m-auto pb-0.5 my-4 2xl:text-left text-graay-100 cursor-pointer hover:text-second-200 2xl:hover:border-second-200 2xl:hover:border-b-[1px]">
-              <span class="2xl:hidden material-symbols-outlined m-0 ">
-                water_drop
-              </span>
-              <span class="hidden 2xl:inline-block">點數/優惠卷</span>
-            </a>
-            <a href="javascript:;" class="inline-block w-full text-center 2xl:w-[128px] m-auto pb-0.5 my-4 2xl:text-left text-graay-100 cursor-pointer hover:text-second-200 2xl:hover:border-second-200 2xl:hover:border-b-[1px]">
-              <span class="2xl:hidden material-symbols-outlined m-0 ">
-                lock_person
-              </span>
-              <span class="hidden 2xl:inline-block">修改密碼</span>
-            </a>
-          </div>
-          <li class="items-center py-4 text-center cursor-pointer">
-            <a href="javascript:;" class="flex justify-center hover:text-second-200">
-              <span class="material-symbols-outlined m-0 2xl:mr-6">
-                menu_book
-              </span>
-              <span class="hidden 2xl:inline-block">我的課程</span>
-            </a>
-          </li>
-          <li class="items-center py-4 text-center cursor-pointer">
-            <a href="javascript:;" class="flex justify-center hover:text-second-200">
-              <span class="material-symbols-outlined m-0 2xl:mr-6">
-                notifications
-              </span>
-              <span class="hidden 2xl:inline-block">通知中心</span>
-            </a>
-          </li>
-          <li class="items-center py-4 text-center cursor-pointer">
-            <a href="javascript:;" class="flex justify-center hover:text-second-200">
-              <span class="material-symbols-outlined m-0 2xl:mr-6">
-                shopping_cart
-              </span>
-              <span class="hidden 2xl:inline-block">我的訂單</span>
-            </a>
-          </li>
-          <li class="items-center py-4 text-center cursor-pointer">
-            <a href="javascript:;" class="flex justify-center hover:text-second-200">
-              <span class="material-symbols-outlined m-0 2xl:mr-6">
-                favorite
-              </span>
-              <span class="hidden 2xl:inline-block">追蹤清單</span>
-            </a>
-          </li>
-          <button class="absolute w-full bottom-0 py-4 text-xl text-center text-graay-100 cursor-pointer hover:bg-second-100 hover:text-graay-600 focus:bg-second-100 focus:text-graay-600">登出</button>
-        </ul>
-      </div>
-    </nav>
+        <li class="items-center py-4 text-center cursor-pointer">
+          <a href="javascript:;" class="flex justify-center hover:text-second-200">
+            <span class="material-symbols-outlined m-0 2xl:mr-6">
+              menu_book
+            </span>
+            <span class="hidden 2xl:inline-block">我的課程</span>
+          </a>
+        </li>
+        <li class="items-center py-4 text-center cursor-pointer">
+          <a href="javascript:;" class="flex justify-center hover:text-second-200">
+            <span class="material-symbols-outlined m-0 2xl:mr-6">
+              notifications
+            </span>
+            <span class="hidden 2xl:inline-block">通知中心</span>
+          </a>
+        </li>
+        <li class="items-center py-4 text-center cursor-pointer">
+          <a href="javascript:;" class="flex justify-center hover:text-second-200">
+            <span class="material-symbols-outlined m-0 2xl:mr-6">
+              shopping_cart
+            </span>
+            <span class="hidden 2xl:inline-block">我的訂單</span>
+          </a>
+        </li>
+        <li class="items-center py-4 text-center cursor-pointer">
+          <a href="javascript:;" class="flex justify-center hover:text-second-200">
+            <span class="material-symbols-outlined m-0 2xl:mr-6">
+              favorite
+            </span>
+            <span class="hidden 2xl:inline-block">追蹤清單</span>
+          </a>
+        </li>
+        <button class="absolute w-full bottom-0 py-4 text-xl text-center text-graay-100 cursor-pointer hover:bg-second-100 hover:text-graay-600 focus:bg-second-100 focus:text-graay-600">登出</button>
+      </ul>
+    </div>
+  </nav>
   
   <!-- 桌機選單 -->
   <header class="fixed w-full top-0 bg-graay-600 shadow-sm shadow-graay-400 z-20">
@@ -230,7 +236,7 @@
             </span>
             我的課程
           </a>
-          <a href="#" class="flex items-center px-2 py-1.5 mr-5 rounded-md border border-primary-200 text-primary-200">
+          <a href="javascript:;" class="flex items-center px-2 py-1.5 mr-5 rounded-md border border-primary-200 text-primary-200">
             <span class="inline-block material-symbols-outlined mr-1">
               person
             </span>
@@ -263,11 +269,11 @@
     <div class="hidden product-Sub shadow-sm shadow-graay-400">
       <div class="lg:w-[62%] xl:w-[72%] py-4 xl:py-6 m-auto flex justify-between items-center">
         <nav class="text-graay-100">
-          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300"><i class="fa-solid fa-filter mr-1"></i>篩選</a>
-          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">全部</a>
-          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">募資</a>
-          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">預購</a>
-          <a href="#" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">長期</a>
+          <a href="javascript:;" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300"><i class="fa-solid fa-filter mr-1"></i>篩選</a>
+          <a href="javascript:;" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">全部</a>
+          <a href="javascript:;" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">募資</a>
+          <a href="javascript:;" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">預購</a>
+          <a href="javascript:;" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">長期</a>
         </nav>
         <div class="searchBar lg:w-[28%] xl:w-[25%] h-[40px] flex lg:px-2 xl:px-5 border border-graay-500 rounded-md">
           <div class="text-graay-100 mr-2 flex justify-center items-center"><i class="fa-solid fa-magnifying-glass"></i></div>

@@ -26,6 +26,9 @@
     .menu nav > a.active {
         @apply text-primary-300
     }
+    .footerLink.active {
+        @apply text-primary-200
+    }
     .on {
         @apply bg-primary-100 3xl:focus:shadow-md 3xl:focus:shadow-graay-200 focus:bg-primary-100
     }

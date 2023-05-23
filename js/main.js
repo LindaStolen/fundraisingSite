@@ -22,6 +22,11 @@ $(function(){
         if($(window).innerWidth() < 1024){
             $('.subMenu > div').addClass('hidden').children('a').removeClass('active')
         }
+        if($(window).innerWidth() > 1023 && !$('.searchBox').hasClass('hidden')){
+            $('.searchBox').addClass('hidden').find('input:text').val('')
+            $(".background").addClass('hidden')
+            $('body').css('overflow-y','scroll')
+        }
     })
     $(".about").on('click', function(){
         console.log('這是關於')        
@@ -103,7 +108,24 @@ $(function(){
         $('html,body').animate({scrollTop: 0,} ,700)
     })
 
+    // footer點擊樣式
+    $('footer .footerLink').on('click', function(){
+        $('.footerLink').removeClass('active')
+        $(this).addClass('active')
+    })
     
+    // 手機版搜尋筐功能
+    $('.searchOpen').on('click',function(){
+        $('.searchBox').removeClass('hidden').addClass('flex')
+        $(".background").removeClass('hidden')
+        $('body').css('overflow-y','hidden')
+    })
+    $('.searchClose').on('click',function(){
+        $('.searchBox').removeClass('flex').addClass('hidden').find('input:text').val('')
+        $(".background").addClass('hidden')
+        $('body').css('overflow-y','scroll')
+    })
+
     let owl = $('.ad');
     owl.owlCarousel({
         loop:true,
