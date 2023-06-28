@@ -1,16 +1,17 @@
 $(function(){
   // 商品篩選區塊功能
-  $('.toggle').on('click',function(){
+  $('.toggle, .selectBtn').on('click',function(){
     let close = $(this).hasClass('close')
     console.log(close)
     if(close){
-      $(this).removeClass('close').addClass('select')
+      $('.toggle, .selectBtn').removeClass('close').addClass('select')
       $('.sidebarSelect').animate({left: 15})
     }else {
-      $(this).addClass('close').removeClass('select')
+      $('.toggle, .selectBtn').addClass('close').removeClass('select')
       $('.sidebarSelect').animate({left: -256})
     }
   })
+
   // product_content tab切換功能
   $('nav.tab span').on('click', function(){
     let num = $(this).index()

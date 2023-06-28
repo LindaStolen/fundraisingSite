@@ -36,7 +36,7 @@
         @apply  bg-primary-300 text-graay-600
     }
     .toggle.select {
-        @apply bg-primary-500 text-primary-100
+        @apply text-primary-100
     }
     .permanent.active {
         @apply  bg-second-300 text-graay-600

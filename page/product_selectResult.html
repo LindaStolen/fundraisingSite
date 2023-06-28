@@ -163,7 +163,7 @@
     <div class="hidden product-Sub shadow-sm shadow-graay-400">
       <div class="lg:w-[62%] xl:w-[72%] py-4 xl:py-6 m-auto flex justify-between items-center">
         <nav class="text-graay-100">
-          <a href="javascript:;" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300"><i class="fa-solid fa-filter mr-1"></i>篩選</a>
+          <a href="javascript:;" class="hidden selectBtn close lg:inline-block lg:mr-8 xl:mr-12 hover:text-primary-300"><i class="fa-solid fa-filter mr-1"></i>篩選</a>
           <a href="javascript:;" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">全部</a>
           <a href="javascript:;" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">募資</a>
           <a href="javascript:;" class="inline-block lg:mr-8 xl:mr-12 hover:text-primary-300">預購</a>
@@ -178,25 +178,39 @@
   </div>
   <!-- 側邊篩選 start-->
   <ul class="sidebarSelect fixed top-46 -left-[265px] 3xl:left-20 w-[256px] p-7 bg-graay-600 border-primary-400 border-[1px] rounded-lg drop-shadow-md shadow-graay-200 3xl:shadow-none z-20">
+    <div class="toggle close flex items-center justify-end">
+      <span class="material-symbols-outlined">
+        close
+      </span>
+    </div>
     <form action="">
       <!-- <li class="relative"> -->
-        <!-- <div class="toggle close flex items-center 3xl:hidden absolute -right-[77px] w-12 h-12 pl-2 bg-primary-500 rounded-tr-[50%] rounded-br-[50%]">
-          <span class="material-symbols-outlined">
-            filter_alt
-            </span>
-        </div> -->
       <!-- </li> -->
-      <li class="pb-5 text-[24px]">篩選：</li>
-      <li class="pb-5"><label for="hot"><input class="mr-3" type="checkbox" name="" id="hot">本週熱門</label></li>
-      <li class="pb-5"><label for="newest"><input class="mr-3" type="checkbox" name="" id="newest">最新上架</label></li>
-      <li class="pb-5"><label for="recommend"><input class="mr-3" type="checkbox" name="" id="recommend">A-Ho推薦</label></li>
-      <li class="pb-5 text-[24px]">分類：</li>
-      <li class="pb-5"><label for="books"><input class="mr-3" type="checkbox" name="" id="books">書籍</label></li>
-      <li class="pb-5"><label for="food"><input class="mr-3" type="checkbox" name="" id="food">食品</label></li>
-      <li class="pb-5"><label for="class"><input class="mr-3" type="checkbox" name="" id="class">課程</label></li>
-      <li class="pb-5"><label for="handmade"><input class="mr-3" type="checkbox" name="" id="handmade">手作</label></li>
-      <li class="pb-5"><label for="music"><input class="mr-3" type="checkbox" name="" id="music">音樂</label></li>
-      <li class="pb-5"><label for="else"><input class="mr-3" type="checkbox" name="" id="else">其他</label></li>
+      <div class="overflow-y-auto h-[400px] mb-3">
+        <li class="pb-5 text-[24px]">篩選：</li>
+        <li class="pb-5"><label for="hot"><input class="mr-3" type="checkbox" name="" id="hot">本週熱門</label></li>
+        <li class="pb-5"><label for="newest"><input class="mr-3" type="checkbox" name="" id="newest">最新上架</label></li>
+        <li class="pb-5"><label for="recommend"><input class="mr-3" type="checkbox" name="" id="recommend">A-Ho推薦</label></li>
+        <li class="pb-5 text-[24px]">分類：</li>
+        <li class="pb-5"><label for="books"><input class="mr-3" type="checkbox" name="" id="books">書籍</label></li>
+        <li class="pb-5"><label for="food"><input class="mr-3" type="checkbox" name="" id="food">食品</label></li>
+        <li class="pb-5"><label for="class"><input class="mr-3" type="checkbox" name="" id="class">課程</label></li>
+        <li class="pb-5"><label for="handmade"><input class="mr-3" type="checkbox" name="" id="handmade">手作</label></li>
+        <li class="pb-5"><label for="music"><input class="mr-3" type="checkbox" name="" id="music">音樂</label></li>
+        <li class="pb-5"><label for="else"><input class="mr-3" type="checkbox" name="" id="else">其他</label></li>
+        <li class="pb-5"><label for="else"><input class="mr-3" type="checkbox" name="" id="else">其他</label></li>
+        <li class="pb-5"><label for="else"><input class="mr-3" type="checkbox" name="" id="else">其他</label></li>
+        <li class="pb-5"><label for="else"><input class="mr-3" type="checkbox" name="" id="else">其他</label></li>
+        <li class="pb-5"><label for="else"><input class="mr-3" type="checkbox" name="" id="else">其他</label></li>
+        <li class="pb-5"><label for="else"><input class="mr-3" type="checkbox" name="" id="else">其他</label></li>
+        <li class="pb-5"><label for="else"><input class="mr-3" type="checkbox" name="" id="else">其他</label></li>
+        <li class="pb-5"><label for="else"><input class="mr-3" type="checkbox" name="" id="else">其他</label></li>
+        <li class="pb-5"><label for="else"><input class="mr-3" type="checkbox" name="" id="else">其他</label></li>
+        <li class="pb-5"><label for="else"><input class="mr-3" type="checkbox" name="" id="else">其他</label></li>
+        <li class="pb-5"><label for="else"><input class="mr-3" type="checkbox" name="" id="else">其他</label></li>
+        <li class="pb-5"><label for="else"><input class="mr-3" type="checkbox" name="" id="else">其他</label></li>
+        <li class="pb-5"><label for="else"><input class="mr-3" type="checkbox" name="" id="else">其他</label></li>
+      </div>
       <li><button type="reset" class="block w-full py-1 bg-primary-600 border-primary-200 border-[1px] text-[24px] text-graay-100 rounded-lg">清除篩選</button></li>
     </form>
   </ul>
@@ -390,7 +404,7 @@
   </footer>
     <!-- 固定按鈕 -->
     <div class="buttons fixed flex flex-col right-5 3xl:right-[9%] bottom-10 md:bottom-36">
-      <div class="toggle close flex justify-center items-center 3xl:hidden w-14 h-14 mb-3 bg-primary-300 text-graay-600 rounded-full shadow-sm shadow-graay-400">
+      <div class="toggle close lg:hidden flex justify-center items-center 3xl:hidden w-14 h-14 mb-3 bg-primary-300 text-graay-600 rounded-full shadow-sm shadow-graay-400">
         <span class="material-symbols-outlined">
           filter_alt
           </span>

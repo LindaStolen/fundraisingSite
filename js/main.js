@@ -32,7 +32,7 @@ $(function(){
         console.log('這是關於')        
         let device = $(window).innerWidth()
         console.log(device)
-        if(device > 768){
+        if(device >= 1024){
             let close = $('.about-Sub').hasClass('hidden')
             if(close){
                 console.log(close)
@@ -56,7 +56,7 @@ $(function(){
         console.log('這是商品')
         let device = $(window).innerWidth()
         console.log(device)
-        if(device >768){
+        if(device >= 1024){
             let close = $('.product-Sub').hasClass('hidden')
             if(close){
                 $('.subMenu > div').addClass('hidden').children('a').removeClass('active')
